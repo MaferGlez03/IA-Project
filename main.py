@@ -20,79 +20,28 @@ patient, history = chat.chating("Imagine you are the Christina Yang from Grey's 
 energy_level = chat.analyze_conversation(history, "nivel de energía")
 pain_level = chat.analyze_conversation(history, "nivel de dolor")
 
-patient_info = {
-    'age': int(patient.age),
-    'lifestyle_factors1': 1,
-    'lifestyle_factors2': 1,
-    'lifestyle_factors3': 1,
-    'lifestyle_factors4': 1,
-    'lifestyle_factors5': 1,
-    'lifestyle_factors6': 1,
-    'lifestyle_factors7': 1,
-    'lifestyle_factors8': 1,
-    'lifestyle_factors9': 1,
-    'lifestyle_factors10': 1,
-    'lifestyle_factors11': 1,
-    'lifestyle_factors12': 1,
-    'family_history1': 1,
-    'family_history2': 1,
-    'family_history3': 1,
-    'family_history4': 1,
-    'family_history5': 1,
-    'family_history6': 1,
-    'family_history7': 1,
-    'family_history8': 1,
-    'family_history9': 1,
-    'family_history10': 1,
-    'family_history11': 1,
-    'family_history12': 1,
-    'genetic_predisposition1': 1,
-    'genetic_predisposition2': 1,
-    'genetic_predisposition3': 1,
-    'genetic_predisposition4': 1,
-    'genetic_predisposition5': 1,
-    'genetic_predisposition6': 1,
-    'genetic_predisposition7': 1,
-    'genetic_predisposition8': 1,
-    'genetic_predisposition9': 1,
-    'genetic_predisposition10': 1,
-    'genetic_predisposition11': 1,
-    'genetic_predisposition12': 1,
-    'environmental_exposure1': 1,
-    'environmental_exposure2': 1,
-    'environmental_exposure3': 1,
-    'environmental_exposure4': 1,
-    'environmental_exposure5': 1,
-    'environmental_exposure6': 1,
-    'environmental_exposure7': 1,
-    'environmental_exposure8': 1,
-    'environmental_exposure9': 1,
-    'environmental_exposure10': 1,
-    'environmental_exposure11': 1,
-    'environmental_exposure12': 1
-}
-patient_symptoms = patient.symptoms
+patient_symptoms = [s.name for s in patient.symptoms]
 
-
-prediction = model.predict(patient_symptoms, patient_info)
+prediction = model.predict_disease(patient_symptoms)
 
 #! !!!!!!!!!!!!!!!!!!Hay que extraerlas del ontology.json !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-diseaes = ["Brain Cancer", "Encephalitis", "Epilepsy", "Multiple Sclerosis", "Prion Diseases",
-                "Spinal Muscular Atrophy", "Parkinson's Disease", "Lewy Body Dementia", 
-                "Huntington's Disease", "Friedreich's Ataxia", "Amyotrophic Lateral Sclerosis", "Alzheimer's Disease"]
+#! ["Brain Cancer", "Encephalitis", "Epilepsy", "Multiple Sclerosis", "Prion Diseases",
+#!                 "Spinal Muscular Atrophy", "Parkinson's Disease", "Lewy Body Dementia", 
+#!                 "Huntington's Disease", "Friedreich's Ataxia", "Amyotrophic Lateral Sclerosis", "Alzheimer's Disease"]
 
 # Generar el array de enfermedades activas
-active_diseaes = [enfermedad for enfermedad, activo in zip(diseaes, prediction) if activo == 1]
+active_diseaes = [[clave for clave, valor in prediction.items() if valor > 0]]
 
 # Verificar si hay enfermedades activas
 if not active_diseaes:
     active_diseaes = ["No hay enfermedades"]
 
-# Resultado
-print(f"{active_diseaes}\n\n\n\n")
-
-# print(f"Predicted Disease: {prediction}")
-
+print()
+print(f"Predicted Disease:")
+for clave, valor in prediction.items():
+        if valor == 0: break
+        print(f"{clave}: {valor}%")
+print()
 
 
 
@@ -139,7 +88,7 @@ astar = A_Star.AStar(possible_procedures, possible_medications)
 initial_state = A_Star.State(
     medications=[],  
     procedures=[],  
-    symptoms=[Support.Symptom(s.name, "severe") for s in patient_symptoms],
+    symptoms=[Support.Symptom(s, "severe") for s in patient_symptoms],
     progress=Support.Progress(30),  # The patient starts with 30% progress
     general_state=Support.StateGeneral(energy_level, pain_level, immune_status="weak")
 )

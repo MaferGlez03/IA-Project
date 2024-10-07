@@ -1,26 +1,26 @@
-patient_id,age,lifestyle_factors1,lifestyle_factors2,lifestyle_factors3,lifestyle_factors4,lifestyle_factors5,lifestyle_factors6,lifestyle_factors7,lifestyle_factors8,lifestyle_factors9,lifestyle_factors10,lifestyle_factors11,lifestyle_factors12,family_history1,family_history2,family_history3,family_history4,family_history5,family_history6,family_history7,family_history8,family_history9,family_history10,family_history11,family_history12,genetic_predisposition1,genetic_predisposition2,genetic_predisposition3,genetic_predisposition4,genetic_predisposition5,genetic_predisposition6,genetic_predisposition7,genetic_predisposition8,genetic_predisposition9,genetic_predisposition10,genetic_predisposition11,genetic_predisposition12,environmental_exposure1,environmental_exposure2,environmental_exposure3,environmental_exposure4,environmental_exposure5,environmental_exposure6,environmental_exposure7,environmental_exposure8,environmental_exposure9,environmental_exposure10,environmental_exposure11,environmental_exposure12,symptoms,diagnosis1,diagnosis2,diagnosis3,diagnosis4,diagnosis5,diagnosis6,diagnosis7,diagnosis8,diagnosis9,diagnosis10,diagnosis11,diagnosis12
-1,44,1,1,1,1,0,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,"Numbness or Tingling, Involuntary Movements",0,0,0,0,0,0,0,0,0,0,0,1
-2,45,1,1,1,1,1,1,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,Heart Problems,0,0,1,0,0,0,0,0,0,0,0,0
-3,54,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Visual Hallucinations,0,0,0,0,0,0,0,0,0,1,0,0
-4,67,1,0,0,0,0,1,0,1,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Difficulty Walking, Tremor, Mood Changes",0,0,0,0,0,0,0,1,0,0,0,0
-5,32,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Cognitive Decline,0,0,0,1,0,0,0,0,0,0,0,0
-6,55,1,1,1,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,Visual Hallucinations,0,0,0,0,0,0,0,0,0,0,0,1
-7,65,1,1,0,0,0,1,1,0,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Bradykinesia,0,0,0,0,0,0,1,0,0,0,0,0
-8,37,0,1,1,1,1,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Memory Loss, Fatigue, Numbness or Tingling",0,0,0,1,0,0,0,0,0,0,0,0
-9,21,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Difficulty Walking, Tremor, Visual Hallucinations",0,0,0,0,0,1,0,0,0,0,0,0
-10,35,1,0,1,0,0,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Visual Hallucinations, Involuntary Movements, Fatigue",1,0,0,0,0,0,0,0,0,0,0,0
-11,68,1,0,1,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Memory Loss, Difficulty Walking",0,0,0,0,0,0,1,0,0,0,0,0
-12,42,0,1,1,0,1,0,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Tremor, Bradykinesia, Difficulty Speaking",0,1,0,0,0,0,0,0,0,0,0,0
-13,24,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Involuntary Movements,0,0,0,0,0,0,0,0,0,0,0,0
-14,36,1,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Muscle Weakness, Bradykinesia, Visual Hallucinations",0,0,0,0,1,0,0,0,0,0,0,0
-15,38,0,1,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Mood Changes, Numbness or Tingling",0,0,0,0,0,1,0,0,0,0,0,0
-16,59,0,0,0,1,0,0,1,1,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Visual Hallucinations, Difficulty Walking",0,0,0,0,0,0,1,0,0,0,0,0
-17,43,0,1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fatigue, Memory Loss",0,0,1,0,0,0,0,0,0,0,0,0
-18,50,1,1,0,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Difficulty Speaking, Bradykinesia",0,0,0,1,0,0,0,0,0,0,0,0
-19,29,0,1,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Memory Loss, Numbness or Tingling",0,0,0,0,0,0,0,1,0,0,0,0
-20,72,1,0,0,0,1,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Difficulty Walking, Fatigue",0,0,1,0,0,0,0,0,0,0,0,0
-21,47,0,1,1,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,"Visual Hallucinations, Tremor",0,0,0,0,0,1,0,0,0,0,0,0
-22,62,1,0,1,0,1,1,1,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Muscle Weakness, Bradykinesia, Memory Loss",0,1,0,0,0,0,0,0,0,0,0,0
-23,40,1,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Difficulty Walking, Tremor",0,0,1,0,0,0,0,0,0,0,0,0
-24,54,1,1,1,1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Numbness or Tingling, Visual Hallucinations",0,0,0,0,0,1,0,0,0,0,0,0
-25,66,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Muscle Weakness, Mood Changes, Difficulty Speaking",0,0,0,0,0,0,1,0,0,0,0,0
+patient_id,symptoms,Brain_Cancer,Encephalitis,Epilepsy,Multiple_Sclerosis,Prion_Diseases,Spinal_Muscular_Atrophy,Parkinson_Disease,Lewy_Body_Dementia,Huntington_Disease,Friedreich_Ataxia,Amyotrophic_Lateral_Sclerosis,Alzheimer_Disease
+1,"Numbness or Tingling, Involuntary Movements",5%,5%,10%,25%,0%,0%,15%,5%,5%,5%,20%,5%
+2,Heart Problems,0%,10%,6%,6%,6%,6%,0%,0%,6%,40%,0%,20%
+3,Visual Hallucinations,5%,5%,5%,5%,5%,0%,25%,25%,0%,0%,5%,20%
+4,"Difficulty Walking, Tremor, Mood Changes",5%,0%,0%,10%,5%,0%,40%,5%,5%,20%,5%,5%
+5,Cognitive Decline,5%,0%,5%,5%,0%,0%,20%,25%,5%,5%,5%,25%
+6,Visual Hallucinations,5%,5%,5%,5%,5%,0%,25%,25%,0%,0%,5%,20%
+7,Bradykinesia,0%,0%,0%,10%,0%,0%,50%,0%,10%,10%,10%,10%
+8,"Memory Loss, Fatigue, Numbness or Tingling",10%,5%,5%,30%,5%,5%,0%,0%,0%,5%,5%,30%
+9,"Difficulty Walking, Tremor, Visual Hallucinations",5%,5%,5%,20%,5%,0%,20%,20%,5%,5%,5%,5%
+10,"Visual Hallucinations, Involuntary Movements, Fatigue",5%,10%,15%,10%,5%,0%,20%,5%,15%,0%,10%,5%
+11,"Memory Loss, Difficulty Walking",5%,5%,5%,20%,5%,0%,0%,5%,0%,15%,5%,35%
+12,"Tremor, Bradykinesia, Difficulty Speaking",0%,0%,0%,15%,0%,0%,50%,0%,20%,0%,15%,0%
+13,Involuntary Movements,0%,0%,40%,0%,10%,0%,10%,10%,30%,0%,0%,0%
+14,"Muscle Weakness, Bradykinesia, Visual Hallucinations",10%,0%,10%,10%,10%,10%,20%,10%,0%,0%,10%,10%
+15,"Mood Changes, Numbness or Tingling",5%,5%,5%,45%,5%,5%,5%,5%,5%,5%,5%,5%
+16,"Visual Hallucinations, Difficulty Walking",5%,5%,5%,15%,5%,0%,25%,25%,0%,5%,5%,5%
+17,"Fatigue, Memory Loss",10%,10%,10%,10%,10%,0%,0%,0%,0%,0%,10%,40%
+18,"Difficulty Speaking, Bradykinesia",0%,0%,0%,0%,0%,0%,70%,0%,10%,0%,10%,10%
+19,"Memory Loss, Numbness or Tingling",5%,5%,5%,35%,5%,5%,0%,0%,0%,0%,5%,35%
+20,"Difficulty Walking, Fatigue",10%,10%,10%,25%,10%,0%,0%,0%,0%,15%,10%,10%
+21,"Visual Hallucinations, Tremor",5%,5%,5%,5%,5%,0%,35%,30%,0%,0%,5%,5%
+22,"Muscle Weakness, Bradykinesia, Memory Loss",10%,0%,0%,10%,0%,10%,25%,0%,0%,0%,15%,30%
+23,"Difficulty Walking, Tremor",10%,0%,0%,10%,0%,0%,35%,0%,10%,15%,10%,10%
+24,"Numbness or Tingling, Visual Hallucinations",5%,5%,5%,25%,5%,0%,25%,15%,0%,5%,5%,5%
+25,"Muscle Weakness, Mood Changes, Difficulty Speaking",10%,0%,0%,10%,10%,10%,10%,0%,0%,0%,40%,10%

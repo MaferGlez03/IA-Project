@@ -1,16 +1,20 @@
 import pandas as pd
 import numpy as np
+import json
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.multioutput import MultiOutputClassifier
+from sklearn.preprocessing import MultiLabelBinarizer
 
 class DiseasePredictionModel:
     def __init__(self, ontology, csv_file):
         self.ontology = ontology
         self.data = pd.read_csv(csv_file)
         self.model = None
+        self.models = None  # Para almacenar los modelos entrenados
         self.symptom_map = self.create_symptom_map()
+        self.mlb = MultiLabelBinarizer()
 
     def create_symptom_map(self):
         # Crear un diccionario de síntomas a partir de la ontología
@@ -20,18 +24,29 @@ class DiseasePredictionModel:
         return symptom_map
 
     def preprocess_data(self):
-        # Convertir los síntomas de cada paciente en características binarias
-        all_symptoms = [symptom['name'] for symptom in self.ontology['symptoms']]
-        for symptom in all_symptoms:
-            self.data[symptom] = self.data['symptoms'].apply(lambda x: 1 if symptom in x else 0)
+        df = self.data
+        df['symptoms'] = df['symptoms'].apply(lambda x: x.split(', '))
+        symptom_features = self.mlb.fit_transform(df['symptoms'])
+        symptom_columns = [f"{symptom}" for symptom in self.mlb.classes_]
 
-        diagnosis_columns = [f'diagnosis{i}' for i in range(1, 13)]
+        # Combinar las nuevas columnas con el DataFrame original
+        df_symptoms = pd.DataFrame(symptom_features, columns=symptom_columns)
+        df = pd.concat([df, df_symptoms], axis=1)
 
-        # Definir X (características)
-        X = self.data.drop(['patient_id', 'symptoms'] + diagnosis_columns, axis=1)
+        # Eliminar la columna original de síntomas
+        df = df.drop(columns=['symptoms'])
 
-        # Crear la etiqueta de enfermedad como DataFrame
-        y = self.data[diagnosis_columns].copy()  # Copiar las columnas de diagnóstico directamente
+        # Separar las características de las etiquetas (diagnósticos)
+        X = df.drop(columns=['Brain_Cancer', 'Encephalitis', 'Epilepsy', 'Multiple_Sclerosis', 'Prion_Diseases',
+                     'Spinal_Muscular_Atrophy', 'Parkinson_Disease', 'Lewy_Body_Dementia',
+                     'Huntington_Disease', 'Friedreich_Ataxia', 'Amyotrophic_Lateral_Sclerosis',
+                     'Alzheimer_Disease'])
+        
+        # La etiqueta será la enfermedad correspondiente
+        y = df[['Brain_Cancer', 'Encephalitis', 'Epilepsy', 'Multiple_Sclerosis', 'Prion_Diseases',
+                     'Spinal_Muscular_Atrophy', 'Parkinson_Disease', 'Lewy_Body_Dementia',
+                     'Huntington_Disease', 'Friedreich_Ataxia', 'Amyotrophic_Lateral_Sclerosis',
+                     'Alzheimer_Disease']]
 
         return X, y
 
@@ -39,38 +54,52 @@ class DiseasePredictionModel:
         X, y = self.preprocess_data()
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-        # Usar MultiOutputClassifier con RandomForest
-        self.model = MultiOutputClassifier(RandomForestClassifier(random_state=42))
-        self.model.fit(X_train, y_train)
-        
-        # Evaluar el modelo
-        y_pred = self.model.predict(X_test)
-        
-        # Calcular la precisión por enfermedad
-        accuracy = (y_pred == y_test.values).mean(axis=0)  # Promedio de precisión por enfermedad
-        for i, acc in enumerate(accuracy):
-            print(f"Accuracy for Disease {i + 1}: {acc * 100:.2f}%")
-    
-    def predict(self, patient_symptoms, patient_info):
-        # Crear un vector para los síntomas del paciente
-        symptoms_vector = [1 if symptom in patient_symptoms else 0 for symptom in self.symptom_map]
+        # Entrenar un modelo RandomForest para cada enfermedad
+        models = {}
+        for disease in y.columns:
+            model = RandomForestClassifier()
+            model.fit(X_train, y_train[disease])
+            models[disease] = model
 
-        # Crear un vector para los factores del paciente
-        factors_vector = []
-        for factor in ['lifestyle_factors', 'family_history', 'genetic_predisposition', 'environmental_exposure']:
-            for i in range(1, 13):
-                factors_vector.append(f"{factor}{i}")  # Se espera que sea 0 o 1
+        self.models = models  # Guardar los modelos entrenados
 
-        # Concatenar síntomas e información adicional
-        features = list(patient_info.values()) + symptoms_vector
+        # Realizar predicciones
+        predictions = {}
+        for disease, model in models.items():
+            predictions[disease] = model.predict(X_test)
 
-        # Crear un DataFrame con nombres de características
-        feature_names = ['age'] + factors_vector + list(self.symptom_map.keys())
-        features_df = pd.DataFrame([features], columns=feature_names)
+        # Medir la precisión de cada modelo
+        for disease in predictions:
+            acc = accuracy_score(y_test[disease], predictions[disease])
 
-        
-        # Obtener las predicciones para todas las enfermedades
-        predictions = self.model.predict(features_df)[0]  # Obtiene un vector de 12 elementos
-        
-        return predictions
+    def predict_disease(self, symptom_list):
+        # Crear un vector de características a partir de los síntomas proporcionados
+        symptom_features = self.mlb.transform([symptom_list])  # La función transform requiere una lista de listas
+        symptom_columns = [f"Symptom_{symptom}" for symptom in self.mlb.classes_]
+        input_vector = pd.DataFrame(symptom_features, columns=symptom_columns)
+
+        # Llenar con ceros las columnas que faltan en input_vector
+        missing_cols = set(self.models[list(self.models.keys())[0]].feature_names_in_) - set(input_vector.columns)
+        for col in missing_cols:
+            input_vector[col] = 0
+
+        # Ordenar las columnas para que coincidan con el entrenamiento
+        input_vector = input_vector[self.models[list(self.models.keys())[0]].feature_names_in_]
+
+        # Predecir enfermedades
+        predicted_diseases = {}
+        for disease, model in self.models.items():
+            prediction = model.predict(input_vector)
+            predicted_diseases[disease] = prediction
+
+        # Aplicar operación a cada valor y crear un nuevo diccionario
+        diccionario_modificado = {clave: int(valor[0][:-1]) for clave, valor in predicted_diseases.items()}
+
+        # Ordenar el diccionario modificado por valor
+        final = dict(sorted(diccionario_modificado.items(), key=lambda x: x[1], reverse=True))
+
+        return final
+
+
+
 
