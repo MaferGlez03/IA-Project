@@ -1,4 +1,4 @@
-from Support import *
+from A_Star_Algorithim.Support import Symptom, Progress, StateGeneral
 class State:
     def __init__(self, medications, procedures, symptoms, progress, general_state, disease_stage=None):
         self.medications = medications

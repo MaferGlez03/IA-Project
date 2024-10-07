@@ -1,5 +1,5 @@
 import heapq
-from States import State
+from A_Star_Algorithim.States import State
 
 class AStar:
     def __init__(self,possible_procedures,possible_medications, minimal_cost_per_action=50, minimal_cost_per_treatment=100):
@@ -7,6 +7,7 @@ class AStar:
         self.minimal_cost_per_treatment = minimal_cost_per_treatment
         self.possible_procedure = possible_procedures
         self.possible_medications = possible_medications
+        self.log = ""
 
     # Heuristic to guide the search (Admissible)
     def heuristic(self, state):
@@ -93,10 +94,9 @@ class AStar:
                     general_state=updated_general_state,
                     disease_stage=current_state.disease_stage  # Optional if used
                 )
-                # print(f"Generated successor with procedure: {new_procedure.name}")
-                # print(f"Symptoms: {updated_symptoms}")
-                # print(f"Progress: {updated_progress.improvement_percentage}%")
                 successors.append(new_state)
+
+        
 
         # 2. Administer new medications
         for new_medication in self.possible_medications:
@@ -113,9 +113,13 @@ class AStar:
                     general_state=updated_general_state,
                     disease_stage=current_state.disease_stage  # Optional if used
                 )
-                print(f"Generated successor with medication: {new_medication.name}")
-                print(f"Symptoms: {updated_symptoms}")
-                print(f"Progress: {updated_progress.improvement_percentage}%")
+                medication = f"Generated successor with medication: {new_medication.name}"
+                symptoms = f"Symptoms: {[s.name for s in updated_symptoms]}"
+                progress = f"Progress: {updated_progress.improvement_percentage}%"
+                self.log = self.log + medication + "\n" + symptoms + "\n" + progress + "\n"
+                print(medication)
+                print(symptoms)
+                print(progress)
                 successors.append(new_state)
 
         return successors

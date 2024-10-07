@@ -46,9 +46,9 @@ class Progress:
 # StateGeneral Class
 class StateGeneral:
     def __init__(self, energy_level, pain_level, immune_status):
-        self.energy_level = energy_level
-        self.pain_level = pain_level
-        self.immune_status = immune_status
+        self.energy_level = energy_level  # 0 - 10
+        self.pain_level = pain_level  # 0 - 10
+        self.immune_status = immune_status  # weak, normal, compromised, severe
     
     def __str__(self):
         return f"Energy: {self.energy_level}, Pain: {self.pain_level}/10, Immune Status: {self.immune_status}"
