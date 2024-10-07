@@ -1,0 +1,552 @@
+{
+    "symptoms": [
+        {
+        "id": "s1",
+        "name": "Memory Loss",
+        "description": "A decline in the ability to remember information, which can affect daily life.",
+        "associated_diseases": [
+            "Alzheimer's",
+            "Lewy body dementia",
+            "Huntington's"
+        ],
+        "treatments": [
+            "Cognitive therapy",
+            "Cholinesterase inhibitors"
+        ],
+        "diagnostic_tests": [
+            "Cognitive assessments",
+            "Neuroimaging"
+        ]
+        },
+        {
+        "id": "s2",
+        "name": "Muscle Weakness",
+        "description": "A condition characterized by a decrease in muscle strength, affecting mobility and daily activities.",
+        "associated_diseases": [
+            "ALS",
+            "Spinal muscular atrophy",
+            "Friedreich's ataxia"
+        ],
+        "treatments": [
+            "Physical therapy",
+            "Medications to manage symptoms"
+        ],
+        "diagnostic_tests": [
+            "Electromyography (EMG)",
+            "Muscle biopsy"
+        ]
+        },
+        {
+        "id": "s3",
+        "name": "Involuntary Movements",
+        "description": "Uncontrolled movements that can include jerks, twitches, or spasms.",
+        "associated_diseases": [
+            "Huntington's",
+            "Parkinson's"
+        ],
+        "treatments": [
+            "Antipsychotic medications",
+            "Physical therapy"
+        ],
+        "diagnostic_tests": [
+            "Neurological examination",
+            "MRI"
+        ]
+        },
+        {
+        "id": "s4",
+        "name": "Tremor",
+        "description": "Rhythmic shaking of a part of the body, often observed in the hands.",
+        "associated_diseases": [
+            "Parkinson's",
+            "Essential tremor"
+        ],
+        "treatments": [
+            "Medications like beta-blockers",
+            "Surgery for severe cases"
+        ],
+        "diagnostic_tests": [
+            "Neurological examination",
+            "Blood tests to rule out other causes"
+        ]
+        },
+        {
+        "id": "s5",
+        "name": "Difficulty Speaking",
+        "description": "Challenges in articulating words or forming sentences, often leading to frustration.",
+        "associated_diseases": [
+            "ALS",
+            "Parkinson's",
+            "Multiple sclerosis"
+        ],
+        "treatments": [
+            "Speech therapy",
+            "Augmentative communication devices"
+        ],
+        "diagnostic_tests": [
+            "Speech assessments",
+            "Neurological evaluations"
+        ]
+        },
+        {
+        "id": "s6",
+        "name": "Fatigue",
+        "description": "A feeling of tiredness or lack of energy that is persistent and not alleviated by rest.",
+        "associated_diseases": [
+            "Multiple sclerosis",
+            "Parkinson's"
+        ],
+        "treatments": [
+            "Cognitive behavioral therapy",
+            "Medications"
+        ],
+        "diagnostic_tests": [
+            "Blood tests to check for anemia or thyroid issues",
+            "Sleep studies"
+        ]
+        },
+        {
+        "id": "s7",
+        "name": "Visual Hallucinations",
+        "description": "Seeing things that are not present, often associated with cognitive disorders.",
+        "associated_diseases": [
+            "Lewy body dementia",
+            "Parkinson's disease"
+        ],
+        "treatments": [
+            "Antipsychotic medications",
+            "Supportive therapy"
+        ],
+        "diagnostic_tests": [
+            "Neurological assessments",
+            "Psychiatric evaluations"
+        ]
+        },
+        {
+        "id": "s8",
+        "name": "Cognitive Decline",
+        "description": "A gradual decrease in cognitive abilities such as thinking, memory, and reasoning.",
+        "associated_diseases": [
+            "Alzheimer's",
+            "Huntington's",
+            "Lewy body dementia"
+        ],
+        "treatments": [
+            "Cognitive therapies",
+            "Medications to slow progression"
+        ],
+        "diagnostic_tests": [
+            "Cognitive assessments",
+            "Neuropsychological testing"
+        ]
+        },
+        {
+        "id": "s9",
+        "name": "Difficulty Walking",
+        "description": "Challenges with gait and balance, which can lead to falls.",
+        "associated_diseases": [
+            "Friedreich's ataxia",
+            "Multiple sclerosis",
+            "Parkinson's"
+        ],
+        "treatments": [
+            "Physical therapy",
+            "Assistive devices like walkers"
+        ],
+        "diagnostic_tests": [
+            "Gait analysis",
+            "Neurological examination"
+        ]
+        },
+        {
+        "id": "s10",
+        "name": "Numbness or Tingling",
+        "description": "A sensation of pins and needles or loss of feeling, often affecting the limbs.",
+        "associated_diseases": [
+            "Multiple sclerosis",
+            "ALS",
+            "Diabetic neuropathy"
+        ],
+        "treatments": [
+            "Pain management therapies",
+            "Medications for nerve pain"
+        ],
+        "diagnostic_tests": [
+            "Nerve conduction studies",
+            "MRI"
+        ]
+        },
+        {
+        "id": "s11",
+        "name": "Bradykinesia",
+        "description": "Slowness of movement, often seen in Parkinson's disease.",
+        "associated_diseases": [
+            "Parkinson's"
+        ],
+        "treatments": [
+            "Levodopa medication",
+            "Physical therapy"
+        ],
+        "diagnostic_tests": [
+            "Neurological examination",
+            "Response to dopaminergic medications"
+        ]
+        },
+        {
+        "id": "s12",
+        "name": "Mood Changes",
+        "description": "Fluctuations in mood, including depression, anxiety, and irritability.",
+        "associated_diseases": [
+            "Alzheimer's",
+            "Huntington's",
+            "Lewy body dementia"
+        ],
+        "treatments": [
+            "Psychotherapy",
+            "Medications such as antidepressants"
+        ],
+        "diagnostic_tests": [
+            "Psychological evaluations",
+            "Mood disorder assessments"
+        ]
+        },
+        {
+        "id": "s13",
+        "name": "Seizures",
+        "description": "Sudden bursts of electrical activity in the brain, leading to convulsions or loss of consciousness.",
+        "associated_diseases": [
+            "Epilepsy",
+            "Encephalitis",
+            "Prion diseases"
+        ],
+        "treatments": [
+            "Antiepileptic medications",
+            "Surgery in refractory cases"
+        ],
+        "diagnostic_tests": [
+            "EEG (electroencephalogram)",
+            "Neuroimaging"
+        ]
+        },
+        {
+        "id": "s14",
+        "name": "Heart Problems",
+        "description": "Cardiovascular issues such as arrhythmias or heart failure, sometimes associated with neurodegenerative diseases.",
+        "associated_diseases": [
+            "Friedreich's ataxia"
+        ],
+        "treatments": [
+            "Medications for heart health",
+            "Lifestyle changes"
+        ],
+        "diagnostic_tests": [
+            "Electrocardiogram (ECG)",
+            "Echocardiogram"
+        ]
+        }
+    ],
+    "diseases": [
+    {
+        "id": "d1",
+        "name": "Alzheimer's Disease",
+        "description": "A progressive neurodegenerative disorder that causes memory loss, cognitive decline, and changes in behavior.",
+        "symptoms": [
+        "Memory Loss",
+        "Cognitive Decline",
+        "Mood Changes",
+        "Difficulty Planning",
+        "Language Problems"
+        ],
+        "treatments": [
+        "Cholinesterase inhibitors",
+        "Memantine",
+        "Cognitive therapies"
+        ],
+        "diagnostic_tests": [
+        "Cognitive assessments",
+        "Neuroimaging (MRI, PET)",
+        "Blood tests to rule out other causes"
+        ],
+        "risk_factors": [
+        "Age",
+        "Family history",
+        "Genetic predisposition (APOE-e4 allele)"
+        ]
+    },
+    {
+        "id": "d2",
+        "name": "Amyotrophic Lateral Sclerosis (ALS)",
+        "description": "A progressive neurodegenerative disease that affects motor neurons, leading to muscle weakness and atrophy.",
+        "symptoms": [
+        "Muscle Weakness",
+        "Muscle Twitching",
+        "Difficulty Speaking",
+        "Difficulty Swallowing",
+        "Respiratory Problems"
+        ],
+        "treatments": [
+        "Riluzole",
+        "Edaravone",
+        "Supportive therapies"
+        ],
+        "diagnostic_tests": [
+        "Electromyography (EMG)",
+        "Nerve conduction studies",
+        "MRI"
+        ],
+        "risk_factors": [
+        "Age",
+        "Family history",
+        "Environmental factors (exposure to toxins)"
+        ]
+    },
+    {
+        "id": "d3",
+        "name": "Friedreich's Ataxia",
+        "description": "A hereditary degenerative disease that affects the spinal cord and peripheral nerves, leading to loss of coordination.",
+        "symptoms": [
+        "Loss of Coordination",
+        "Difficulty Walking",
+        "Speech Problems",
+        "Heart Problems",
+        "Numbness or Tingling"
+        ],
+        "treatments": [
+        "Physical therapy",
+        "Cardiovascular management",
+        "Supportive care"
+        ],
+        "diagnostic_tests": [
+        "Genetic testing",
+        "Neurological examination",
+        "MRI"
+        ],
+        "risk_factors": [
+        "Family history (autosomal recessive inheritance)"
+        ]
+    },
+    {
+        "id": "d4",
+        "name": "Huntington's Disease",
+        "description": "An inherited disorder that causes progressive degeneration of nerve cells in the brain, leading to movement, cognitive, and psychiatric disorders.",
+        "symptoms": [
+        "Involuntary Movements",
+        "Cognitive Decline",
+        "Mood Changes",
+        "Difficulty Swallowing"
+        ],
+        "treatments": [
+        "Tetrabenazine",
+        "Antidepressants",
+        "Psychotherapy"
+        ],
+        "diagnostic_tests": [
+        "Genetic testing",
+        "Neurological evaluation",
+        "Brain imaging (MRI, CT)"
+        ],
+        "risk_factors": [
+        "Family history (autosomal dominant inheritance)"
+        ]
+    },
+    {
+        "id": "d5",
+        "name": "Lewy Body Dementia",
+        "description": "A type of progressive dementia characterized by the presence of Lewy bodies in the brain, leading to cognitive decline and visual hallucinations.",
+        "symptoms": [
+        "Visual Hallucinations",
+        "Fluctuating Cognition",
+        "Parkinsonism",
+        "Sleep Disorders"
+        ],
+        "treatments": [
+        "Cholinesterase inhibitors",
+        "Antipsychotic medications (with caution)",
+        "Supportive care"
+        ],
+        "diagnostic_tests": [
+        "Neurological examination",
+        "Cognitive assessments",
+        "Neuroimaging"
+        ],
+        "risk_factors": [
+        "Age",
+        "Family history"
+        ]
+    },
+    {
+        "id": "d6",
+        "name": "Parkinson's Disease",
+        "description": "A progressive disorder of the nervous system that affects movement, causing tremors and stiffness.",
+        "symptoms": [
+        "Tremor",
+        "Bradykinesia",
+        "Rigidity",
+        "Postural Instability"
+        ],
+        "treatments": [
+        "Levodopa",
+        "Dopamine agonists",
+        "Physical therapy"
+        ],
+        "diagnostic_tests": [
+        "Neurological examination",
+        "Response to dopaminergic medications",
+        "Brain imaging (MRI, PET)"
+        ],
+        "risk_factors": [
+        "Age",
+        "Family history",
+        "Environmental factors (pesticide exposure)"
+        ]
+    },
+    {
+        "id": "d7",
+        "name": "Spinal Muscular Atrophy (SMA)",
+        "description": "A genetic disorder characterized by weakness and wasting in the voluntary muscles due to the degeneration of motor neurons.",
+        "symptoms": [
+        "Muscle Weakness",
+        "Difficulty Breathing",
+        "Difficulty Swallowing",
+        "Scoliosis"
+        ],
+        "treatments": [
+        "Nusinersen (Spinraza)",
+        "Onasemnogene abeparvovec (Zolgensma)",
+        "Supportive care"
+        ],
+        "diagnostic_tests": [
+        "Genetic testing",
+        "Electromyography (EMG)",
+        "Muscle biopsy"
+        ],
+        "risk_factors": [
+        "Family history (autosomal recessive inheritance)"
+        ]
+    },
+    {
+        "id": "d8",
+        "name": "Prion Diseases",
+        "description": "A group of neurodegenerative disorders caused by prions, leading to rapid cognitive decline and movement disorders.",
+        "symptoms": [
+        "Rapid Cognitive Decline",
+        "Myoclonus",
+        "Visual Disturbances",
+        "Cerebellar Ataxia"
+        ],
+        "treatments": [
+        "No effective treatment currently available; supportive care only"
+        ],
+        "diagnostic_tests": [
+        "Brain biopsy",
+        "MRI",
+        "Electroencephalography (EEG)"
+        ],
+        "risk_factors": [
+        "Genetic mutations (inherited forms)",
+        "Exposure to contaminated tissue"
+        ]
+    },
+    {
+        "id": "d9",
+        "name": "Multiple Sclerosis (MS)",
+        "description": "A chronic disease that affects the central nervous system, leading to a wide range of symptoms including fatigue and cognitive changes.",
+        "symptoms": [
+        "Fatigue",
+        "Vision Problems",
+        "Numbness or Tingling",
+        "Weakness"
+        ],
+        "treatments": [
+        "Disease-modifying therapies (e.g., interferons)",
+        "Corticosteroids for flare-ups",
+        "Symptom management therapies"
+        ],
+        "diagnostic_tests": [
+        "MRI",
+        "Lumbar puncture (spinal tap)",
+        "Evoked potentials"
+        ],
+        "risk_factors": [
+        "Age",
+        "Gender (more common in women)",
+        "Family history"
+        ]
+    },
+    {
+        "id": "d10",
+        "name": "Epilepsy",
+        "description": "A neurological disorder marked by recurrent seizures due to abnormal brain activity.",
+        "symptoms": [
+        "Seizures",
+        "Temporary Confusion",
+        "Fear or Anxiety",
+        "Deja Vu"
+        ],
+        "treatments": [
+        "Antiepileptic medications",
+        "Lifestyle changes",
+        "Surgery for refractory cases"
+        ],
+        "diagnostic_tests": [
+        "EEG (electroencephalogram)",
+        "Neuroimaging (CT, MRI)"
+        ],
+        "risk_factors": [
+        "Family history",
+        "Head injuries",
+        "Stroke"
+        ]
+    },
+    {
+        "id": "d11",
+        "name": "Encephalitis",
+        "description": "An inflammation of the brain often caused by viral infections, leading to various neurological symptoms.",
+        "symptoms": [
+        "Fever",
+        "Headache",
+        "Confusion",
+        "Seizures"
+        ],
+        "treatments": [
+        "Antiviral medications (if viral cause is identified)",
+        "Supportive care"
+        ],
+        "diagnostic_tests": [
+        "Lumbar puncture",
+        "MRI",
+        "Blood tests"
+        ],
+        "risk_factors": [
+        "Recent viral infections",
+        "Autoimmune conditions"
+        ]
+    },
+    {
+        "id": "d12",
+        "name": "Brain Cancer",
+        "description": "The presence of tumors in the brain, which can lead to various neurological symptoms depending on their location.",
+        "symptoms": [
+        "Headaches",
+        "Seizures",
+        "Cognitive Changes",
+        "Vision Problems"
+        ],
+        "treatments": [
+        "Surgery",
+        "Radiation therapy",
+        "Chemotherapy"
+        ],
+        "diagnostic_tests": [
+        "MRI",
+        "CT scans",
+        "Biopsy"
+        ],
+        "risk_factors": [
+        "Exposure to radiation",
+        "Family history of brain tumors"
+        ]
+    }
+    ]
+
+}
