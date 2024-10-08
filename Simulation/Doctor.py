@@ -29,6 +29,7 @@ def brf(beliefs, new_symptoms, knowledge_model):
                 # If new disease is discovered, add to beliefs
                 beliefs[disease] = prob
                 
+    # Example logic to hypothesize a new disease if current beliefs do not match
     if not beliefs:
         # If there are no beliefs, form a new one based on severity of symptoms
         beliefs.append(form_new_belief(new_symptoms))
@@ -36,6 +37,7 @@ def brf(beliefs, new_symptoms, knowledge_model):
     return beliefs
 
 def form_new_belief(symptoms):
+    # Hypothesize a new disease based on symptoms
     new_disease_name = f"Unknown Disease {len(symptoms)}"
     return {Disease(new_disease_name, symptoms): 100}  # Assign 100% to the unknown disease
 
@@ -75,6 +77,7 @@ def filter(beliefs, desires, patient, priority_threshold=60, progression_thresho
             if desire_actions.get("prevent_progression", False):
                 intentions.append(f"Implement strategies to prevent progression of {disease.name}")
     
+    # Return the list of filtered intentions
     return intentions
 
 
@@ -154,7 +157,3 @@ def execute_action(intentions, patient, procedures):
 
     # Return the results of the executed actions
     return results
-
-
-
-

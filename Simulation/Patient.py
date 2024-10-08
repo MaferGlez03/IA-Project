@@ -3,11 +3,11 @@ import random
 
 def beliefs():
     return {
-        'disease_progress': 0, # all values 1-10
-        'confidence_treatment': 0, 
-        'welfare_feeling': 5,
-        'family_history': 0, 
-        'knowldege_disease': 0, 
+        'disease_progress': 50,  # 1-100
+        'confidence_treatment': random.randint(3, 7), # all values 1-10
+        'welfare_feeling': random.randint(3, 7), 
+        'family_history': random.randint(3, 7), 
+        'knowldege_disease': random.randint(3, 7), 
         'patient': random.randint(0, 9), 
         'has_bed': False, 
         'has_left': False
@@ -126,8 +126,10 @@ def execute_action(hospital, beliefs, desires, perception):
     if desires['want_left']:
         print("Se canso de esperar")
         perception['has_left'] = True
+
     if beliefs['has_bed']:
         perception['has_bed'] = True
+
     elif desires['want_bed']:
         # Buscar cama disponible en el hospital
         if hospital.availability:

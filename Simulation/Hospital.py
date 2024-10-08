@@ -37,4 +37,3 @@ class Symptom:
         self.severity = severity
         self. tratments = treatments
         self.diagnostic_tests = diagnostic_tests
-        
