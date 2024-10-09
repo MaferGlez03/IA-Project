@@ -86,8 +86,7 @@ def chating(role): # Imagine you are the Christina Yang from Grey's Anatomy
     age = input("Edad (en números): ")
     sex = input("Sexo M o F: ")
     print()
-    if sex == "M" or "m": 
-        sex = "Male"
+    if sex == "M" or sex =="m": sex = "Male"
     else: sex = "Female"
 
     # Crear un paciente

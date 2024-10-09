@@ -28,6 +28,7 @@ for symptom in ontology.get('symptoms', []):
     )
 
 def identify_symptoms(text):
+    
     # Convertir el texto a minúsculas y eliminar signos de puntuación
     text_clean = re.sub(r'[^\w\s]', '', text.lower())
 
