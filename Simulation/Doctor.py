@@ -1,11 +1,11 @@
-from Hospital import *
+from Simulation import Hospital
 
 def beliefs(symptoms, knowledge_model):
     # Initialize a dictionary to store beliefs
     beliefs_dict = {}
     
     # Get the diagnosis from the knowledge model (returns a dictionary with disease probabilities)
-    diagnosis = knowledge_model.diagnose(symptoms)
+    diagnosis = knowledge_model.predict_disease(symptoms)
     
     if diagnosis:
         # Add diseases with high probability to beliefs (threshold can be adjusted)
@@ -39,7 +39,7 @@ def brf(beliefs, new_symptoms, knowledge_model):
 def form_new_belief(symptoms):
     # Hypothesize a new disease based on symptoms
     new_disease_name = f"Unknown Disease {len(symptoms)}"
-    return {Disease(new_disease_name, symptoms): 100}  # Assign 100% to the unknown disease
+    return {Hospital.Disease(new_disease_name, symptoms): 100}  # Assign 100% to the unknown disease
 
 
 def desires(beliefs):

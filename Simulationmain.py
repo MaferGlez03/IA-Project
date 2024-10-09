@@ -67,7 +67,9 @@ def patient_generator(env, hospital, procedures):
 
         prediction = model.predict_disease(patient_symptoms)
 
-        env.process(doctor(env, Doctor.beliefs(), Doctor.desires(), 100, procedures, patient_symptoms, prediction, patient))
+        beliefs = Doctor.beliefs(patient_symptoms, model)
+
+        env.process(doctor(env, beliefs, Doctor.desires(beliefs), 100, procedures, patient_symptoms, prediction, patient))
 
 def create_procedures():
     procedures = []
@@ -78,7 +80,7 @@ def run_simulation():
     env = simpy.Environment()
     procedures = create_procedures()
 
-    hospital = Hospital(env, procedures)
+    hospital = Hospital.Hospital(env, procedures)
 
     env.process(patient_generator(env, hospital, procedures))
 
