@@ -34,7 +34,7 @@ def brf(perception, beliefs):
         beliefs['has_left'] = True
 
     # Revisar la disponibilidad de cama en el hospital
-    if 'has_bed' not in perception:
+    if 'patient' in perception:
         beliefs['patient'] = perception['patient']
 
     # Actualizar progresión de la enfermedad basada en síntomas y procedimientos
