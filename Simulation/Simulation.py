@@ -44,7 +44,7 @@ def patients(env, beliefs, desires, hospital, id):
     hospital.patients[id] = beliefs
     
 def patient_generator(env, hospital):
-    """Generate new tourists that arrive at the hotel."""
+    """Generate new patients that arrive at the hospital."""
     for i in itertools.count():
         yield env.timeout(random.randint(*[5, 20]))
         env.process(patients(env, Patient.beliefs(), Patient.desires(), hospital, i))

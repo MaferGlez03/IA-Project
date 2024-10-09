@@ -2,12 +2,12 @@ import re
 import json
 from Knowledge import medical_record
 
-print("cero")
+#print("cero")
 
 with open("Knowledge/ontology.json", 'r') as file:
     ontology = json.load(file)
     
-print("uno")
+#print("uno")
 # Crear un diccionario para almacenar los síntomas
 KNOWN_SYMPTOMS = {}
 
@@ -58,6 +58,7 @@ for symptom in ontology.get('symptoms', []):
 
 
 def identify_symptoms(text):
+    
     # Convertir el texto a minúsculas y eliminar signos de puntuación
     text_clean = re.sub(r'[^\w\s]', '', text.lower())
 

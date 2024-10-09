@@ -70,7 +70,7 @@ class AStar:
                 successor.cost = priority  # Store the total cost in the state object
 
                 heapq.heappush(frontier, (priority, successor))
-                print("No solution found.")
+                #print("No solution found.")
 
         return None  # No solution found
 
