@@ -17,7 +17,7 @@ def beliefs(symptoms, knowledge_model):
 
 def brf(beliefs, new_symptoms, knowledge_model):
     # Check the diagnosis from the knowledge model for new symptoms
-    new_diagnosis = knowledge_model.diagnose(new_symptoms)
+    new_diagnosis = knowledge_model.predict_disease(new_symptoms)
     
     if new_diagnosis:
         # Update beliefs with new information
@@ -47,6 +47,7 @@ def desires(beliefs):
 
     # Generate desires based on the beliefs
     for disease, prob in beliefs.items():
+            desires_dict[disease] = {}
             desires_dict[disease]["investigate_symptoms"] =  False
             desires_dict[disease]["reduce_symptoms"] =  False
             desires_dict[disease]["prevent_progression"] =  False

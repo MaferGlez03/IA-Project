@@ -4,12 +4,12 @@ import random
 import itertools
 from Language import chat
 from Knowledge.disease_detection import DiseasePredictionModel
-from Simulationmain import Doctor, Patient, Hospital
+from Simulation import Doctor, Patient, Hospital
 
-def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, prediction, patient):
+def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, model, patient):
     #! Cambiar tiempo espera hasta que todas las enfermedades esten por debajo del nivel esperado
     while env.now < sim_time: 
-        Doctor.brf(beliefs, patient_symptoms, prediction)
+        Doctor.brf(beliefs, patient_symptoms, model)
         Doctor.generate_options(beliefs, patient_symptoms, procedures, desires)
         intentions = Doctor.filter(beliefs, desires, patient)
 
@@ -23,7 +23,7 @@ def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, predic
 
 def patients(env, beliefs, desires, hospital, id):
     perception = {
-
+        
     }
 
     while env.now < 100:
@@ -69,7 +69,14 @@ def patient_generator(env, hospital, procedures):
 
         beliefs = Doctor.beliefs(patient_symptoms, model)
 
-        env.process(doctor(env, beliefs, Doctor.desires(beliefs), 100, procedures, patient_symptoms, prediction, patient))
+        print()
+        print(f"Predicted Disease:")
+        for clave, valor in prediction.items():
+                if valor == 0: break
+                print(f"{clave}: {valor}%")
+        print()
+
+        env.process(doctor(env, beliefs, Doctor.desires(beliefs), 100, procedures, patient_symptoms, model, patient))
 
 def create_procedures():
     procedures = []
