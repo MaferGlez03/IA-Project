@@ -2,12 +2,9 @@ import json
 import simpy
 import random
 import itertools
-from A_Star_Algorithim import A_Star, Support, Goal
 from Language import chat
 from Knowledge.disease_detection import DiseasePredictionModel
 from Simulation import Doctor, Patient, Hospital
-
-
 
 def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, prediction, patient):
     #! Cambiar tiempo espera hasta que todas las enfermedades esten por debajo del nivel esperado
@@ -43,11 +40,39 @@ def patients(env, beliefs, desires, hospital, id):
     
     hospital.patients[id] = beliefs
     
-def patient_generator(env, hospital):
+def patient_generator(env, hospital, procedures):
     """Generate new tourists that arrive at the hotel."""
     for i in itertools.count():
         yield env.timeout(random.randint(*[5, 20]))
         env.process(patients(env, Patient.beliefs(), Patient.desires(), hospital, i))
+        
+        with open("Knowledge/ontology.json", 'r') as file:
+            ontology = json.load(file)
+
+        database_path = "Knowledge/patient_data.csv"
+
+        # Crear el modelo de predicción
+        model = DiseasePredictionModel(ontology, database_path)
+
+        # Entrenar el modelo
+        model.train_model()
+
+        # Hacer la predicción
+        patient, history = chat.chating("Imagine you are the Christina Yang from Grey's Anatomy")
+
+        energy_level = chat.analyze_conversation(history, "nivel de energía")
+        pain_level = chat.analyze_conversation(history, "nivel de dolor")
+
+        patient_symptoms = [s.name for s in patient.symptoms]
+
+        prediction = model.predict_disease(patient_symptoms)
+
+        env.process(doctor(env, Doctor.beliefs(), Doctor.desires(), 100, procedures, patient_symptoms, prediction, patient))
+
+def create_procedures():
+    procedures = []
+    procedures.append(Hospital.Procedure("test", "u1", "f1", "r1"))
+    return procedures
 
 def run_simulation():
     env = simpy.Environment()
@@ -55,4 +80,8 @@ def run_simulation():
 
     hospital = Hospital(env, procedures)
 
-    env.process(doctor(env, Doctor.beliefs(), Doctor.desires(), 100, procedures, ))
+    env.process(patient_generator(env, hospital, procedures))
+
+    env.run(until=100)
+
+run_simulation()
