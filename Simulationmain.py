@@ -5,7 +5,7 @@ import itertools
 from Language import chat
 from Knowledge.disease_detection import DiseasePredictionModel
 from Simulation import Doctor, Patient, Hospital
-
+results=[]
 def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, model, patient):
     #! Cambiar tiempo espera hasta que todas las enfermedades esten por debajo del nivel esperado
     while env.now < sim_time: 
@@ -20,7 +20,7 @@ def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, model,
         print(intentions)
         print(patient)
         print([procedure.name for procedure in procedures])
-        env.process(Doctor.execute_action(intentions, patient, procedures))
+        env.process(Doctor.execute_action(intentions, patient, procedures,results,env))
         yield env.timeout(random.randint(1, 3))
     print("End Doc")
 
@@ -89,6 +89,7 @@ def create_procedures():
 def run_simulation():
     env = simpy.Environment()
     procedures = create_procedures()
+    results.append((env.now,'Hospital is open'))
 
     hospital = Hospital.Hospital(env, procedures)
 

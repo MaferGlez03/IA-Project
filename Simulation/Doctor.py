@@ -117,9 +117,8 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
 
 
 
-def execute_action(intentions, patient, procedures):
-    # Initialize a list to store the results of executed actions
-    results = []
+def execute_action(intentions, patient, procedures,results,env):
+   
 
     # Execute each intention
     for intention in intentions:
@@ -129,10 +128,11 @@ def execute_action(intentions, patient, procedures):
             for procedure in procedures:
                 if procedure.name.lower() in disease.lower() and procedure.availability:
                     result = f"Used {procedure.name} to investigate new symptoms for {disease} in {patient.name}"
-                    results.append(result)
+                    results.append((env.now,result))
                     # Simular el descubrimiento de nuevos síntomas
                     new_symptom = f"New symptom for {disease}" #!Aqui arreglar con los results del procedure
                     patient.symptoms.append(new_symptom)
+                    yield env.timeout(10)
 
         elif "Apply treatments to reduce symptoms" in intention:
             disease = intention.split()[-1]  # Extract disease name from intention
@@ -142,19 +142,21 @@ def execute_action(intentions, patient, procedures):
                     # Reducir la severidad solo si el resultado del procedimiento es bueno
                     if procedure.result == "good":
                         result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
-                        results.append(result)
+                        results.append((env.now,result))
                         # Reducir la severidad del síntoma
                         patient.symptom_severity -= 5 #!Parche 
+                        yield env.timeout(10)
                     else:
                         result = f"{procedure.name} applied, but the result was not effective for {disease} in {patient.name}"
-                        results.append(result)
+                        results.append((env.now,result))
+                        yield env.timeout(10)
 
         elif "Prevent progression" in intention:
             disease = intention.split()[-1]  # Extract disease name from intention
             result = f"Implemented monitoring plan for {disease} in {patient.name}"
-            results.append(result)
+            results.append((env.now,result))
             # Reducir la progresión de la enfermedad
             patient.disease_progress -= 5  # Reducción de ejemplo
+            yield env.timeout(10)
 
-    # Return the results of the executed actions
-    return results
+   
