@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import json
+from Simulation.Hospital import Disease
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
@@ -98,6 +99,12 @@ class DiseasePredictionModel:
         # Ordenar el diccionario modificado por valor
         final = dict(sorted(diccionario_modificado.items(), key=lambda x: x[1], reverse=True))
 
+        with open("Knowledge/ontology.json", 'r') as file:
+            ontology = json.load(file)
+
+        # Crear las enfermedades como objetos
+        final2 = {Disease(disease, [ontology_diseases[disease]['symptoms']  for ontology_diseases in ontology['diseases']], 30): value for disease, value in final.items()}
+        
         return final
 
 

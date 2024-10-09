@@ -48,25 +48,3 @@ class Patient:
                 f"Diseases: {[d.name for d in self.diseases]}\n"
                 f"Treatments: {[t.name for t in self.treatments]}\n")
 
-# Example usage
-if __name__ == "__main__":
-    # Create some symptoms
-    memory_loss = Symptom("s1", "Memory Loss", "A decline in the ability to remember information.",
-                          ["Alzheimer's", "Lewy body dementia", "Huntington's"],
-                          ["Cognitive therapy", "Cholinesterase inhibitors"],
-                          ["Cognitive assessments", "Neuroimaging"])
-
-    tremor = Symptom("s4", "Tremor", "Rhythmic shaking of a part of the body.",
-                     ["Parkinson's", "Essential tremor"],
-                     ["Medications like beta-blockers", "Surgery for severe cases"],
-                     ["Neurological examination", "Blood tests to rule out other causes"])
-
-    # Create a patient
-    patient = Patient("John Doe", 65, "Male")
-    
-    # Add symptoms to the patient
-    patient.add_symptom(memory_loss)
-    patient.add_symptom(tremor)
-
-    # Print patient information
-    print(patient)
