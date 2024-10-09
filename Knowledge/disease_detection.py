@@ -105,7 +105,7 @@ class DiseasePredictionModel:
         # Crear las enfermedades como objetos
         final2 = {Disease(disease, [ontology_diseases[disease]['symptoms']  for ontology_diseases in ontology['diseases']], 30): value for disease, value in final.items()}
         
-        return final
+        return final2
 
 
 
