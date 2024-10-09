@@ -40,7 +40,7 @@ print()
 print(f"Predicted Disease:")
 for clave, valor in prediction.items():
         if valor == 0: break
-        print(f"{clave}: {valor}%")
+        print(f"{clave.name}: {valor}%")
 print()
 
 

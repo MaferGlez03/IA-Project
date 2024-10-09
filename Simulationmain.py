@@ -46,7 +46,7 @@ def patients(env, beliefs, desires, hospital, id):
 def patient_generator(env, hospital, procedures):
     """Generate new tourists that arrive at the hotel."""
     for i in itertools.count():
-        yield env.timeout(random.randint(*[5, 20]))
+        yield env.timeout(random.randint(*[5,20 ]))
         env.process(patients(env, Patient.beliefs(), Patient.desires(), hospital, i))
         
         with open("Knowledge/ontology.json", 'r') as file:
