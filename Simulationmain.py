@@ -9,6 +9,7 @@ from Simulation import Doctor, Patient, Hospital
 def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, model, patient):
     #! Cambiar tiempo espera hasta que todas las enfermedades esten por debajo del nivel esperado
     while env.now < sim_time: 
+        print("Start Doc")
         Doctor.brf(beliefs, patient_symptoms, model)
         Doctor.generate_options(beliefs, patient_symptoms, procedures, desires)
         intentions = Doctor.filter(beliefs, desires, patient)
@@ -16,10 +17,12 @@ def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, model,
         if not intentions:
             yield env.timeout(10)
             continue
-        while beliefs:
-            yield env.timeout(1)
+        print(intentions)
+        print(patient)
+        print([procedure.name for procedure in procedures])
         env.process(Doctor.execute_action(intentions, patient, procedures))
         yield env.timeout(random.randint(1, 3))
+    print("End Doc")
 
 def patients(env, beliefs, desires, hospital, id):
     perception = {
@@ -73,10 +76,10 @@ def patient_generator(env, hospital, procedures):
         print(f"Predicted Disease:")
         for clave, valor in prediction.items():
                 if valor == 0: break
-                print(f"{clave}: {valor}%")
+                print(f"{clave.name}: {valor}%")
         print()
 
-        env.process(doctor(env, beliefs, Doctor.desires(beliefs), 100, procedures, patient_symptoms, model, patient))
+        env.process(doctor(env, beliefs, Doctor.desires(beliefs), env.now + 100, procedures, patient_symptoms, model, patient))
 
 def create_procedures():
     procedures = []

@@ -82,9 +82,6 @@ def chating(role): # Imagine you are the Christina Yang from Grey's Anatomy
     
     history = []
 
-    # Iniciar la conversación
-    print("Antes de iniciar rellena el siguiente cuestionario")
-
     # Listas de nombres y apellidos
     first_names = [
         "Carlos", "María", "Juan", "Ana", "José", "Luis", "Sofía", "Laura", "David", "Pedro", "Marta", "Jorge", "Lucía", "Fernando", "Andrés", "Paula", "Camila", "Diego", "Gabriela", "Miguel",
@@ -104,7 +101,7 @@ def chating(role): # Imagine you are the Christina Yang from Grey's Anatomy
         "Zúñiga", "Paredes", "Hidalgo", "Arroyo", "Olivares", "Montero", "Camacho", "Bautista", "Villarreal", "Galindo", "Prieto", "Mansilla", "Varela", "Escamilla", "Bustamante", "Barrios", "Sepúlveda"
     ]
 
-    name = random.choice(first_names) + random.choice(last_names) + random.choice(last_names)
+    name = random.choice(first_names) + " " + random.choice(last_names) + " " + random.choice(last_names)
     age = random.randint(18, 100)
     sex = random.choice(["Male", "Female"])
     print()
