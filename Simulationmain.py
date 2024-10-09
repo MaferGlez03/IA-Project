@@ -4,7 +4,7 @@ import random
 import itertools
 from Language import chat
 from Knowledge.disease_detection import DiseasePredictionModel
-from Simulation import Doctor, Patient, Hospital
+from Simulationmain import Doctor, Patient, Hospital
 
 def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, prediction, patient):
     #! Cambiar tiempo espera hasta que todas las enfermedades esten por debajo del nivel esperado
