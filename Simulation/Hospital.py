@@ -17,6 +17,7 @@ class Procedure:
         self. result = result
         self.availability = True
         self.price = price
+        self.uses = 0
         
 class Utility:
     def __init__(self, name, ammount):
