@@ -82,8 +82,9 @@ def patient_generator(env, hospital, procedures):
         env.process(doctor(env, beliefs, Doctor.desires(beliefs), env.now + 100, procedures, patient_symptoms, model, patient))
 
 def create_procedures():
+    
     procedures = []
-    procedures.append(Hospital.Procedure("test", "u1", "f1", "r1"))
+    procedures.append(Hospital.Procedure("Huntington_Disease", "u1", "f1", "r1"))
     return procedures
 
 def run_simulation():

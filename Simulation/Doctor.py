@@ -128,6 +128,7 @@ def execute_action(intentions, patient, procedures,results,env):
             for procedure in procedures:
                 if procedure.name.lower() in disease.lower() and procedure.availability:
                     result = f"Used {procedure.name} to investigate new symptoms for {disease} in {patient.name}"
+                    procedure.uses += 1
                     results.append((env.now,result))
                     # Simular el descubrimiento de nuevos síntomas
                     new_symptom = f"New symptom for {disease}" #!Aqui arreglar con los results del procedure
