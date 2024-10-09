@@ -103,7 +103,7 @@ class DiseasePredictionModel:
             ontology = json.load(file)
 
         # Crear las enfermedades como objetos
-        final2 = {Disease(disease, [ontology_diseases[disease]['symptoms']  for ontology_diseases in ontology['diseases']], 30): value for disease, value in final.items()}
+        final2 = {Disease(disease, [ontology_diseases['name'] for ontology_diseases in ontology['diseases'] if ontology_diseases['name'] == disease], 30): value for disease, value in final.items()}
         
         return final2
 
