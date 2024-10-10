@@ -97,4 +97,6 @@ def run_simulation():
 
     env.run(until=100)
 
+    return hospital
+
 run_simulation()
