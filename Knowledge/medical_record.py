@@ -6,6 +6,12 @@ class Symptom:
         self.associated_diseases = associated_diseases
         self.treatments = treatments
         self.diagnostic_tests = diagnostic_tests
+        
+    def __hash__(self):
+        return hash((self.name))
+
+    def __eq__(self, other):
+        return isinstance(other, Symptom) and self.name == other.name
 
 class Disease:
     def __init__(self, id, name, description, symptoms, treatments, diagnostic_tests, risk_factors):
@@ -16,6 +22,8 @@ class Disease:
         self.treatments = treatments
         self.diagnostic_tests = diagnostic_tests
         self.risk_factors = risk_factors
+        
+    
 
 class Treatments:
     def __init__(self) -> None:
@@ -32,7 +40,8 @@ class Patient:
         self.diagnostic_tests_results = {}
 
     def add_symptom(self, symptom):
-        self.symptoms.append(symptom)
+        if symptom not in self.symptoms:
+            self.symptoms.append(symptom)
 
     def add_disease(self, disease):
         self.diseases.append(disease)

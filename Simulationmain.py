@@ -4,22 +4,25 @@ import random
 import itertools
 from Language import chat
 from Knowledge.disease_detection import DiseasePredictionModel
-from Simulation import Doctor, Patient, Hospital
+from Simulation import Doctor, Patient, Hospital, Procedures
+from A_Star_Algorithim import A_Star,Support
+
 results=[]
 def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, model, patient):
     #! Cambiar tiempo espera hasta que todas las enfermedades esten por debajo del nivel esperado
     while env.now < sim_time: 
         print("Start Doc")
-        Doctor.brf(beliefs, patient_symptoms, model)
+        patient_symptoms_ = [s.name for s in patient.symptoms]
+        Doctor.brf(beliefs, patient_symptoms_, model)
         Doctor.generate_options(beliefs, patient_symptoms, procedures, desires)
         intentions = Doctor.filter(beliefs, desires, patient)
 
         if not intentions:
             yield env.timeout(10)
             continue
-        print(intentions)
+        #print(intentions)
         print(patient)
-        print([procedure.name for procedure in procedures])
+        #print([procedure.name for procedure in procedures])
         env.process(Doctor.execute_action(intentions, patient, procedures,results,env))
         yield env.timeout(random.randint(1, 3))
     print("End Doc")
@@ -44,7 +47,7 @@ def patients(env, beliefs, desires, hospital, id):
     hospital.patients[id] = beliefs
     
 def patient_generator(env, hospital, procedures):
-    """Generate new tourists that arrive at the hotel."""
+    """Generate new patients that arrive at the hospital."""
     for i in itertools.count():
         yield env.timeout(random.randint(*[5,20 ]))
         env.process(patients(env, Patient.beliefs(), Patient.desires(), hospital, i))
@@ -69,6 +72,7 @@ def patient_generator(env, hospital, procedures):
         patient_symptoms = [s.name for s in patient.symptoms]
 
         prediction = model.predict_disease(patient_symptoms)
+        results.append((env.now, f'Patient {patient.name} has been ingressed with a possible {list(prediction.keys())[0].name}'))
 
         beliefs = Doctor.beliefs(patient_symptoms, model)
 
@@ -79,17 +83,13 @@ def patient_generator(env, hospital, procedures):
                 print(f"{clave.name}: {valor}%")
         print()
 
-        env.process(doctor(env, beliefs, Doctor.desires(beliefs), env.now + 100, procedures, patient_symptoms, model, patient))
+        env.process(doctor(env, beliefs, Doctor.desires(beliefs), env.now + 100, procedures, patient.symptoms, model, patient))
 
-def create_procedures():
-    
-    procedures = []
-    procedures.append(Hospital.Procedure("Huntington_Disease", "u1", "f1", "r1"))
-    return procedures
+
 
 def run_simulation():
     env = simpy.Environment()
-    procedures = create_procedures()
+    procedures = Procedures.create_procedures()
     results.append((env.now,'Hospital is open'))
 
     hospital = Hospital.Hospital(env, procedures)
@@ -97,5 +97,20 @@ def run_simulation():
     env.process(patient_generator(env, hospital, procedures))
 
     env.run(until=100)
+    print(results)
 
+def appy_A_Star(patient, goal):
+    # Initialize the AStar object with the possible procedures and medications
+    astar = A_Star.AStar(possible_medications= [])
+    initial_state = A_Star.State(
+    medications=[],  
+    procedures=[],  
+    symptoms=[Support.Symptom(s, "severe") for s in patient.symptoms.name],
+    progress=Support.Progress(30),  # The patient starts with 30% progress
+    general_state=Support.StateGeneral(patient.energy_level, patient.pain_level, immune_status="weak")
+    )
+    solution = astar.a_star(initial_state, goal)
+    if solution :return solution.procedures
+    return []
+    
 run_simulation()

@@ -1,11 +1,12 @@
 import heapq
 from A_Star_Algorithim.States import State
+from Procedures import treatment_procedures
 
 class AStar:
-    def __init__(self,possible_procedures,possible_medications, minimal_cost_per_action=50, minimal_cost_per_treatment=100):
+    def __init__(self,possible_medications, minimal_cost_per_action=50, minimal_cost_per_treatment=100):
         self.minimal_cost_per_action = minimal_cost_per_action
         self.minimal_cost_per_treatment = minimal_cost_per_treatment
-        self.possible_procedure = possible_procedures
+        self.possible_procedure = treatment_procedures
         self.possible_medications = possible_medications
         self.log = ""
 
