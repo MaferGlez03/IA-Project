@@ -4,33 +4,54 @@ import random
 import itertools
 from Language import chat
 from Knowledge.disease_detection import DiseasePredictionModel
-from Simulation import Doctor, Patient, Hospital, Procedures
+from Simulation import Doctor, Patient, Hospital, Procedures, Tools
 from A_Star_Algorithim import A_Star,Support
 
 results=[]
-def doctor(env, beliefs, desires, sim_time, procedures, patient_symptoms, model, patient):
+def doctor(env, procedures, model, hospital):
     #! Cambiar tiempo espera hasta que todas las enfermedades esten por debajo del nivel esperado
-    while env.now < sim_time: 
-        print("Start Doc")
-        patient_symptoms_ = [s.name for s in patient.symptoms]
-        Doctor.brf(beliefs, patient_symptoms_, model)
-        Doctor.generate_options(beliefs, patient_symptoms, procedures, desires)
-        intentions = Doctor.filter(beliefs, desires, patient)
-
-        if not intentions:
-            yield env.timeout(10)
+    while env.now < sim_time:
+        if not hospital.patients:
+            yield env.timeout(5)
             continue
-        #print(intentions)
-        print(patient)
-        #print([procedure.name for procedure in procedures])
-        env.process(Doctor.execute_action(intentions, patient, procedures,results,env))
-        yield env.timeout(random.randint(1, 3))
-    print("End Doc")
+        patient = hospital.take_patient()
+        patient_symptoms = patient.patient_symptoms
+        beliefs = Doctor.beliefs(patient_symptoms, model)
+        desires = Doctor.desires(beliefs)
+        sim_time = env.now + 100
+        print("Start Doc")
 
-def patients(env, beliefs, desires, hospital, id):
+        while True: 
+            
+            patient_symptoms_ = [s.name for s in patient.symptoms]
+            Doctor.brf(beliefs, patient_symptoms_, model)
+            Doctor.generate_options(beliefs, patient_symptoms, procedures, desires)
+            intentions = Doctor.filter(beliefs, desires, patient)
+
+            if not intentions:
+                print("End action doc")
+                yield env.timeout(10)
+                continue
+            if "End patient" in intentions: # Modificar para que en algun momento termine con el paciente
+                print("Next Patient")
+                yield env.timeout(random.randint(1, 3))
+                break
+
+            env.process(Doctor.execute_action(intentions, patient, procedures,results,env))
+            print("End action doc")
+            yield env.timeout(random.randint(1, 3))
+
+def doctor_generator(env, procedures, model, hospital):
+    for i in range(5):
+        env.process(doctor(env, procedures, model, hospital))
+
+def patients(env, hospital, id):
     perception = {
         
     }
+
+    beliefs = Patient.beliefs()
+    desires = Patient.desires()
 
     while env.now < 100:
         Patient.brf(perception, beliefs)
@@ -46,35 +67,22 @@ def patients(env, beliefs, desires, hospital, id):
     
     hospital.patients[id] = beliefs
     
-def patient_generator(env, hospital, procedures):
+def patient_generator(env, model, hospital):
     """Generate new patients that arrive at the hospital."""
     for i in itertools.count():
-        yield env.timeout(random.randint(*[5,20 ]))
-        env.process(patients(env, Patient.beliefs(), Patient.desires(), hospital, i))
-        
-        with open("Knowledge/ontology.json", 'r') as file:
-            ontology = json.load(file)
-
-        database_path = "Knowledge/patient_data.csv"
-
-        # Crear el modelo de predicción
-        model = DiseasePredictionModel(ontology, database_path)
-
-        # Entrenar el modelo
-        model.train_model()
+        yield env.timeout(random.randint(*[5,20]))
+        env.process(patients(env, hospital, i))
 
         # Hacer la predicción
         patient, history = chat.chating("Imagine you are the Christina Yang from Grey's Anatomy")
 
-        energy_level = chat.analyze_conversation(history, "nivel de energía")
-        pain_level = chat.analyze_conversation(history, "nivel de dolor")
+        # energy_level = chat.analyze_conversation(history, "nivel de energía")
+        # pain_level = chat.analyze_conversation(history, "nivel de dolor")
 
         patient_symptoms = [s.name for s in patient.symptoms]
 
         prediction = model.predict_disease(patient_symptoms)
         results.append((env.now, f'Patient {patient.name} has been ingressed with a possible {list(prediction.keys())[0].name}'))
-
-        beliefs = Doctor.beliefs(patient_symptoms, model)
 
         print()
         print(f"Predicted Disease:")
@@ -82,22 +90,6 @@ def patient_generator(env, hospital, procedures):
                 if valor == 0: break
                 print(f"{clave.name}: {valor}%")
         print()
-
-        env.process(doctor(env, beliefs, Doctor.desires(beliefs), env.now + 100, procedures, patient.symptoms, model, patient))
-
-
-
-def run_simulation():
-    env = simpy.Environment()
-    procedures = Procedures.create_procedures()
-    results.append((env.now,'Hospital is open'))
-
-    hospital = Hospital.Hospital(env, procedures)
-
-    env.process(patient_generator(env, hospital, procedures))
-
-    env.run(until=100)
-    print(results)
 
 def appy_A_Star(patient, goal):
     # Initialize the AStar object with the possible procedures and medications
@@ -114,5 +106,34 @@ def appy_A_Star(patient, goal):
     return []
     
     return hospital
+
+def create_model():
+    with open("Knowledge/ontology.json", 'r') as file:
+        ontology = json.load(file)
+
+    database_path = "Knowledge/patient_data.csv"
+
+    # Crear el modelo de predicción
+    model = DiseasePredictionModel(ontology, database_path)
+
+    # Entrenar el modelo
+    model.train_model()    
+
+    return model
+
+def run_simulation():
+    env = simpy.Environment()
+    procedures = Procedures.create_procedures()
+    results.append((env.now,'Hospital is open'))
+
+    hospital = Hospital.Hospital(env, procedures)
+
+    model = create_model()
+
+    env.process(doctor_generator(env, model, hospital))
+    env.process(patient_generator(env, model,hospital))
+
+    env.run(until=100)
+    Tools.save_log(results)
 
 run_simulation()

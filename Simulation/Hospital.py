@@ -9,6 +9,11 @@ class Hospital:
         self.medical_records = {}
         self.availability = []
         self.patients_treated = 0
+    
+    def take_patient(self):
+        patient = self.patients[0]
+        self.patients.pop(0)
+        return patient
         
 class Procedure:
     def __init__(self, name, utilities, function, result, price = 20):

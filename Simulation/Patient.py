@@ -64,7 +64,7 @@ def generate_option(beliefs, desires):
     elif beliefs['patient'] >= 10:
         desires['want_left'] = True
         
-    elif beliefs['disease_progress'] > 5:
+    elif beliefs['disease_progress'] > 50:
         desires['improve_quality_life'] = True
 
     elif beliefs['confidence_treatment'] < 5:
@@ -90,7 +90,7 @@ def filter(beliefs, desires):
         desires['want_bed'] = False
 
     # Si la progresión de la enfermedad es avanzada, desea mejorar la calidad de vida
-    if beliefs['disease_progress'] > 7:
+    if beliefs['disease_progress'] > 70:
         desires['improve_quality_life'] = True
     else:
         desires['improve_quality_life'] = False

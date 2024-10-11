@@ -1,4 +1,4 @@
-from Support import Procedure
+from A_Star_Algorithim.Support import Procedure
 treatment_procedures = [
     Procedure("Defibrillation", 50, effects_progress=20, result="good"),
     Procedure("IV Therapy", 30, effects_progress=10, result="normal"),
