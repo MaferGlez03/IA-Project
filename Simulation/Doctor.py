@@ -9,7 +9,7 @@ def beliefs(symptoms, knowledge_model):
     
     if diagnosis:
         # Add diseases with high probability to beliefs (threshold can be adjusted)
-        beliefs_dict = {disease: prob for disease, prob in diagnosis.items() if prob > 30}
+        beliefs_dict = {disease: prob for disease, prob in diagnosis.items() if prob > 15}
     
     # Return the dictionary of beliefs
     return beliefs_dict
@@ -22,12 +22,14 @@ def brf(beliefs, new_symptoms, knowledge_model):
     if new_diagnosis:
         # Update beliefs with new information
         for disease, prob in new_diagnosis.items():
+            
             if disease in beliefs:
                 # If disease already exists, update its probability
                 beliefs[disease] = max(beliefs[disease], prob)  # Take the higher probability
             else:
+                if prob > 15:
                 # If new disease is discovered, add to beliefs
-                beliefs[disease] = prob
+                    beliefs[disease] = prob
                 
     # Example logic to hypothesize a new disease if current beliefs do not match
     if not beliefs:
@@ -87,25 +89,26 @@ def filter(beliefs, desires, patient, priority_threshold=60, progression_thresho
 def generate_options(beliefs, symptoms, procedures, desires_dict):
     # Actualizamos el diccionario existente de deseos
     for disease, prob in beliefs.items():
-        if prob >= 50:  # Consider only significant beliefs
+        if prob >= 20:  # Consider only significant beliefs
             # Si la enfermedad ya existe en desires_dict, seguimos trabajando con ella
             if disease not in desires_dict:
                 desires_dict[disease] = {}
 
             # Obtener los síntomas relacionados con la enfermedad
-            related_symptoms = [symptom for symptom in symptoms if symptom.name.lower() in disease.lower()]
+            if symptoms:
+             related_symptoms = [symptom for symptom in symptoms if symptom.name.lower() in disease.symptom]
 
-            for symptom in related_symptoms:
-                # Verificar procedimientos disponibles para el síntoma
-                available_procedures = [proc for proc in procedures if symptom.name.lower() in proc.name.lower() and proc.availability]
+             for symptom in related_symptoms:
+                 # Verificar procedimientos disponibles para el síntoma
+                 available_procedures = [proc for proc in procedures if  proc.name.lower() in symptom.treatments and proc.availability] #!!!!!CHECK
 
-                # Generar deseos basados en los procedimientos disponibles
-                if available_procedures:
-                    desires_dict[disease]["apply_procedure"] = [True,available_procedures]
-                else:
-                    desires_dict[disease]["reduce_symptoms"] = [True,available_procedures]
+                 # Generar deseos basados en los procedimientos disponibles
+                 if available_procedures:
+                     desires_dict[disease]["apply_procedure"] = [True,available_procedures]
+                 else:
+                     desires_dict[disease]["reduce_symptoms"] = [True,available_procedures]
 
-            desires_dict[disease]["prevent_progression"] = True
+             desires_dict[disease]["prevent_progression"] = True
         else:
             # Si la creencia es débil, centrarse en la investigación
             desires_dict[disease] = {
@@ -125,7 +128,7 @@ def execute_action(intentions, patient, procedures,results,env):
         if "Investigate symptoms" in intention:
             disease = intention.split()[-1]  # Extract disease name from intention
             # Descubrir nuevos síntomas relacionados con la enfermedad
-            for procedure in procedures:
+            for procedure in procedures: 
                 if procedure.name.lower() in disease.lower() and procedure.availability:
                     result = f"Used {procedure.name} to investigate new symptoms for {disease} in {patient.name}"
                     procedure.uses += 1
@@ -138,6 +141,7 @@ def execute_action(intentions, patient, procedures,results,env):
         elif "Apply treatments to reduce symptoms" in intention:
             disease = intention.split()[-1]  # Extract disease name from intention
             # Encontrar un procedimiento coincidente para esta enfermedad
+            #! Aqui el A_Star
             for procedure in procedures:
                 if procedure.name.lower() in disease.lower() and procedure.availability:
                     # Reducir la severidad solo si el resultado del procedimiento es bueno
@@ -152,12 +156,12 @@ def execute_action(intentions, patient, procedures,results,env):
                         results.append((env.now,result))
                         yield env.timeout(10)
 
-        elif "Prevent progression" in intention:
+        elif "prevent progression" in intention:
             disease = intention.split()[-1]  # Extract disease name from intention
             result = f"Implemented monitoring plan for {disease} in {patient.name}"
             results.append((env.now,result))
             # Reducir la progresión de la enfermedad
-            patient.disease_progress -= 5  # Reducción de ejemplo
             yield env.timeout(10)
 
+    
    

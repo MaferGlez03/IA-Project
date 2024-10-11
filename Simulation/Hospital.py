@@ -19,11 +19,14 @@ class Procedure:
         self.price = price
         self.uses = 0
         
+    def __hash__(self):
+        return hash((self.name))
+        
 class Utility:
     def __init__(self, name, ammount):
         self.name = name
         self.ammount = ammount
-        self.availability = True
+        self.availability = ammount!=0
         self.status = 100
 
 class Disease:
@@ -31,6 +34,12 @@ class Disease:
         self.name = name 
         self.symptom = symptom
         self.progress = progress
+        
+    def __hash__(self):
+        return hash((self.name))
+
+    def __eq__(self, other):
+        return isinstance(other, Disease) and self.name == other.name
         
 class Symptom:
     def __init__(self, name, severity, treatments, diagnostic_tests):
