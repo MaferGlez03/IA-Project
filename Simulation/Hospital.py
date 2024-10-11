@@ -4,14 +4,15 @@ class Hospital:
     def __init__(self,env,procedures):
         self.env = env
         self.procedures = procedures
-        self.doctors= {}
+        self.doctors = {}
         self.patients = {}
-        self.medical_records ={}
-        self.availability=[]
+        self.medical_records = {}
+        self.availability = []
+        self.patients_treated = 0
         
 class Procedure:
     def __init__(self, name, utilities, function, result, price = 20):
-        self.name= name
+        self.name = name
         self.utilities = utilities
         self.function = function
         self. result = result
@@ -43,7 +44,7 @@ class Disease:
         
 class Symptom:
     def __init__(self, name, severity, treatments, diagnostic_tests):
-        self.name= name
+        self.name = name
         self.severity = severity
         self. tratments = treatments
         self.diagnostic_tests = diagnostic_tests

@@ -113,4 +113,6 @@ def appy_A_Star(patient, goal):
     if solution :return solution.procedures
     return []
     
+    return hospital
+
 run_simulation()

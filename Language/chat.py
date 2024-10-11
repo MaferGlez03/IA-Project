@@ -191,4 +191,10 @@ def abstract(patient_interview, diagnosis, patient_monitoring):
     chat_session = model.start_chat()
     response = chat_session.send_message(prompt)
 
-    return response.text
+    history = []
+    history.append({"role": "user", "parts": [response.text]})
+
+    chat_session = model.start_chat(history=history)
+    evolution = chat_session.send_message("Valora la evolución del paciente con un valor del 0 al 100. Solo escribe el numero")
+
+    return response.text, int(evolution.text)
