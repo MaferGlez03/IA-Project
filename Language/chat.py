@@ -5,7 +5,7 @@ import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from dotenv import load_dotenv
 from Knowledge.medical_record import Patient
-from Language.chat_tools import identify_symptoms
+from Language.chat_tools import identify_symptoms, symptoms_dict
 
 def configure_model(user_system_instruction=""):
     """
@@ -76,9 +76,12 @@ def analyze_conversation(history, analysis_target="nivel de enfermedad"):
     return convert_to_int_or_zero(response.text)
 
 def chating(role): # Imagine you are the Christina Yang from Grey's Anatomy
+    
+    symptom_names = list(symptoms_dict.keys())
+    
     # Obtener la instancia del modelo generativo
     model_doctor = configure_model(f"{role}, you are in a neurodegenerative disease center and I need you to determine in 5 interactions what disease the patient may have. In order to record the symptoms, I need you to invite the patient to mention the symptom explicitly. Only english")
-    model_patient = configure_model(f"You are a patient suffering from a neurodegenerative disease. You are currently in a doctor's office for a consultation. Your task is to respond to the doctor's questions about your symptoms in detail. Please behave naturally and realistically as a patient would during such a consultation. Please begin by describing your current state and any immediate concerns you have.After receiving the doctor's questions, respond accordingly, then wait for the next question.Remember to describe your symptoms honestly and explicitly, as if you were actually experiencing them. Repeat this process for a total of 5 exchanges. After the fifth exchange, please say goodbye to end the simulation. Only english")
+    model_patient = configure_model(f"You are a patient suffering from a neurodegenerative disease. You are currently in a doctor's office for a consultation. Your task is to respond to the doctor's questions about your symptoms saying the specific name of the symptoms {symptom_names} accord to the disease yo have. Please behave naturally and realistically as a patient would during such a consultation. Please begin by describing your current state and any immediate concerns you have.After receiving the doctor's questions, respond accordingly, then wait for the next question.Remember to describe your symptoms honestly and explicitly, as if you were actually experiencing them. Repeat this process for a total of 5 exchanges. After the fifth exchange, please say goodbye to end the simulation. Only english")
     
     history = []
 

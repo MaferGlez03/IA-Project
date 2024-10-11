@@ -26,7 +26,7 @@ for symptom in ontology.get('symptoms', []):
         treatments=treatments,
         diagnostic_tests=diagnostic_tests
     )
-
+symptoms_dict = KNOWN_SYMPTOMS
 def identify_symptoms(text):
     
     # Convertir el texto a minúsculas y eliminar signos de puntuación
