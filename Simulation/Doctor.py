@@ -96,19 +96,19 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
 
             # Obtener los síntomas relacionados con la enfermedad
             if symptoms:
-             related_symptoms = [symptom for symptom in symptoms if symptom.name.lower() in disease.symptom]
+                related_symptoms = [symptom for symptom in symptoms if symptom.lower() in disease.symptom]
 
-             for symptom in related_symptoms:
-                 # Verificar procedimientos disponibles para el síntoma
-                 available_procedures = [proc for proc in procedures if  proc.name.lower() in symptom.treatments and proc.availability] #!!!!!CHECK
+                for symptom in related_symptoms:
+                    # Verificar procedimientos disponibles para el síntoma
+                    available_procedures = [proc for proc in procedures if  proc.name.lower() in symptom.treatments and proc.availability] #!!!!!CHECK
 
-                 # Generar deseos basados en los procedimientos disponibles
-                 if available_procedures:
-                     desires_dict[disease]["apply_procedure"] = [True,available_procedures]
-                 else:
-                     desires_dict[disease]["reduce_symptoms"] = [True,available_procedures]
+                    # Generar deseos basados en los procedimientos disponibles
+                    if available_procedures:
+                        desires_dict[disease]["apply_procedure"] = [True,available_procedures]
+                    else:
+                        desires_dict[disease]["reduce_symptoms"] = [True,available_procedures]
 
-             desires_dict[disease]["prevent_progression"] = True
+                desires_dict[disease]["prevent_progression"] = True
         else:
             # Si la creencia es débil, centrarse en la investigación
             desires_dict[disease] = {

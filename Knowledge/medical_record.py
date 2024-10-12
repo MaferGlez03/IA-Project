@@ -34,6 +34,7 @@ class Patient:
         self.name = name
         self.age = age
         self.gender = gender
+        self.disease_progress = 50
         self.symptoms = []
         self.diseases = []
         self.treatments = []
@@ -45,6 +46,9 @@ class Patient:
 
     def add_disease(self, disease):
         self.diseases.append(disease)
+
+    def set_disease_progress(self, number):
+        self.disease_progress = number
 
     def record_diagnostic_test_result(self, test_name, result):
         self.diagnostic_tests_results[test_name] = result

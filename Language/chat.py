@@ -86,14 +86,22 @@ def chating(role): # Imagine you are the Christina Yang from Grey's Anatomy
     history = []
 
     # Listas de nombres y apellidos
-    first_names = [
-        "Carlos", "María", "Juan", "Ana", "José", "Luis", "Sofía", "Laura", "David", "Pedro", "Marta", "Jorge", "Lucía", "Fernando", "Andrés", "Paula", "Camila", "Diego", "Gabriela", "Miguel",
-        "Adriana", "Raúl", "Isabel", "Manuel", "Carmen", "Roberto", "Francisco", "Alba", "Santiago", "Beatriz", "Enrique", "Eva", "Alberto", "Irene", "Cristina", "Elena", "Julio", "Esteban", 
-        "Teresa", "Héctor", "Marcos", "Rosa", "Álvaro", "Natalia", "Patricia", "Guillermo", "Daniel", "Silvia", "Sebastián", "Pablo", "Inés", "Estefanía", "Ricardo", "Victoria", "Federico", 
-        "Claudia", "Fabián", "Tomás", "Alicia", "Marcelo", "Emilio", "Diana", "Rubén", "Ángela", "Bruno", "Valeria", "Mateo", "Antonia", "César", "Julia", "Renata", "Nicolás", "Sara", "Mario",
-        "Clara", "Félix", "Agustín", "Olga", "Rodrigo", "Verónica", "Sergio", "Emilia", "Gustavo", "Cecilia", "Mauricio", "Rafael", "Gloria", "Iván", "Samantha", "Jaime", "Lola", "Álex", 
-        "Cristóbal", "Ignacio", "Noelia", "Estrella", "Edgar", "Mariano", "Fátima", "Raimundo", "Lourdes", "Ágata", "Ezequiel", "Montserrat"
+    female_names = [
+        "María", "Ana", "Sofía", "Laura", "Marta", "Lucía", "Paula", "Camila", "Gabriela", "Adriana", "Isabel", "Carmen", 
+        "Alba", "Beatriz", "Eva", "Irene", "Cristina", "Elena", "Teresa", "Rosa", "Natalia", "Patricia", "Silvia", "Inés", 
+        "Estefanía", "Victoria", "Claudia", "Alicia", "Diana", "Ángela", "Valeria", "Antonia", "Julia", "Renata", "Sara", 
+        "Clara", "Olga", "Verónica", "Emilia", "Cecilia", "Gloria", "Samantha", "Lola", "Noelia", "Estrella", "Fátima", 
+        "Lourdes", "Ágata", "Montserrat"
     ]
+
+    male_names = [
+        "Carlos", "Juan", "José", "Luis", "David", "Pedro", "Jorge", "Fernando", "Andrés", "Diego", "Miguel", "Raúl", 
+        "Manuel", "Roberto", "Francisco", "Santiago", "Enrique", "Alberto", "Julio", "Esteban", "Héctor", "Marcos", "Álvaro", 
+        "Guillermo", "Daniel", "Sebastián", "Pablo", "Ricardo", "Federico", "Fabián", "Tomás", "Marcelo", "Emilio", "Rubén", 
+        "Bruno", "Mateo", "César", "Nicolás", "Mario", "Félix", "Agustín", "Rodrigo", "Sergio", "Gustavo", "Mauricio", 
+        "Rafael", "Iván", "Jaime", "Álex", "Cristóbal", "Ignacio", "Edgar", "Mariano", "Raimundo", "Ezequiel"
+    ]
+
 
     last_names = [
         "García", "Rodríguez", "Martínez", "Hernández", "López", "González", "Pérez", "Sánchez", "Ramírez", "Torres", "Flores", "Castro", "Rivas", "Ortega", "Molina", "Vargas", "Morales", 
@@ -104,9 +112,12 @@ def chating(role): # Imagine you are the Christina Yang from Grey's Anatomy
         "Zúñiga", "Paredes", "Hidalgo", "Arroyo", "Olivares", "Montero", "Camacho", "Bautista", "Villarreal", "Galindo", "Prieto", "Mansilla", "Varela", "Escamilla", "Bustamante", "Barrios", "Sepúlveda"
     ]
 
-    name = random.choice(first_names) + " " + random.choice(last_names) + " " + random.choice(last_names)
-    age = random.randint(18, 100)
     sex = random.choice(["Male", "Female"])
+    if sex == "Male":
+        name = random.choice(male_names) + " " + random.choice(last_names) + " " + random.choice(last_names)
+    else:
+        name = random.choice(female_names) + " " + random.choice(last_names) + " " + random.choice(last_names)
+    age = random.randint(18, 100)
     print()
 
     # Crear un paciente
@@ -133,7 +144,7 @@ def chating(role): # Imagine you are the Christina Yang from Grey's Anatomy
             patient.add_symptom(symptom)
 
         # Mostrar respuesta del paciente
-        print(f"Paciente: {patient_response.text}")
+        print(f"Patient: {patient_response.text}")
         print()
 
         # Añadir la respuesta a la historia

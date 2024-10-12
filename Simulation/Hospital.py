@@ -5,7 +5,7 @@ class Hospital:
         self.env = env
         self.procedures = procedures
         self.doctors = {}
-        self.patients = {}
+        self.patients = []
         self.medical_records = {}
         self.availability = []
         self.patients_treated = 0
