@@ -117,8 +117,8 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
                     # Generar deseos basados en los procedimientos disponibles
                     if available_procedures:
                         desires_dict[disease]["reduce_symptoms"] = True
-                    else:
-                        desires_dict[disease]["investigate_symptoms"] = True
+                if not related_symptoms:   
+                    desires_dict[disease]["investigate_symptoms"] = True
 
             desires_dict[disease]["discharge_patient"] = disease.progress<=15
         else:
