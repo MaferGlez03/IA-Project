@@ -1,4 +1,4 @@
-patient_id,symptoms,Brain_Cancer,Encephalitis,Epilepsy,Multiple_Sclerosis,Prion_Diseases,Spinal_Muscular_Atrophy,Parkinson_Disease,Lewy_Body_Dementia,Huntington_Disease,Friedreich_Ataxia,Amyotrophic_Lateral_Sclerosis,Alzheimer_Disease
+patient_id,symptoms,Brain Cancer,Encephalitis,Epilepsy,Multiple Sclerosis (MS),Prion Diseases,Spinal Muscular Atrophy (SMA),Parkinson's Disease,Lewy Body Dementia,Huntington's Disease,Friedreich's Ataxia,Amyotrophic Lateral Sclerosis (ALS),Alzheimer's Disease
 1,"Numbness or Tingling, Involuntary Movements",5%,5%,10%,25%,0%,0%,15%,5%,5%,5%,20%,5%
 2,Heart Problems,0%,10%,6%,6%,6%,6%,0%,0%,6%,40%,0%,20%
 3,Visual Hallucinations,5%,5%,5%,5%,5%,0%,25%,25%,0%,0%,5%,20%

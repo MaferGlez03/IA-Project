@@ -61,7 +61,7 @@ def patients(env, hospital, id, patient):
         Patient.filter(beliefs, desires)
 
         
-        env.process(Patient.execute_action(hospital, beliefs, desires, perception,results, env,patient))
+        env.process(Patient.execute_action(hospital, beliefs, desires, perception, results, env, patient))
         if beliefs['has_left']: return
         yield env.timeout(random.randint(1, 3))
     

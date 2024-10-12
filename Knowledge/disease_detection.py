@@ -37,17 +37,29 @@ class DiseasePredictionModel:
         # Eliminar la columna original de síntomas
         df = df.drop(columns=['symptoms'])
 
+        # # Separar las características de las etiquetas (diagnósticos)
+        # X = df.drop(columns=['Brain_Cancer', 'Encephalitis', 'Epilepsy', 'Multiple_Sclerosis', 'Prion_Diseases',
+        #              'Spinal_Muscular_Atrophy', 'Parkinson_Disease', 'Lewy_Body_Dementia',
+        #              'Huntington_Disease', 'Friedreich_Ataxia', 'Amyotrophic_Lateral_Sclerosis',
+        #              'Alzheimer_Disease'])
+        
+        # # La etiqueta será la enfermedad correspondiente
+        # y = df[['Brain_Cancer', 'Encephalitis', 'Epilepsy', 'Multiple_Sclerosis', 'Prion_Diseases',
+        #              'Spinal_Muscular_Atrophy', 'Parkinson_Disease', 'Lewy_Body_Dementia',
+        #              'Huntington_Disease', 'Friedreich_Ataxia', 'Amyotrophic_Lateral_Sclerosis',
+        #              'Alzheimer_Disease']]
+        
         # Separar las características de las etiquetas (diagnósticos)
-        X = df.drop(columns=['Brain_Cancer', 'Encephalitis', 'Epilepsy', 'Multiple_Sclerosis', 'Prion_Diseases',
-                     'Spinal_Muscular_Atrophy', 'Parkinson_Disease', 'Lewy_Body_Dementia',
-                     'Huntington_Disease', 'Friedreich_Ataxia', 'Amyotrophic_Lateral_Sclerosis',
-                     'Alzheimer_Disease'])
+        X = df.drop(columns=['Brain Cancer', 'Encephalitis', 'Epilepsy', 'Multiple Sclerosis (MS)', 'Prion Diseases',
+                     'Spinal Muscular Atrophy (SMA)', 'Parkinson\'s Disease', 'Lewy Body Dementia',
+                     'Huntington\'s Disease', 'Friedreich\'s Ataxia', 'Amyotrophic Lateral Sclerosis (ALS)',
+                     'Alzheimer\'s Disease'])
         
         # La etiqueta será la enfermedad correspondiente
-        y = df[['Brain_Cancer', 'Encephalitis', 'Epilepsy', 'Multiple_Sclerosis', 'Prion_Diseases',
-                     'Spinal_Muscular_Atrophy', 'Parkinson_Disease', 'Lewy_Body_Dementia',
-                     'Huntington_Disease', 'Friedreich_Ataxia', 'Amyotrophic_Lateral_Sclerosis',
-                     'Alzheimer_Disease']]
+        y = df[['Brain Cancer', 'Encephalitis', 'Epilepsy', 'Multiple Sclerosis (MS)', 'Prion Diseases',
+                     'Spinal Muscular Atrophy (SMA)', 'Parkinson\'s Disease', 'Lewy Body Dementia',
+                     'Huntington\'s Disease', 'Friedreich\'s Ataxia', 'Amyotrophic Lateral Sclerosis (ALS)',
+                     'Alzheimer\'s Disease']]
 
         return X, y
 
@@ -112,17 +124,7 @@ class DiseasePredictionModel:
 
 
 
-        # # Separar las características de las etiquetas (diagnósticos)
-        # X = df.drop(columns=['Brain Cancer', 'Encephalitis', 'Epilepsy', 'Multiple Sclerosis (MS)', 'Prion Diseases',
-        #              'Spinal Muscular Atrophy (SMA)', 'Parkinson\'s Disease', 'Lewy Body Dementia',
-        #              'Huntington\'s Disease', 'Friedreich\'s Ataxia', 'Amyotrophic Lateral Sclerosis (ALS)',
-        #              'Alzheimer\'s Disease'])
-        
-        # # La etiqueta será la enfermedad correspondiente
-        # y = df[['Brain Cancer', 'Encephalitis', 'Epilepsy', 'Multiple Sclerosis (MS)', 'Prion Diseases',
-        #              'Spinal Muscular Atrophy (SMA)', 'Parkinson\'s Disease', 'Lewy Body Dementia',
-        #              'Huntington\'s Disease', 'Friedreich\'s Ataxia', 'Amyotrophic Lateral Sclerosis (ALS)',
-        #              'Alzheimer\'s Disease']]
+
 
 
 # Brain Cancer,Encephalitis,Epilepsy,Multiple Sclerosis (MS),Prion Diseases,Spinal Muscular Atrophy (SMA),Parkinson's Disease,Lewy Body Dementia,Huntington's Disease,Friedreich's Ataxia,Amyotrophic Lateral Sclerosis (ALS),Alzheimer's Disease
