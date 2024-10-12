@@ -10,6 +10,7 @@ def beliefs(symptoms, knowledge_model):
     if diagnosis:
         # Add diseases with high probability to beliefs (threshold can be adjusted)
         beliefs_dict = {disease: prob for disease, prob in diagnosis.items() if prob > 15}
+        
     
     # Return the dictionary of beliefs
     return beliefs_dict
@@ -49,10 +50,11 @@ def desires(beliefs):
 
     # Generate desires based on the beliefs
     for disease, prob in beliefs.items():
-            desires_dict[disease] = {}
+            
             desires_dict[disease]["investigate_symptoms"] =  False
             desires_dict[disease]["reduce_symptoms"] =  False
             desires_dict[disease]["prevent_progression"] =  False
+            desires_dict[disease]["discharge_patient"]=disease.progress<=15 
         
     return desires_dict
 
@@ -62,7 +64,7 @@ def desires(beliefs):
 def filter(beliefs, desires, patient, priority_threshold=60, progression_threshold=70):
     # Initialize a list to store filtered intentions
     intentions = []
-
+    count =0 
     # Generate intentions based on desires, beliefs, and disease-specific progression
     for disease, desire_actions in desires.items():
         prob = beliefs[disease]  # Accede a la probabilidad de la enfermedad
@@ -73,12 +75,22 @@ def filter(beliefs, desires, patient, priority_threshold=60, progression_thresho
             # Verificar si hay que investigar síntomas
             if desire_actions.get("investigate_symptoms", False):
                 intentions.append(f"Investigate symptoms for {disease.name}")
+                return intentions
+
 
             # Verificar si hay que reducir síntomas o prevenir progresión
-            if desire_actions.get("reduce_symptoms", False):
-                intentions.append(f"Apply treatments to reduce symptoms of {disease.name}")
-            if desire_actions.get("prevent_progression", False):
-                intentions.append(f"Implement strategies to prevent progression of {disease.name}")
+        if desire_actions.get("reduce_symptoms", False):
+            intentions.append(f"Apply treatments to reduce symptoms of {disease.name}")
+            return intentions
+
+        if desire_actions.get("prevent_progression", False):
+            intentions.append(f"Implement strategies to prevent progression of {disease.name}")
+            return intentions
+
+        if desire_actions.get(f"discharge_patient",False):
+            count +=1
+    if count == len(beliefs):
+        intentions.append(f'Patient {patient.name} can be discharged')
     
     # Return the list of filtered intentions
     return intentions
@@ -104,15 +116,15 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
 
                  # Generar deseos basados en los procedimientos disponibles
                  if available_procedures:
-                     desires_dict[disease]["apply_procedure"] = [True,available_procedures]
+                     desires_dict[disease]["reduce_symptoms"] = True
                  else:
-                     desires_dict[disease]["reduce_symptoms"] = [True,available_procedures]
+                     desires_dict[disease]["investigate_symptoms"] = True
 
-             desires_dict[disease]["prevent_progression"] = True
+             desires_dict[disease]["discharge_patient"] = disease.progress<=15
         else:
-            # Si la creencia es débil, centrarse en la investigación
+            # Si la creencia es débil, centrarse en la prevención
             desires_dict[disease] = {
-                "investigate_symptoms": True
+                "prevent_progression": True
             }
 
     # Retornar el diccionario de deseos actualizado
@@ -136,6 +148,8 @@ def execute_action(intentions, patient, procedures,results,env):
                     # Simular el descubrimiento de nuevos síntomas
                     new_symptom = f"New symptom for {disease}" #!Aqui arreglar con los results del procedure
                     patient.symptoms.append(new_symptom)
+                    d = take_disease(disease, patient)
+                    desires[d]["investigate_symptoms"] =  False
                     yield env.timeout(10)
 
         elif "Apply treatments to reduce symptoms" in intention:
@@ -149,19 +163,30 @@ def execute_action(intentions, patient, procedures,results,env):
                         result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
                         results.append((env.now,result))
                         # Reducir la severidad del síntoma
-                        patient.symptom_severity -= 5 #!Parche 
+                        d = take_disease(disease, patient)
+                        d.progress-= d.progress/len(patient.symptoms)   #!Parche 
                         yield env.timeout(10)
                     else:
                         result = f"{procedure.name} applied, but the result was not effective for {disease} in {patient.name}"
                         results.append((env.now,result))
+                        desires[d]["reduce_symptoms"] =  False
                         yield env.timeout(10)
 
         elif "prevent progression" in intention:
             disease = intention.split()[-1]  # Extract disease name from intention
             result = f"Implemented monitoring plan for {disease} in {patient.name}"
             results.append((env.now,result))
+            d = take_disease(disease, patient)
+            desires[d]["prevent progression"] =  False
             # Reducir la progresión de la enfermedad
             yield env.timeout(10)
+            
+        elif "can be discharged" in intention:
+            results.append((env.now,f"Patient {patient.name} has been discharged"))
 
     
-   
+def take_disease(disease, patient):
+    for dis in patient.diseases:
+        if dis.name.lower() == disease.lower():
+            return disease
+    

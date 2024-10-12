@@ -32,7 +32,7 @@ def doctor(env, procedures, model, hospital):
                 print("End action doc")
                 yield env.timeout(10)
                 continue
-            if "End patient" in intentions: # Modificar para que en algun momento termine con el paciente
+            if "dispatched" in intentions: # Modificar para que en algun momento termine con el paciente
                 print("Next Patient")
                 yield env.timeout(random.randint(1, 3))
                 break
@@ -91,7 +91,7 @@ def patient_generator(env, model, hospital):
                 print(f"{clave.name}: {valor}%")
         print()
 
-def appy_A_Star(patient, goal):
+def apply_A_Star(patient, goal):
     # Initialize the AStar object with the possible procedures and medications
     astar = A_Star.AStar(possible_medications= [])
     initial_state = A_Star.State(
@@ -130,7 +130,7 @@ def run_simulation():
 
     model = create_model()
 
-    env.process(doctor_generator(env, model, hospital))
+    env.process(doctor_generator(env,procedures, model, hospital))
     env.process(patient_generator(env, model,hospital))
 
     env.run(until=100)
