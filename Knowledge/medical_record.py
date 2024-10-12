@@ -1,3 +1,6 @@
+import json
+from Simulation import Hospital
+
 class Symptom:
     def __init__(self, id, name, description, associated_diseases, treatments, diagnostic_tests):
         self.id = id
@@ -41,8 +44,12 @@ class Patient:
         self.diagnostic_tests_results = {}
 
     def add_symptom(self, symptom):
-        if symptom not in self.symptoms:
-            self.symptoms.append(symptom)
+        with open("Knowledge/ontology.json", 'r') as file:
+            ontology = json.load(file)
+        symptom_name = symptom.name
+        if symptom_name not in self.symptoms:
+            symp = Hospital.Symptom(symptom_name, "severe", [ontology_symptom['treatments'] for ontology_symptom in ontology['symptoms'] if ontology_symptom['name'] == symptom_name][0], [ontology_symptom['diagnostic_tests'] for ontology_symptom in ontology['symptoms'] if ontology_symptom['name'] == symptom_name][0])
+            self.symptoms.append(symp)
 
     def add_disease(self, disease):
         self.diseases.append(disease)
