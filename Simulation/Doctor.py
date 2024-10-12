@@ -50,7 +50,7 @@ def desires(beliefs):
 
     # Generate desires based on the beliefs
     for disease, prob in beliefs.items():
-            
+            desires_dict[disease]={}
             desires_dict[disease]["investigate_symptoms"] =  False
             desires_dict[disease]["reduce_symptoms"] =  False
             desires_dict[disease]["prevent_progression"] =  False
@@ -120,7 +120,7 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
                     else:
                         desires_dict[disease]["investigate_symptoms"] = True
 
-                desires_dict[disease]["discharge_patient"] = disease.progress<=15
+            desires_dict[disease]["discharge_patient"] = disease.progress<=15
         else:
             # Si la creencia es débil, centrarse en la prevención
             desires_dict[disease] = {

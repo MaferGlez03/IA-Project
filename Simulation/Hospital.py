@@ -7,7 +7,7 @@ class Hospital:
         self.doctors = {}
         self.patients = []
         self.medical_records = {}
-        self.availability = []
+        self.availability = 50
         self.patients_treated = 0
     
     def take_patient(self):
