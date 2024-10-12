@@ -30,6 +30,12 @@ def doctor(env, procedures, model, hospital, id, disease_level=0):
             Doctor.generate_options(beliefs, patient_symptoms, procedures, desires)
             intentions = Doctor.filter(beliefs, desires, patient)
 
+            if not intentions:
+                print("End action doc")
+                yield env.timeout(10)
+                continue
+            if "dispatched" in intentions: # Modificar para que en algun momento termine con el paciente
+                print("Next Patient")
             if "End patient" in intentions: # Modificar para que en algun momento termine con el paciente
                 print(f"Next Patient {id}")
                 yield env.timeout(random.randint(1, 3))
@@ -93,7 +99,7 @@ def patient_generator(env, model, hospital):
                 print(f"{clave.name}: {valor}%")
         print()
 
-def appy_A_Star(patient, goal):
+def apply_A_Star(patient, goal):
     # Initialize the AStar object with the possible procedures and medications
     astar = A_Star.AStar(possible_medications= [])
     initial_state = A_Star.State(
@@ -132,6 +138,7 @@ def run_simulation(progress_disease_level=10):
 
     model = create_model()
 
+    env.process(patient_generator(env, model, hospital))
 
     env.process(patient_generator(env, model, hospital))
     for i in range(5):
