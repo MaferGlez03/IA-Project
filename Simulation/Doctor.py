@@ -5,7 +5,7 @@ def beliefs(symptoms, knowledge_model):
     beliefs_dict = {}
     
     # Get the diagnosis from the knowledge model (returns a dictionary with disease probabilities)
-    diagnosis = knowledge_model.predict_disease(symptoms)
+    diagnosis = knowledge_model.predict_disease([s.name for s in symptoms])
     
     if diagnosis:
         # Add diseases with high probability to beliefs (threshold can be adjusted)
@@ -18,7 +18,7 @@ def beliefs(symptoms, knowledge_model):
 
 def brf(beliefs, new_symptoms, knowledge_model):
     # Check the diagnosis from the knowledge model for new symptoms
-    new_diagnosis = knowledge_model.predict_disease(new_symptoms)
+    new_diagnosis = knowledge_model.predict_disease([s.name for s in new_symptoms])
     
     if new_diagnosis:
         # Update beliefs with new information
@@ -108,7 +108,7 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
 
             # Obtener los síntomas relacionados con la enfermedad
             if symptoms:
-                related_symptoms = [symptom for symptom in symptoms if symptom.lower() in disease.symptom]
+                related_symptoms = [symptom for symptom in symptoms if symptom.name.lower() in disease.symptom]
 
                 for symptom in related_symptoms:
                     # Verificar procedimientos disponibles para el síntoma
@@ -120,7 +120,7 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
                     else:
                         desires_dict[disease]["investigate_symptoms"] = True
 
-                desires_dict[disease]["discharge_patient"] = disease.progress<=15
+            desires_dict[disease]["discharge_patient"] = disease.progress<=15
         else:
             # Si la creencia es débil, centrarse en la prevención
             desires_dict[disease] = {

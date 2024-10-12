@@ -20,14 +20,12 @@ def doctor(env, procedures, model, hospital, id, disease_level=0):
 
         while patient.disease_progress >= disease_level: 
             print(f"BDI Doctor {id}")
-            
-            patient_symptoms = [s.name for s in patient.symptoms]
 
-            beliefs = Doctor.beliefs(patient_symptoms, model)
+            beliefs = Doctor.beliefs(patient.symptoms, model)
             desires = Doctor.desires(beliefs)
             
-            Doctor.brf(beliefs, patient_symptoms, model)
-            Doctor.generate_options(beliefs, patient_symptoms, procedures, desires)
+            Doctor.brf(beliefs, patient.symptoms, model)
+            Doctor.generate_options(beliefs, patient.symptoms, procedures, desires)
             intentions = Doctor.filter(beliefs, desires, patient)
 
             if not intentions:
@@ -145,7 +143,7 @@ def run_simulation(progress_disease_level=10):
 
     
 
-    env.run(until=100)
+    env.run(until=40)
     Tools.save_log(results)
 
 run_simulation()

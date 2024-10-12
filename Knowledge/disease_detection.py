@@ -103,6 +103,7 @@ class DiseasePredictionModel:
             ontology = json.load(file)
 
         # Crear las enfermedades como objetos
+        # final2 = {Disease(disease, [ontology_diseases['symptoms'] for ontology_diseases in ontology['diseases'] if ontology_diseases['name'] == disease], 30): value for disease, value in final.items()}
         final2 = {Disease(disease, [ontology_diseases['name'] for ontology_diseases in ontology['diseases'] if ontology_diseases['name'] == disease], 30): value for disease, value in final.items()}
         
         return final2
@@ -110,3 +111,18 @@ class DiseasePredictionModel:
 
 
 
+
+        # # Separar las características de las etiquetas (diagnósticos)
+        # X = df.drop(columns=['Brain Cancer', 'Encephalitis', 'Epilepsy', 'Multiple Sclerosis (MS)', 'Prion Diseases',
+        #              'Spinal Muscular Atrophy (SMA)', 'Parkinson\'s Disease', 'Lewy Body Dementia',
+        #              'Huntington\'s Disease', 'Friedreich\'s Ataxia', 'Amyotrophic Lateral Sclerosis (ALS)',
+        #              'Alzheimer\'s Disease'])
+        
+        # # La etiqueta será la enfermedad correspondiente
+        # y = df[['Brain Cancer', 'Encephalitis', 'Epilepsy', 'Multiple Sclerosis (MS)', 'Prion Diseases',
+        #              'Spinal Muscular Atrophy (SMA)', 'Parkinson\'s Disease', 'Lewy Body Dementia',
+        #              'Huntington\'s Disease', 'Friedreich\'s Ataxia', 'Amyotrophic Lateral Sclerosis (ALS)',
+        #              'Alzheimer\'s Disease']]
+
+
+# Brain Cancer,Encephalitis,Epilepsy,Multiple Sclerosis (MS),Prion Diseases,Spinal Muscular Atrophy (SMA),Parkinson's Disease,Lewy Body Dementia,Huntington's Disease,Friedreich's Ataxia,Amyotrophic Lateral Sclerosis (ALS),Alzheimer's Disease
