@@ -1,80 +1,9 @@
 0, Hospital is open
-15, Patient Julio Paredes Molina has been ingressed with a possible Alzheimer_Disease
-33, Patient Lola Muñoz Morales has been ingressed with a possible Alzheimer_Disease
-35, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-36, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-39, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-42, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-44, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-46, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-48, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-51, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-52, Patient Antonia Aguilar Rojas has been ingressed with a possible Alzheimer_Disease
-53, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-55, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-56, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-57, Patient Patricia Ruiz Beltrán has been ingressed with a possible Alzheimer_Disease
-58, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-59, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-60, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-60, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-61, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-61, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-62, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-63, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-63, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-64, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-65, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-65, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-66, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-66, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-67, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-67, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-68, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-68, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-69, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-70, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-70, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-71, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-72, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-73, Patient Andrés Palacios Hidalgo has been ingressed with a possible Alzheimer_Disease
-73, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-73, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-74, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-74, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-75, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-76, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-77, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-78, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-79, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-80, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-80, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-80, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-81, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-82, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-82, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-83, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-83, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-84, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-84, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-85, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-86, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-87, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-87, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-88, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-89, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-90, Patient Lourdes Esquivel Paredes has been ingressed with a possible Alzheimer_Disease
-90, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-91, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-91, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-92, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-92, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-94, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-94, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-95, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-95, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-95, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-96, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
-98, Implemented monitoring plan for Alzheimer_Disease in Lola Muñoz Morales
-98, Implemented monitoring plan for Alzheimer_Disease in Patricia Ruiz Beltrán
-99, Implemented monitoring plan for Alzheimer_Disease in Antonia Aguilar Rojas
+16, Patient Esteban Miranda Núñez has been ingressed with a possible Alzheimer_Disease
+29, Patient Lourdes Castro Montoya has been ingressed with a possible Alzheimer_Disease
+36, Patient Álex Zamora Hidalgo has been ingressed with a possible Alzheimer_Disease
+52, Patient Noelia Fuentes Ramos has been ingressed with a possible Alzheimer_Disease
+62, Patient Natalia Esquivel Figueroa has been ingressed with a possible Alzheimer_Disease
+71, Patient Héctor Camacho Reyes has been ingressed with a possible Alzheimer_Disease
+80, Patient Andrés Alvarado Delgado has been ingressed with a possible Alzheimer_Disease
+97, Patient Guillermo Paredes Rivas has been ingressed with a possible Alzheimer_Disease
