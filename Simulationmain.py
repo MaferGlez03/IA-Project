@@ -58,12 +58,10 @@ def patients(env, hospital, id, patient):
     while env.now < 100:
         Patient.brf(perception, beliefs)
         Patient.generate_option(beliefs, desires)
-        intentions = Patient.filter(beliefs, desires)
+        Patient.filter(beliefs, desires)
 
-        if not intentions:
-            yield env.timeout(10)
-            continue  
-        env.process(Patient.execute_action(hospital, beliefs, desires, perception))
+        
+        env.process(Patient.execute_action(hospital, beliefs, desires, perception,results, env,patient))
         if beliefs['has_left']: return
         yield env.timeout(random.randint(1, 3))
     

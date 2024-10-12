@@ -50,7 +50,7 @@ def desires(beliefs):
 
     # Generate desires based on the beliefs
     for disease, prob in beliefs.items():
-            desires_dict[disease] = {}
+            desires_dict[disease]={}
             desires_dict[disease]["investigate_symptoms"] =  False
             desires_dict[disease]["reduce_symptoms"] =  False
             desires_dict[disease]["prevent_progression"] =  False
