@@ -31,7 +31,7 @@ def doctor(env, procedures, model, hospital, id, disease_level=0):
             intentions = Doctor.filter(beliefs, desires, patient)
 
             if not intentions:
-                print("End action doc")
+                print(f"End action doc {id}")
                 yield env.timeout(10)
                 continue
             if "dispatched" in intentions: # Modificar para que en algun momento termine con el paciente
@@ -74,7 +74,7 @@ def patient_generator(env, model, hospital):
         yield env.timeout(random.randint(*[5,20]))
 
         # Hacer la predicción
-        patient, history = chat.chating("Imagine you are the Christina Yang from Grey's Anatomy")
+        patient, history = chat.chating("Christina Yang from Grey's Anatomy")
 
         hospital.patients.append(patient)
 
@@ -135,8 +135,6 @@ def run_simulation(progress_disease_level=10):
     hospital = Hospital.Hospital(env, procedures)
 
     model = create_model()
-
-    env.process(patient_generator(env, model, hospital))
 
     env.process(patient_generator(env, model, hospital))
     for i in range(5):
