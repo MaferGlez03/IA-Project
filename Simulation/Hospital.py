@@ -16,14 +16,15 @@ class Hospital:
         return patient
         
 class Procedure:
-    def __init__(self, name, utilities, function, result, price = 20):
+    def __init__(self, name, utilities, function, result, purpose ):
         self.name = name
         self.utilities = utilities
         self.function = function
         self. result = result
         self.availability = True
-        self.price = price
+        self.price = 20
         self.uses = 0
+        self.purpose=purpose
         
     def __hash__(self):
         return hash((self.name))
