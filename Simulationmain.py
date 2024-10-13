@@ -39,7 +39,7 @@ def doctor(env, procedures, model, hospital, id, disease_level=0):
                 yield env.timeout(random.randint(1, 3))
                 break
 
-            env.process(Doctor.execute_action(intentions, patient, procedures,results,env))
+            env.process(Doctor.execute_action(intentions, patient, procedures,results,env, desires, beliefs))
             print(f"End action doc {id}")
             yield env.timeout(random.randint(1, 3))
         
