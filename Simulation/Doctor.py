@@ -108,11 +108,11 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
 
             # Obtener los síntomas relacionados con la enfermedad
             if symptoms:
-                related_symptoms = [symptom for symptom in symptoms if symptom.name.lower() in disease.symptom]
+                related_symptoms = [symptom for symptom in symptoms if symptom.name in disease.symptom]
 
                 for symptom in related_symptoms:
                     # Verificar procedimientos disponibles para el síntoma
-                    available_procedures = [proc for proc in procedures if  proc.name.lower() in symptom.treatments and proc.availability] #!!!!!CHECK
+                    available_procedures = [proc for proc in procedures if ((proc.name.lower() in [s.lower() for s in symptom.treatments]) and (proc.availability))] #!!!!!CHECK
 
                     # Generar deseos basados en los procedimientos disponibles
                     if available_procedures:

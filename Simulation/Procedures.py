@@ -75,8 +75,8 @@ treatment_procedures = [
 
 def create_procedures():
     procedures=[]
-    procedures.append(treatment_procedures)
-    procedures.append(diagnosis_procedures)
+    procedures.extend(treatment_procedures)
+    procedures.extend(diagnosis_procedures)
     return procedures
 
 

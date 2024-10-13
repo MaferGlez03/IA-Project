@@ -32,7 +32,7 @@ def doctor(env, procedures, model, hospital, id, disease_level=0):
                 print(f"End action doc {id}")
                 yield env.timeout(10)
                 continue
-            if "dispatched" in intentions: # Modificar para que en algun momento termine con el paciente
+            if "dispatched".capitalize in intentions: # Modificar para que en algun momento termine con el paciente
                 print("Next Patient")
             if "End patient" in intentions: # Modificar para que en algun momento termine con el paciente
                 print(f"Next Patient {id}")

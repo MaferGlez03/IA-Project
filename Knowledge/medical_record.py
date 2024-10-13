@@ -47,7 +47,7 @@ class Patient:
         with open("Knowledge/ontology.json", 'r') as file:
             ontology = json.load(file)
         symptom_name = symptom.name
-        if symptom_name not in self.symptoms:
+        if symptom_name not in [s.name for s in self.symptoms]:
             symp = Hospital.Symptom(symptom_name, "severe", [ontology_symptom['treatments'] for ontology_symptom in ontology['symptoms'] if ontology_symptom['name'] == symptom_name][0], [ontology_symptom['diagnostic_tests'] for ontology_symptom in ontology['symptoms'] if ontology_symptom['name'] == symptom_name][0])
             self.symptoms.append(symp)
 

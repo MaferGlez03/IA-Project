@@ -51,5 +51,5 @@ class Symptom:
     def __init__(self, name, severity, treatments, diagnostic_tests):
         self.name = name
         self.severity = severity
-        self. tratments = treatments
+        self.treatments = treatments
         self.diagnostic_tests = diagnostic_tests
