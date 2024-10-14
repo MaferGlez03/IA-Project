@@ -42,6 +42,8 @@ class Patient:
         self.diseases = {}
         self.treatments = []
         self.diagnostic_tests_results = {}
+        self.energy_level=0
+        self.pain_level=0
 
     def add_symptom(self, symptom):
         with open("Knowledge/ontology.json", 'r') as file:

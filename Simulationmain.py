@@ -72,6 +72,15 @@ def patient_generator(env, model, hospital, threshold):
 
         hospital.patients.append(patient)
 
+        energy_level = chat.analyze_conversation(history, "nivel de energía")
+        pain_level = chat.analyze_conversation(history, "nivel de dolor")
+        patient.energy_level=energy_level
+        patient.pain_level=pain_level
+        env.process(patients(env, hospital, i, patient))
+
+        
+
+        
         env.process(patients(env, hospital, i, patient, threshold))
 
         patient_symptoms = [s.name for s in patient.symptoms]
@@ -87,21 +96,9 @@ def patient_generator(env, model, hospital, threshold):
                 print(f"{clave.name}: {valor}%")
         print()
 
-def apply_A_Star(patient, goal):
-    # Initialize the AStar object with the possible procedures and medications
-    astar = A_Star.AStar(possible_medications= [])
-    initial_state = A_Star.State(
-    medications=[],  
-    procedures=[],  
-    symptoms=[Support.Symptom(s, "severe") for s in patient.symptoms.name],
-    progress=Support.Progress(30),  # The patient starts with 30% progress
-    general_state=Support.StateGeneral(patient.energy_level, patient.pain_level, immune_status="weak")
-    )
-    solution = astar.a_star(initial_state, goal)
-    if solution :return solution.procedures
-    return []
+
     
-    return hospital
+    
 
 def create_model():
     with open("Knowledge/ontology.json", 'r') as file:
@@ -133,7 +130,7 @@ def run_simulation(threshold=15):
 
     
 
-    env.run(until=80)
+    env.run(until=40)
     Tools.save_log(results)
     return hospital
 

@@ -1,4 +1,8 @@
 from Simulation import Hospital
+import json
+from A_Star_Algorithim import Support, A_Star,Goal
+
+
 
 def beliefs(symptoms, knowledge_model):
     # Initialize a dictionary to store beliefs
@@ -143,13 +147,12 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
         elif "Investigate symptoms" in intention[0]:
             disease = ' '.join(intention[0].split()[-2:] ) # Extract disease name from intention
             for procedure in procedures: 
-                if procedure.purpose == 'treatment': #!AQUI VA DIAGNOSIS
+                if procedure.purpose == 'diagnosis': 
                     result = f"Used {procedure.name} to investigate new symptoms for {disease} in {patient.name}"
                     procedure.uses += 1
                     results.append((env.now,result))
                     # Simular el descubrimiento de nuevos síntomas
-                    new_symptom = f"New symptom for {disease}" #!Aqui arreglar con los results del procedure
-                    #patient.symptoms.append(new_symptom)
+                    for symptoms in procedure.revealed_symptoms: create_new_symptoms(symptoms)
                     d = take_disease(disease, beliefs)
                     desires[d]["investigate_symptoms"] =  False
                     yield env.timeout(10)
@@ -157,11 +160,13 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
         elif "Apply treatments to reduce symptoms" in intention[0]:
             disease = ' '.join(intention[0].split()[-2:] )  # Extract disease name from intention
             # Encontrar un procedimiento coincidente para esta enfermedad
-            #! Aqui el A_Star
-            for procedure in procedures:
+            best_procedures = apply_A_Star(patient,Goal.GoalCheck.is_goal)
+            print(best_procedures)
+            if not best_procedures: best_procedures= procedures
+            for procedure in best_procedures:
                 if len(intention[1]):
                     disease_symptoms=intention[1]
-                    if procedure.name.lower() in (t.lower() for t in disease_symptoms[0].treatments) and procedure.availability:
+                    if procedure.name.lower() in (t.lower() for t in disease_symptoms[0].treatments):
                         # Reducir la severidad solo si el resultado del procedimiento es bueno
                         if procedure.result == "good":
                             result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
@@ -216,4 +221,26 @@ def take_disease(disease, beliefs):
     for dis in diseases:
         if dis.name.lower() == disease.lower():
             return dis
+        
+def create_new_symptoms(patient,symptom_name):
+    with open("Knowledge/ontology.json", 'r') as file:
+            ontology = json.load(file)
+     
+    if symptom_name not in [s.name for s in patient.symptoms]:
+            symp = Hospital.Symptom(symptom_name, "severe", [ontology_symptom['treatments'] for ontology_symptom in ontology['symptoms'] if ontology_symptom['name'] == symptom_name][0], [ontology_symptom['diagnostic_tests'] for ontology_symptom in ontology['symptoms'] if ontology_symptom['name'] == symptom_name][0])
+            patient.symptoms.append(symp)
+            
+def apply_A_Star(patient, goal):
+    # Initialize the AStar object with the possible procedures and medications
+    astar = A_Star.AStar()
+    initial_state = A_Star.State(
+    medications=[],  
+    procedures=[],  
+    symptoms=[Support.Symptom(s.name, "severe") for s in patient.symptoms],
+    progress=Support.Progress(patient.disease_progress),  # The patient starts with 30% progress
+    general_state=Support.StateGeneral(patient.energy_level,patient.pain_level, immune_status="weak")
+    )
+    solution = astar.a_star(initial_state, goal)
+    if solution :return solution.medications.extend(solution.procedures)
+    return []
     

@@ -47,21 +47,21 @@ diagnosis_procedures = [
 # ]
 
 treatment_procedures = [
-    Procedure("Cognitive Therapy", [utilities["Stethoscope"]], "Improve cognitive function", "normal", "treatment"),
+    Procedure("Cognitive Therapy", [utilities["Stethoscope"]], "Improve cognitive function", "normal", "diagnosis"),
     Procedure("Cholinesterase Inhibitors", [utilities["Syringe"], utilities["IV Drip"]], "Slow progression of Alzheimer's", "good", "treatment"),
     Procedure("Medications to Manage Symptoms", [utilities["Syringe"], utilities["IV Drip"]], "Alleviate symptoms of disease", "normal", "treatment"),
     Procedure("Medications like Beta-Blockers", [utilities["Syringe"]], "Control heart rate", "normal", "treatment"),
     Procedure("Surgery for Severe Cases", [utilities["Syringe"], utilities["IV Drip"], utilities["Ventilator"]], "Correct structural issues", "good", "treatment"),
     Procedure("Speech Therapy", [utilities["Stethoscope"]], "Improve communication", "normal", "treatment"),
-    Procedure("Augmentative Communication Devices", [], "Assist with communication", "good", "treatment"),
-    Procedure("Cognitive Behavioral Therapy", [utilities["Stethoscope"]], "Treat mental health conditions", "good", "treatment"),
+    Procedure("Augmentative Communication Devices", [], "Assist with communication", "good", "diagnosis"),
+    Procedure("Cognitive Behavioral Therapy", [utilities["Stethoscope"]], "Treat mental health conditions", "good", "diagnosis"),
     Procedure("Medications", [utilities["Syringe"], utilities["IV Drip"]], "General symptom management", "normal", "treatment"),
     Procedure("Antipsychotic Medications", [utilities["Syringe"]], "Manage psychosis", "normal", "treatment"),
     Procedure("Supportive Therapy", [], "Provide emotional support", "good", "treatment"),
-    Procedure("Cognitive Therapies", [utilities["Stethoscope"]], "Improve cognitive function", "normal", "treatment"),
+    Procedure("Cognitive Therapies", [utilities["Stethoscope"]], "Improve cognitive function", "normal", "diagnosis"),
     Procedure("Medications to Slow Progression", [utilities["Syringe"], utilities["IV Drip"]], "Slow down disease progression", "good", "treatment"),
-    Procedure("Assistive Devices like Walkers", [], "Help with mobility", "good", "treatment"),
-    Procedure("Pain Management Therapies", [utilities["Syringe"], utilities["Blood Test Kit"]], "Manage chronic pain", "normal", "treatment"),
+    Procedure("Assistive Devices like Walkers", [], "Help with mobility", "good", "diagnosis"),
+    Procedure("Pain Management Therapies", [utilities["Syringe"], utilities["Blood Test Kit"]], "Manage chronic pain", "normal", "diagnosis"),
     Procedure("Medications for Nerve Pain", [utilities["Syringe"], utilities["IV Drip"]], "Alleviate nerve pain", "normal", "treatment"),
     Procedure("Levodopa Medication", [utilities["Syringe"]], "Treat Parkinson's symptoms", "good", "treatment"),
     Procedure("Physical Therapy", [utilities["Stethoscope"]], "Improve mobility and strength", "good", "treatment"),
@@ -70,7 +70,7 @@ treatment_procedures = [
     Procedure("Antiepileptic Medications", [utilities["Syringe"]], "Control seizures", "good", "treatment"),
     Procedure("Surgery in Refractory Cases", [utilities["Syringe"], utilities["IV Drip"], utilities["Ventilator"]], "Treat epilepsy in severe cases", "good", "treatment"),
     Procedure("Medications for Heart Health", [utilities["Syringe"], utilities["IV Drip"]], "Improve heart function", "good", "treatment"),
-    Procedure("Lifestyle Changes", [], "Improve overall health", "normal", "treatment")
+    Procedure("Lifestyle Changes", [], "Improve overall health", "normal", "diagnosis")
 ]
 
 def create_procedures():

@@ -1,13 +1,13 @@
 import heapq
 from A_Star_Algorithim.States import State
-from A_Star_Algorithim.Procedures import treatment_procedures
+from A_Star_Algorithim.Procedures import treatment_procedures,treatment_medications
 
 class AStar:
-    def __init__(self,possible_medications, minimal_cost_per_action=50, minimal_cost_per_treatment=100):
+    def __init__(self, minimal_cost_per_action=100, minimal_cost_per_treatment=100):
         self.minimal_cost_per_action = minimal_cost_per_action
         self.minimal_cost_per_treatment = minimal_cost_per_treatment
         self.possible_procedure = treatment_procedures
-        self.possible_medications = possible_medications
+        self.possible_medications = treatment_medications
         self.log = ""
 
     # Heuristic to guide the search (Admissible)
