@@ -18,11 +18,11 @@ def doctor(env, procedures, model, hospital, id, disease_level=0):
         print(f"New patient Doctor {id}")
         patient = hospital.take_patient()
 
+        beliefs = Doctor.beliefs(patient.symptoms, model)
+        desires = Doctor.desires(beliefs)
+
         while patient.disease_progress >= disease_level: 
             print(f"BDI Doctor {id}")
-
-            beliefs = Doctor.beliefs(patient.symptoms, model)
-            desires = Doctor.desires(beliefs)
             
             Doctor.brf(beliefs, patient.symptoms, model)
             Doctor.generate_options(beliefs, patient.symptoms, procedures, desires)
@@ -53,16 +53,10 @@ def patients(env, hospital, id, patient):
     patient.set_disease_progress(beliefs['disease_progress'])
 
     while env.now < 100:
-        print()
-        print("BDI patient")
-        print(patient.name)
-        print(patient.disease_progress)
-        print()
         Patient.brf(perception, beliefs, patient)
         Patient.generate_option(beliefs, desires)
         Patient.filter(beliefs, desires)
 
-        
         env.process(Patient.execute_action(hospital, beliefs, desires, perception, results, env, patient))
         yield env.timeout(random.randint(1, 3))
         if beliefs['has_left']: return
@@ -88,6 +82,7 @@ def patient_generator(env, model, hospital):
         patient_symptoms = [s.name for s in patient.symptoms]
 
         prediction = model.predict_disease(patient_symptoms)
+        patient.diseases = prediction
         results.append((env.now, f'Patient {patient.name} has been ingressed with a possible {list(prediction.keys())[0].name}'))
 
         print()

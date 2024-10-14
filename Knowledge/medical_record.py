@@ -39,7 +39,7 @@ class Patient:
         self.gender = gender
         self.disease_progress = 50
         self.symptoms = []
-        self.diseases = []
+        self.diseases = {}
         self.treatments = []
         self.diagnostic_tests_results = {}
 

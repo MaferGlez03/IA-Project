@@ -1,514 +1,134 @@
 0, Hospital is open
-15, Patient Jorge Quintana Ponce has been ingressed with a possible Alzheimer's Disease
-15, A bed has been assigned to patiend Jorge Quintana Ponce
-15, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jorge Quintana Ponce
-16, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-17, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jorge Quintana Ponce
-18, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-18, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jorge Quintana Ponce
-19, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-21, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jorge Quintana Ponce
-22, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-22, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jorge Quintana Ponce
-25, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jorge Quintana Ponce
-25, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-25, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-26, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-27, Patient Fabián Durán Ramírez has been ingressed with a possible Alzheimer's Disease
-27, A bed has been assigned to patiend Fabián Durán Ramírez
-27, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jorge Quintana Ponce
-27, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-27, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-28, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jorge Quintana Ponce
-28, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-29, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-29, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-30, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-30, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-30, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-31, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jorge Quintana Ponce
-32, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jorge Quintana Ponce
-32, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-32, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-32, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-33, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-34, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-34, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-35, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-35, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-36, Patient Francisco León Blanco has been ingressed with a possible Alzheimer's Disease
-36, A bed has been assigned to patiend Francisco León Blanco
-36, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-36, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-37, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-37, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-37, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-37, Patient Francisco León Blanco prefer to avoid secondary effects
-38, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-38, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-39, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-39, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-39, Patient Francisco León Blanco prefer to avoid secondary effects
-39, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-40, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-40, Patient Francisco León Blanco has been discharged
-40, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-40, Patient Francisco León Blanco prefer to avoid secondary effects
-40, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-41, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-41, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-41, Patient Francisco León Blanco prefer to avoid secondary effects
-42, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-42, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-42, Patient Francisco León Blanco prefer to avoid secondary effects
-43, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-43, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-43, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-44, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-44, Patient Francisco León Blanco prefer to avoid secondary effects
-44, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-45, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-45, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-45, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-45, Patient Francisco León Blanco prefer to avoid secondary effects
-46, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-46, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-46, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-46, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-47, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-47, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-47, Patient Francisco León Blanco prefer to avoid secondary effects
-47, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-48, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-48, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-48, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-48, Patient Francisco León Blanco prefer to avoid secondary effects
-48, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-49, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-49, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-49, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-49, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-50, Patient José Salinas Lara has been ingressed with a possible Alzheimer's Disease
-50, A bed has been assigned to patiend José Salinas Lara
-50, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-50, Patient José Salinas Lara has been discharged
-51, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-51, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-51, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-51, Patient Francisco León Blanco prefer to avoid secondary effects
-51, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-51, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-52, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-52, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-52, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-53, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-53, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-53, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-54, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-54, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-54, Patient Francisco León Blanco prefer to avoid secondary effects
-54, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-55, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-55, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-55, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-55, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-55, Patient Francisco León Blanco prefer to avoid secondary effects
-56, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-56, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-56, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-56, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-56, Patient Francisco León Blanco prefer to avoid secondary effects
-57, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-57, Patient Santiago Guerrero Valencia has been ingressed with a possible Alzheimer's Disease
-57, A bed has been assigned to patiend Santiago Guerrero Valencia
-57, Patient Santiago Guerrero Valencia has been discharged
-57, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-57, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-57, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-58, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-58, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-58, Patient Francisco León Blanco prefer to avoid secondary effects
-58, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-58, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-59, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-59, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-59, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-59, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-59, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-59, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-59, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-60, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-60, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-60, Patient Francisco León Blanco prefer to avoid secondary effects
-60, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-61, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-61, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-61, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-61, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-61, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-61, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-61, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-62, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-62, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-62, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-62, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-62, Patient Francisco León Blanco prefer to avoid secondary effects
-62, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-62, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-63, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-63, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-63, Patient Gustavo Pineda Ornelas has been ingressed with a possible Alzheimer's Disease
-63, A bed has been assigned to patiend Gustavo Pineda Ornelas
-63, Cognitive Therapies applied, but the result was not effective for Alzheimer's Disease in Gustavo Pineda Ornelas
-63, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-63, Patient Francisco León Blanco prefer to avoid secondary effects
-64, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-64, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-64, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-64, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-64, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-65, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-65, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-65, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-65, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-65, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-65, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-65, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-65, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-66, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-66, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-66, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-66, Cognitive Therapies applied, but the result was not effective for Alzheimer's Disease in Gustavo Pineda Ornelas
-66, Patient Francisco León Blanco prefer to avoid secondary effects
-66, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-66, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-67, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-67, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-67, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-67, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-67, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-67, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-67, Cognitive Therapies applied, but the result was not effective for Alzheimer's Disease in Gustavo Pineda Ornelas
-67, Patient Francisco León Blanco prefer to avoid secondary effects
-68, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-68, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-68, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-68, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-68, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-68, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-69, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-69, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-69, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-69, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-69, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-69, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-69, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-69, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-70, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-70, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-70, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-70, Cognitive Therapies applied, but the result was not effective for Alzheimer's Disease in Gustavo Pineda Ornelas
-70, Patient Francisco León Blanco prefer to avoid secondary effects
-70, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-70, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-70, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-71, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-71, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-71, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-71, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-71, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-71, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-71, Patient Francisco León Blanco prefer to avoid secondary effects
-71, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-72, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-72, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-72, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-72, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-72, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-72, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-72, Patient Francisco León Blanco prefer to avoid secondary effects
-73, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-73, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-73, Applied Medications to Slow Progression successfully to reduce symptoms of Alzheimer's Disease in Gustavo Pineda Ornelas
-73, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-73, Applied Psychotherapy successfully to reduce symptoms of Alzheimer's Disease in Gustavo Pineda Ornelas
-73, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-73, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-74, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-74, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-74, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-74, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-74, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-74, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-75, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-75, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-75, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-75, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-75, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-75, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-75, Patient Francisco León Blanco prefer to avoid secondary effects
-76, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-76, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-76, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-76, Applied Medications to Slow Progression successfully to reduce symptoms of Alzheimer's Disease in Gustavo Pineda Ornelas
-76, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-76, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-76, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-76, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-76, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-76, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-76, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-76, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-77, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-77, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-77, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-77, Applied Medications to Slow Progression successfully to reduce symptoms of Alzheimer's Disease in Gustavo Pineda Ornelas
-77, Patient Francisco León Blanco prefer to avoid secondary effects
-77, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-77, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-77, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-78, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-78, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-78, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-78, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-78, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-78, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-78, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-78, Patient Francisco León Blanco prefer to avoid secondary effects
-79, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-79, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-79, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-79, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-79, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-79, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-79, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-79, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-79, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-79, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-79, Patient Francisco León Blanco prefer to avoid secondary effects
-80, Patient Emilia Mejía Blanco has been ingressed with a possible Alzheimer's Disease
-80, A bed has been assigned to patiend Emilia Mejía Blanco
-80, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-80, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-80, Applied Medications to Slow Progression successfully to reduce symptoms of Alzheimer's Disease in Gustavo Pineda Ornelas
-80, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-80, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-80, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-80, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-80, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-81, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-81, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-81, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-81, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-81, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-81, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-81, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-81, Patient Francisco León Blanco prefer to avoid secondary effects
-81, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-82, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-82, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-82, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-82, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-82, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-82, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-82, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-82, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-82, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-82, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-82, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-83, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-83, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-83, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-83, Applied Medications such as Antidepressants successfully to reduce symptoms of Alzheimer's Disease in Gustavo Pineda Ornelas
-83, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-83, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-83, Patient Emilia Mejía Blanco is looking up for alternative treatments 
-83, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-83, Patient Francisco León Blanco prefer to avoid secondary effects
-83, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-83, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-84, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-84, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-84, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-84, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-84, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-84, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-84, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-84, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-85, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-85, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-85, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-85, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-85, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-85, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-85, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-85, Patient Francisco León Blanco prefer to avoid secondary effects
-86, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-86, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-86, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-86, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-86, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-86, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-86, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-86, Patient Emilia Mejía Blanco will implement strategies to reduce impact on daily life 
-86, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-86, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-86, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-87, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-87, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-87, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-87, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-87, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-87, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-87, Patient Francisco León Blanco prefer to avoid secondary effects
-87, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-87, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-88, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-88, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-88, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-88, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-88, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-88, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-88, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-88, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-88, Patient Emilia Mejía Blanco is looking up for alternative treatments 
-88, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-88, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-88, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-88, Patient Francisco León Blanco prefer to avoid secondary effects
-88, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-88, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-89, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-89, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-89, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-89, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-89, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-89, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-89, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-89, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-89, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-89, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-89, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-89, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-90, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-90, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-90, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-90, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-90, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-90, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-90, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-90, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-90, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-90, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-90, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-91, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-91, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-91, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-91, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-91, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-91, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-91, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-91, Patient Emilia Mejía Blanco will implement strategies to reduce impact on daily life 
-91, Patient Francisco León Blanco prefer to avoid secondary effects
-91, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-91, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-91, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-92, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-92, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-92, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-92, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-92, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-92, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-92, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-92, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-92, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-92, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-92, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-92, Patient Francisco León Blanco prefer to avoid secondary effects
-92, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-93, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-93, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-93, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-93, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-93, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-93, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-93, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-93, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-93, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-93, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-93, Patient Francisco León Blanco prefer to avoid secondary effects
-94, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-94, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-94, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-94, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-94, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-94, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-94, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-94, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-94, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-94, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-94, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-95, Used Cognitive Behavioral Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-95, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-95, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-95, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-95, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-95, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-95, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-95, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-96, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-96, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-96, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-96, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-96, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-96, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-96, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-96, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-96, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-96, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-96, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-96, Patient Francisco León Blanco prefer to avoid secondary effects
-96, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-96, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-96, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-97, Used Cognitive Behavioral Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-97, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-97, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-97, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-97, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-97, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-97, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-97, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-97, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-97, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-97, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-98, Patient Sofía Hernández Sánchez has been ingressed with a possible Alzheimer's Disease
-98, A bed has been assigned to patiend Sofía Hernández Sánchez
-98, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-98, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-98, Used Surgery for Severe Cases to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-98, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-98, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-98, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-98, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-98, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-98, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-98, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-98, Patient Francisco León Blanco prefer to avoid secondary effects
-98, Used Cognitive Therapy to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-98, Patient Jorge Quintana Ponce is lookin up for another doctor opinion
-98, Patient Santiago Guerrero Valencia prefer to avoid secondary effects
-99, Used Cognitive Behavioral Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-99, Used Augmentative Communication Devices to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-99, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-99, Used Speech Therapy to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-99, Used Medications like Beta-Blockers to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-99, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-99, Used Medications to Manage Symptoms to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-99, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Fabián Durán Ramírez
-99, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Emilia Mejía Blanco
-99, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Jorge Quintana Ponce
-99, Used Cholinesterase Inhibitors to investigate new symptoms for Alzheimer's Disease in Gustavo Pineda Ornelas
-99, Patient Fabián Durán Ramírez is lookin up for another doctor opinion
-99, Patient Gustavo Pineda Ornelas prefer to avoid secondary effects
-99, Patient Francisco León Blanco prefer to avoid secondary effects
+16, Patient Federico Sepúlveda Blanco has been ingressed with a possible Alzheimer's Disease
+16, A bed has been assigned to patiend Federico Sepúlveda Blanco
+17, Patient Federico Sepúlveda Blanco is looking up for alternative treatments 
+20, Applied Assistive Devices like Walkers successfully to reduce symptoms of Alzheimer's Disease in Federico Sepúlveda Blanco
+22, Patient Federico Sepúlveda Blanco has been discharged
+23, Patient Marcos Figueroa Bautista has been ingressed with a possible Alzheimer's Disease
+23, A bed has been assigned to patiend Marcos Figueroa Bautista
+24, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
+25, Patient Marcos Figueroa Bautista will implement strategies to reduce impact on daily life 
+26, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
+28, Patient Marcos Figueroa Bautista will implement strategies to reduce impact on daily life 
+28, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
+29, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
+30, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Federico Sepúlveda Blanco
+30, Patient Marcos Figueroa Bautista is looking up for alternative treatments 
+30, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
+32, Patient Marcos Figueroa Bautista will implement strategies to reduce impact on daily life 
+33, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
+34, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
+35, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
+36, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
+36, Patient Marcos Figueroa Bautista has been discharged
+37, Patient Alicia Beltrán Paredes has been ingressed with a possible Alzheimer's Disease
+37, A bed has been assigned to patiend Alicia Beltrán Paredes
+38, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
+38, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
+39, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
+39, Patient Alicia Beltrán Paredes is looking up for alternative treatments 
+40, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
+40, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
+41, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
+43, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
+44, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
+45, Medications applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
+45, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
+47, Patient Patricia Fernández Ortiz has been ingressed with a possible Alzheimer's Disease
+47, A bed has been assigned to patiend Patricia Fernández Ortiz
+48, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
+48, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
+49, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+49, Medications to Manage Symptoms applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
+50, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
+50, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
+50, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+51, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
+51, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+52, Patient Alicia Beltrán Paredes has been discharged
+52, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
+52, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+54, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
+54, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
+55, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
+55, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+56, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
+57, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+57, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
+58, Medications applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
+59, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
+59, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
+60, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
+60, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+62, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
+62, Patient Patricia Fernández Ortiz has been discharged
+63, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+64, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
+65, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+66, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
+66, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+67, Patient Montserrat Delgado Chávez has been ingressed with a possible Alzheimer's Disease
+67, A bed has been assigned to patiend Montserrat Delgado Chávez
+67, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
+69, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
+69, Patient Montserrat Delgado Chávez has been discharged
+69, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+70, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+71, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+71, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+72, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+73, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+74, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+75, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+76, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+76, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+77, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+78, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+78, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+79, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+79, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+80, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+82, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+83, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+84, Patient Antonia Guerrero Arias has been ingressed with a possible Alzheimer's Disease
+84, A bed has been assigned to patiend Antonia Guerrero Arias
+84, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+84, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+85, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Antonia Guerrero Arias
+85, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+86, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+87, Patient Antonia Guerrero Arias prefer to avoid secondary effects
+87, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+87, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Antonia Guerrero Arias
+88, Patient Antonia Guerrero Arias prefer to avoid secondary effects
+88, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Antonia Guerrero Arias
+89, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+89, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Antonia Guerrero Arias
+90, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+91, Patient Agustín León Paredes has been ingressed with a possible Alzheimer's Disease
+91, A bed has been assigned to patiend Agustín León Paredes
+91, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Agustín León Paredes
+91, Patient Antonia Guerrero Arias prefer to avoid secondary effects
+92, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+92, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Antonia Guerrero Arias
+92, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Agustín León Paredes
+93, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+93, Patient Agustín León Paredes will implement strategies to reduce impact on daily life 
+94, Patient Antonia Guerrero Arias prefer to avoid secondary effects
+94, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+95, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Antonia Guerrero Arias
+95, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+95, Applied Assistive Devices like Walkers successfully to reduce symptoms of Alzheimer's Disease in Antonia Guerrero Arias
+95, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Agustín León Paredes
+95, Patient Antonia Guerrero Arias prefer to avoid secondary effects
+96, Patient Antonia Guerrero Arias prefer to avoid secondary effects
+97, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Antonia Guerrero Arias
+97, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+98, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Antonia Guerrero Arias
+98, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
+98, Patient Antonia Guerrero Arias has been discharged
+98, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Agustín León Paredes
+98, Patient Antonia Guerrero Arias prefer to avoid secondary effects
+98, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
+99, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Antonia Guerrero Arias
+99, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Agustín León Paredes

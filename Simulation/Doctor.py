@@ -110,6 +110,8 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
             # Obtener los síntomas relacionados con la enfermedad
             if symptoms:
                 related_symptoms = [symptom for symptom in symptoms if symptom.name in disease.symptom]
+                if len(related_symptoms) == 0 and len(symptoms) != 0:
+                    related_symptoms = symptoms
                 for symptom in related_symptoms:
                     # Verificar procedimientos disponibles para el síntoma
                     available_procedures = [proc for proc in procedures if ((proc.name.lower() in [s.lower() for s in symptom.treatments]) and (proc.availability))] #!!!!!CHECK
@@ -137,7 +139,10 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
 
     # Execute each intention
     for intention in intentions:
-        if "Investigate symptoms" in intention[0]:
+        if "can be discharged" in intention[0]:
+            results.append((env.now,f"Patient {patient.name} has been discharged"))
+
+        elif "Investigate symptoms" in intention[0]:
             disease = ' '.join(intention[0].split()[-2:] ) # Extract disease name from intention
             for procedure in procedures: 
                 if procedure.purpose == 'treatment': #!AQUI VA DIAGNOSIS
@@ -156,34 +161,37 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
             # Encontrar un procedimiento coincidente para esta enfermedad
             #! Aqui el A_Star
             for procedure in procedures:
-             if len(intention[1]):
-                disease_symptoms=intention[1]
-                if procedure.name.lower() in (t.lower() for t in disease_symptoms[0].treatments) and procedure.availability:
-                    # Reducir la severidad solo si el resultado del procedimiento es bueno
-                    if procedure.result == "good":
-                        result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
-                        results.append((env.now,result))
-                        # Reducir la severidad del síntoma
-                        print()
-                        print(f"patient.symptoms antes: {patient.symptoms}")
-                        patient.symptoms = [symptom for symptom in patient.symptoms if symptom.name != disease_symptoms[0].name]
-                        cured_symptom=disease_symptoms[0].name
-                        disease_symptoms = [symptom for symptom in disease_symptoms if symptom.name != cured_symptom]
-                        print(f"patient.symptoms despues: {patient.symptoms}")
-                        d = take_disease(disease, beliefs)
-                        print(patient.name)
-                        print(f"patient.disease_progress = {patient.disease_progress}")
-                        print(f"d.progress = {d.progress}")
-                        print(f"(len(patient.symptoms) + 1) = {(len(patient.symptoms) + 1)}")
-                        print()
-                        d.progress -= d.progress / (len(patient.symptoms) + 1) #!Parche 
-                        patient.disease_progress = d.progress
-                        desires[d]["reduce_symptoms"] = False
-                        yield env.timeout(10)
-                    else:
-                        result = f"{procedure.name} applied, but the result was not effective for {disease} in {patient.name}"
-                        results.append((env.now,result))
-                        yield env.timeout(10)
+                if len(intention[1]):
+                    disease_symptoms=intention[1]
+                    if procedure.name.lower() in (t.lower() for t in disease_symptoms[0].treatments) and procedure.availability:
+                        # Reducir la severidad solo si el resultado del procedimiento es bueno
+                        if procedure.result == "good":
+                            result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
+                            results.append((env.now,result))
+                            # Reducir la severidad del síntoma
+                            print()
+                            print(f"patient.symptoms antes: {patient.symptoms}")
+                            if len(patient.symptoms) == 1:
+                                patient.symptoms = []
+                            else:
+                                patient.symptoms = [symptom for symptom in patient.symptoms if symptom.name != disease_symptoms[0].name]
+                                cured_symptom=disease_symptoms[0].name
+                                disease_symptoms = [symptom for symptom in disease_symptoms if symptom.name != cured_symptom]
+                            print(f"patient.symptoms despues: {patient.symptoms}")
+                            d = take_disease(disease, beliefs)
+                            print(patient.name)
+                            print(f"patient.disease_progress = {patient.disease_progress}")
+                            print(f"d.progress = {d.progress}")
+                            print(f"(len(patient.symptoms) + 1) = {(len(patient.symptoms) + 1)}")
+                            print()
+                            d.progress -= d.progress / (len(patient.symptoms) + 1) #!Parche 
+                            patient.disease_progress = d.progress
+                            desires[d]["reduce_symptoms"] = False
+                            yield env.timeout(10)
+                        else:
+                            result = f"{procedure.name} applied, but the result was not effective for {disease} in {patient.name}"
+                            results.append((env.now,result))
+                            yield env.timeout(10)
 
         elif "prevent progression" in intention[0]:
             disease = ' '.join(intention[0].split()[-2:] ) # Extract disease name from intention
@@ -193,9 +201,6 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
             desires[d]["prevent progression"] =  False
             # Reducir la progresión de la enfermedad
             yield env.timeout(10)
-            
-        elif "can be discharged" in intention[0]:
-            results.append((env.now,f"Patient {patient.name} has been discharged"))
 
     
 def take_disease(disease, beliefs):
