@@ -124,8 +124,8 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
                         desires_dict[disease]["reduce_symptoms"] = (True,related_symptoms)
                 if not related_symptoms:   
                     desires_dict[disease]["investigate_symptoms"] = True
-
-            desires_dict[disease]["discharge_patient"] = True
+            else:
+                desires_dict[disease]["discharge_patient"] = True
         else:
             # Si la creencia es débil, centrarse en la prevención
             desires_dict[disease] = {
@@ -161,23 +161,22 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
             # Encontrar un procedimiento coincidente para esta enfermedad
             #! Aqui el A_Star
             for procedure in procedures:
-                if len(intention[1]):
-                    if procedure.name.lower() in (t.lower() for t in intention[1][0].treatments) and procedure.availability:
-                        # Reducir la severidad solo si el resultado del procedimiento es bueno
-                        if procedure.result == "good":
-                            result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
-                            results.append((env.now,result))
-                            # Reducir la severidad del síntoma
-                            patient.symptoms= [symptom for symptom in intention[1] if symptom.name != intention[1][0].name]
-                            d = take_disease(disease, beliefs)
-                            d.progress-= d.progress/len(patient.symptoms)#!Parche 
-                            patient.disease_progress = d.progress
-                            desires[d]["reduce_symptoms"] =  False
-                            yield env.timeout(10)
-                        else:
-                            result = f"{procedure.name} applied, but the result was not effective for {disease} in {patient.name}"
-                            results.append((env.now,result))
-                            yield env.timeout(10)
+             if len(intention[1]):
+                if procedure.name.lower() in (t.lower() for t in intention[1][0].treatments) and procedure.availability:
+                    # Reducir la severidad solo si el resultado del procedimiento es bueno
+                    if procedure.result == "good":
+                        result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
+                        results.append((env.now,result))
+                        # Reducir la severidad del síntoma
+                        patient.symptoms= [symptom for symptom in intention[1] if symptom.name != intention[1][0].name]
+                        d = take_disease(disease, beliefs)
+                        d.progress-= d.progress/len(patient.symptoms)#!Parche 
+                        desires[d]["reduce_symptoms"] =  False
+                        yield env.timeout(10)
+                    else:
+                        result = f"{procedure.name} applied, but the result was not effective for {disease} in {patient.name}"
+                        results.append((env.now,result))
+                        yield env.timeout(10)
 
         elif "prevent progression" in intention[0]:
             disease = ' '.join(intention[0].split()[-2:] ) # Extract disease name from intention
