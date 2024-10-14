@@ -99,16 +99,16 @@ def patient_generator(env, model, hospital):
 
 def apply_A_Star(patient, goal):
     # Initialize the AStar object with the possible procedures and medications
-    astar = A_Star.AStar(possible_medications= [])
+    astar = A_Star.AStar()
     initial_state = A_Star.State(
     medications=[],  
     procedures=[],  
     symptoms=[Support.Symptom(s, "severe") for s in patient.symptoms.name],
-    progress=Support.Progress(30),  # The patient starts with 30% progress
+    progress=Support.Progress(patient.disease_progress),  # The patient starts with 30% progress
     general_state=Support.StateGeneral(patient.energy_level, patient.pain_level, immune_status="weak")
     )
     solution = astar.a_star(initial_state, goal)
-    if solution :return solution.procedures
+    if solution :return solution.medications.extend(solution.procedures)
     return []
     
     return hospital

@@ -16,7 +16,7 @@ class Hospital:
         return patient
         
 class Procedure:
-    def __init__(self, name, utilities, function, result, purpose ):
+    def __init__(self, name, utilities, function, result, purpose, revealed_symptoms=[] ):
         self.name = name
         self.utilities = utilities
         self.function = function
@@ -25,6 +25,7 @@ class Procedure:
         self.price = 20
         self.uses = 0
         self.purpose=purpose
+        self.revealed_symptoms = revealed_symptoms
         
     def __hash__(self):
         return hash((self.name))
