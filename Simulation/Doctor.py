@@ -75,7 +75,12 @@ def filter(beliefs, desires, patient, priority_threshold=40, progression_thresho
     for disease, desire_actions in desires.items():
         prob = beliefs[disease]  # Accede a la probabilidad de la enfermedad
         progression = disease.progress  # Accede al progreso de la enfermedad
-
+        
+         # Verificar si hay que reducir síntomas o prevenir progresión
+        if desire_actions['reduce_symptoms'][0]==True:
+            intentions.append((f"Apply treatments to reduce symptoms of {disease.name}", desire_actions['reduce_symptoms'][1]))
+            return intentions
+        
         # Priorizar acciones basadas en probabilidad o progreso de la enfermedad
         if prob < priority_threshold or progression < progression_threshold:
             # Verificar si hay que investigar síntomas
@@ -84,21 +89,11 @@ def filter(beliefs, desires, patient, priority_threshold=40, progression_thresho
                 return intentions
 
 
-            # Verificar si hay que reducir síntomas o prevenir progresión
-            
-        if desire_actions['reduce_symptoms'][0]==True:
-            intentions.append((f"Apply treatments to reduce symptoms of {disease.name}", desire_actions['reduce_symptoms'][1]))
-            return intentions
-
         if desire_actions.get("prevent_progression", False):
             intentions.append((f"Implement strategies to prevent progression of {disease.name}",''))
             return intentions
 
-        
-    if count == len(beliefs):
-        intentions.append((f'Patient {patient.name} can be discharged',''))
-    
-    # Return the list of filtered intentions
+# Return the list of filtered intentions
     return intentions
 
 
@@ -168,7 +163,7 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
                         result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
                         results.append((env.now,result))
                         # Reducir la severidad del síntoma
-                        patient.symptoms= [symptom for symptom in intention[1] if symptom.name != intention[1][0].name]
+                        patient.symptoms= [symptom for symptom in patient.symptoms if symptom.name != intention[1][0].name]
                         d = take_disease(disease, beliefs)
                         d.progress-= d.progress/(len(patient.symptoms) +1)#!Parche 
                         desires[d]["reduce_symptoms"] =  False
