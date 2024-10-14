@@ -28,6 +28,10 @@ prediction = model.predict_disease(patient_symptoms)
 #! ["Brain Cancer", "Encephalitis", "Epilepsy", "Multiple Sclerosis", "Prion Diseases",
 #!                 "Spinal Muscular Atrophy", "Parkinson's Disease", "Lewy Body Dementia", 
 #!                 "Huntington's Disease", "Friedreich's Ataxia", "Amyotrophic Lateral Sclerosis", "Alzheimer's Disease"]
+#!
+#! ["Memory Loss", "Muscle Weakness", "Involuntary Movements", "Tremor", "Difficulty Speaking", 
+#!                  "Fatigue", "Visual Hallucinations", "Cognitive Decline", "Difficulty Walking", 
+#!                  "Numbness or Tingling", "Bradykinesia", "Mood Changes", "Seizures", "Heart Problems"]
 
 # Generar el array de enfermedades activas
 active_diseaes = [[clave for clave, valor in prediction.items() if valor > 0]]

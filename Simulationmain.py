@@ -53,6 +53,11 @@ def patients(env, hospital, id, patient):
     patient.set_disease_progress(beliefs['disease_progress'])
 
     while env.now < 100:
+        print()
+        print("BDI patient")
+        print(patient.name)
+        print(patient.disease_progress)
+        print()
         Patient.brf(perception, beliefs, patient)
         Patient.generate_option(beliefs, desires)
         Patient.filter(beliefs, desires)
@@ -138,7 +143,7 @@ def run_simulation(progress_disease_level=10):
 
     
 
-    env.run(until=40)
+    env.run(until=100)
     Tools.save_log(results)
 
 run_simulation()
