@@ -163,10 +163,20 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
                         result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
                         results.append((env.now,result))
                         # Reducir la severidad del síntoma
-                        patient.symptoms= [symptom for symptom in patient.symptoms if symptom.name != intention[1][0].name]
+                        print()
+                        print(f"patient.symptoms antes: {patient.symptoms}")
+                        patient.symptoms = [symptom for symptom in patient.symptoms if symptom.name != intention[1][0].name]
+                        intention[1] = patient.symptoms
+                        print(f"patient.symptoms despues: {patient.symptoms}")
                         d = take_disease(disease, beliefs)
-                        d.progress-= d.progress/(len(patient.symptoms) +1)#!Parche 
-                        desires[d]["reduce_symptoms"] =  False
+                        print(patient.name)
+                        print(f"patient.disease_progress = {patient.disease_progress}")
+                        print(f"d.progress = {d.progress}")
+                        print(f"(len(patient.symptoms) + 1) = {(len(patient.symptoms) + 1)}")
+                        print()
+                        d.progress -= d.progress / (len(patient.symptoms) + 1) #!Parche 
+                        patient.disease_progress = d.progress
+                        desires[d]["reduce_symptoms"] = False
                         yield env.timeout(10)
                     else:
                         result = f"{procedure.name} applied, but the result was not effective for {disease} in {patient.name}"

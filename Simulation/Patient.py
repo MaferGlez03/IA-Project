@@ -1,9 +1,9 @@
 from Simulation.Hospital import Hospital 
 import random
 
-def beliefs():
+def beliefs(patient):
     return {
-        'disease_progress': 50,  # 1-100
+        'disease_progress': patient.disease_progress,  # 1-100
         'confidence_treatment': random.randint(3, 7), # all values 1-10
         'welfare_feeling': random.randint(3, 7), 
         'family_history': random.randint(3, 7), 
@@ -24,7 +24,7 @@ def desires():
         'want_left': False
     }
 
-def brf(perception, beliefs):
+def brf(perception, beliefs, patient):
     """
     Belief-Revision Function (BRF) actualiza las creencias del agente con base en 
     la percepción del entorno y el estado actual del hospital.
@@ -42,7 +42,7 @@ def brf(perception, beliefs):
 
     # Actualizar progresión de la enfermedad basada en síntomas y procedimientos
     if 'disease_progress' in perception:
-        beliefs['disease_progress'] = perception['disease_progress']
+        beliefs['disease_progress'] = patient.disease_progress
 
     # Actualizar la confianza en el tratamiento según los procedimientos realizados
     if 'confidence_treatment' in perception:
@@ -64,7 +64,7 @@ def generate_option(beliefs, desires):
     if not beliefs['has_bed']:
         desires['want_bed'] = True
 
-    elif beliefs['patient'] >= 10:
+    elif beliefs['patient'] >= 10 or beliefs['disease_progress'] < 15:
         desires['want_left'] = True
         
     elif beliefs['disease_progress'] > 50:

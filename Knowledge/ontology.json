@@ -251,6 +251,7 @@
         "name": "Alzheimer's Disease",
         "description": "A progressive neurodegenerative disorder that causes memory loss, cognitive decline, and changes in behavior.",
         "symptoms": [
+        "Tremor",
         "Memory Loss",
         "Cognitive Decline",
         "Mood Changes",
@@ -278,6 +279,7 @@
         "name": "Amyotrophic Lateral Sclerosis (ALS)",
         "description": "A progressive neurodegenerative disease that affects motor neurons, leading to muscle weakness and atrophy.",
         "symptoms": [
+        "Tremor",
         "Muscle Weakness",
         "Muscle Twitching",
         "Difficulty Speaking",
@@ -305,6 +307,7 @@
         "name": "Friedreich's Ataxia",
         "description": "A hereditary degenerative disease that affects the spinal cord and peripheral nerves, leading to loss of coordination.",
         "symptoms": [
+        "Tremor",
         "Loss of Coordination",
         "Difficulty Walking",
         "Speech Problems",
@@ -330,6 +333,7 @@
         "name": "Huntington's Disease",
         "description": "An inherited disorder that causes progressive degeneration of nerve cells in the brain, leading to movement, cognitive, and psychiatric disorders.",
         "symptoms": [
+        "Tremor",
         "Involuntary Movements",
         "Cognitive Decline",
         "Mood Changes",
@@ -354,6 +358,7 @@
         "name": "Lewy Body Dementia",
         "description": "A type of progressive dementia characterized by the presence of Lewy bodies in the brain, leading to cognitive decline and visual hallucinations.",
         "symptoms": [
+        "Tremor",
         "Visual Hallucinations",
         "Fluctuating Cognition",
         "Parkinsonism",
@@ -405,6 +410,7 @@
         "name": "Spinal Muscular Atrophy (SMA)",
         "description": "A genetic disorder characterized by weakness and wasting in the voluntary muscles due to the degeneration of motor neurons.",
         "symptoms": [
+        "Tremor",
         "Muscle Weakness",
         "Difficulty Breathing",
         "Difficulty Swallowing",
@@ -429,6 +435,7 @@
         "name": "Prion Diseases",
         "description": "A group of neurodegenerative disorders caused by prions, leading to rapid cognitive decline and movement disorders.",
         "symptoms": [
+        "Tremor",
         "Rapid Cognitive Decline",
         "Myoclonus",
         "Visual Disturbances",
@@ -452,6 +459,7 @@
         "name": "Multiple Sclerosis (MS)",
         "description": "A chronic disease that affects the central nervous system, leading to a wide range of symptoms including fatigue and cognitive changes.",
         "symptoms": [
+        "Tremor",   
         "Fatigue",
         "Vision Problems",
         "Numbness or Tingling",
@@ -478,6 +486,7 @@
         "name": "Epilepsy",
         "description": "A neurological disorder marked by recurrent seizures due to abnormal brain activity.",
         "symptoms": [
+        "Tremor",
         "Seizures",
         "Temporary Confusion",
         "Fear or Anxiety",
@@ -503,6 +512,7 @@
         "name": "Encephalitis",
         "description": "An inflammation of the brain often caused by viral infections, leading to various neurological symptoms.",
         "symptoms": [
+        "Tremor",
         "Fever",
         "Headache",
         "Confusion",
@@ -527,6 +537,7 @@
         "name": "Brain Cancer",
         "description": "The presence of tumors in the brain, which can lead to various neurological symptoms depending on their location.",
         "symptoms": [
+        "Tremor",
         "Headaches",
         "Seizures",
         "Cognitive Changes",
