@@ -15,7 +15,7 @@ def doctor(env, procedures, model, hospital, id, disease_level=0):
         if not hospital.patients:
             yield env.timeout(5)
             continue
-        print(f"START {id}")
+        print(f"New patient Doctor {id}")
         patient = hospital.take_patient()
 
         while patient.disease_progress >= disease_level: 
@@ -29,41 +29,38 @@ def doctor(env, procedures, model, hospital, id, disease_level=0):
             intentions = Doctor.filter(beliefs, desires, patient)
 
             if not intentions:
-                print(f"End action doc {id}")
+                print(f"Not intentions Doctor {id}")
                 yield env.timeout(10)
-                continue
-            if "dispatched".capitalize in intentions: # Modificar para que en algun momento termine con el paciente
-                print("Next Patient")
-            if "End patient" in intentions: # Modificar para que en algun momento termine con el paciente
-                print(f"Next Patient {id}")
-                yield env.timeout(random.randint(1, 3))
-                break
+                continue            
 
             env.process(Doctor.execute_action(intentions, patient, procedures,results,env, desires, beliefs))
-            print(f"End action doc {id}")
+            
+            if "can be discharged" in " ".join([intention[0] for intention in intentions]): # Modificar para que en algun momento termine con el paciente
+                print(f"Next Patient Doctor {id}")
+                yield env.timeout(random.randint(1, 3))
+                break
+            
             yield env.timeout(random.randint(1, 3))
-        
-        print(f"Next Patient {id}")
 
 def patients(env, hospital, id, patient):
     perception = {
         
     }
 
-    beliefs = Patient.beliefs()
+    beliefs = Patient.beliefs(patient)
     desires = Patient.desires()
 
     patient.set_disease_progress(beliefs['disease_progress'])
 
     while env.now < 100:
-        Patient.brf(perception, beliefs)
+        Patient.brf(perception, beliefs, patient)
         Patient.generate_option(beliefs, desires)
         Patient.filter(beliefs, desires)
 
         
         env.process(Patient.execute_action(hospital, beliefs, desires, perception, results, env, patient))
-        if beliefs['has_left']: return
         yield env.timeout(random.randint(1, 3))
+        if beliefs['has_left']: return
     
     
 def patient_generator(env, model, hospital):
