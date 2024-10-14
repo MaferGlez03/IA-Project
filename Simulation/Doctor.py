@@ -157,7 +157,8 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
             #! Aqui el A_Star
             for procedure in procedures:
              if len(intention[1]):
-                if procedure.name.lower() in (t.lower() for t in intention[1][0].treatments) and procedure.availability:
+                disease_symptoms=intention[1]
+                if procedure.name.lower() in (t.lower() for t in disease_symptoms[0].treatments) and procedure.availability:
                     # Reducir la severidad solo si el resultado del procedimiento es bueno
                     if procedure.result == "good":
                         result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
@@ -165,8 +166,9 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
                         # Reducir la severidad del síntoma
                         print()
                         print(f"patient.symptoms antes: {patient.symptoms}")
-                        patient.symptoms = [symptom for symptom in patient.symptoms if symptom.name != intention[1][0].name]
-                        intention[1] = patient.symptoms
+                        patient.symptoms = [symptom for symptom in patient.symptoms if symptom.name != disease_symptoms[0].name]
+                        cured_symptom=disease_symptoms[0].name
+                        disease_symptoms = [symptom for symptom in disease_symptoms if symptom.name != cured_symptom]
                         print(f"patient.symptoms despues: {patient.symptoms}")
                         d = take_disease(disease, beliefs)
                         print(patient.name)
