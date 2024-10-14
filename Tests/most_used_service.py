@@ -1,8 +1,9 @@
-from Simulationmain import create_procedures, run_simulation
+# import Simulationmain
+from Simulation import Procedures
 import matplotlib.pyplot as plt
 
 def create_dict_procedures():
-    procedures = create_procedures()
+    procedures = Procedures.create_procedures()
     return {p.name: [0, 0] for p in procedures}
 
 def procedure_most_used(hospital):
@@ -16,12 +17,13 @@ def procedure_most_used(hospital):
 
     return procedures_dict
 
-def test_procedures():
+def test_procedures(func):
     test_dict = {}
     for i in range(5, 101, 5):
         general_dict = create_dict_procedures()
-        for j in range(100):
-            hospital = run_simulation(i)
+        for j in range(10):
+            print(f"Simulate trehshold = {i}")
+            hospital = func(i)
             procedure_dict = procedure_most_used(hospital)
             # Combinar ambos diccionarios sumando los valores
             for key in general_dict:

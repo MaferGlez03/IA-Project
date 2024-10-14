@@ -29,6 +29,9 @@ def brf(perception, beliefs, patient):
     Belief-Revision Function (BRF) actualiza las creencias del agente con base en 
     la percepción del entorno y el estado actual del hospital.
     """
+    # Actualizar progresión de la enfermedad basada en síntomas y procedimientos
+    beliefs['disease_progress'] = patient.disease_progress
+
     # Revisar si se canso de esperar
     if 'has_left' in perception:
         beliefs['has_left'] = True
@@ -39,10 +42,6 @@ def brf(perception, beliefs, patient):
     # Revisar la disponibilidad de cama en el hospital
     if 'patient' in perception:
         beliefs['patient'] = perception['patient']
-
-    # Actualizar progresión de la enfermedad basada en síntomas y procedimientos
-    if 'disease_progress' in perception:
-        beliefs['disease_progress'] = patient.disease_progress
 
     # Actualizar la confianza en el tratamiento según los procedimientos realizados
     if 'confidence_treatment' in perception:
@@ -60,14 +59,14 @@ def brf(perception, beliefs, patient):
     if 'knowledge_disease' in perception:
         beliefs['knowledge_disease'] = perception['knowledge_disease']
 
-def generate_option(beliefs, desires):
+def generate_option(beliefs, desires, threshold):
     if not beliefs['has_bed']:
         desires['want_bed'] = True
 
-    elif beliefs['patient'] >= 10 or beliefs['disease_progress'] < 15:
+    elif beliefs['patient'] >= 10 or beliefs['disease_progress'] < threshold:
         desires['want_left'] = True
         
-    elif beliefs['disease_progress'] > 50:
+    elif beliefs['disease_progress'] > 40:
         desires['improve_quality_life'] = True
 
     elif beliefs['confidence_treatment'] < 5:
@@ -93,7 +92,7 @@ def filter(beliefs, desires):
         desires['want_bed'] = False
 
     # Si la progresión de la enfermedad es avanzada, desea mejorar la calidad de vida
-    if beliefs['disease_progress'] > 70:
+    if beliefs['disease_progress'] > 40:
         desires['improve_quality_life'] = True
     else:
         desires['improve_quality_life'] = False
@@ -127,7 +126,6 @@ def execute_action(hospital, beliefs, desires, perception, results, env, patient
     Ejecuta las acciones de acuerdo con las intenciones formadas.
     """
     if desires['want_left']:
-        print("Se canso de esperar")
         perception['has_left'] = True
         yield env.timeout(2)
         return
@@ -140,14 +138,12 @@ def execute_action(hospital, beliefs, desires, perception, results, env, patient
     elif desires['want_bed']:
         # Buscar cama disponible en el hospital
         if hospital.availability:
-            print("Asignando cama al paciente...")
             results.append((env.now,f"A bed has been assigned to patiend {patient.name}"))
             perception['has_bed'] = True
             hospital.availability -= 1
             yield env.timeout(2)
             return
         else:
-            print("No hay camas disponibles en este momento.")
             results.append((env.now,f"Hospital is full. There is no bed availabilty for {patient.name}"))
             perception['patient'] = beliefs['patient'] + 1
             yield env.timeout(5)
@@ -156,7 +152,6 @@ def execute_action(hospital, beliefs, desires, perception, results, env, patient
         # Ejecutar procedimientos para mejorar la calidad de vida
         for procedure in hospital.procedures:
             if procedure.function == "improve quality life" and procedure.availability:
-                print(f"Aplicando procedimiento: {procedure.name}")
                 results.append((env.now,f"Apply procedure: {procedure.name} to patient {patient.name}"))
                 perception['welfare_feeling'] = beliefs['welfare_feeling'] + 1
                 yield env.timeout(2)
@@ -164,7 +159,6 @@ def execute_action(hospital, beliefs, desires, perception, results, env, patient
 
     if desires['seek_second_opinions']:
         # Consultar con otro doctor
-        print("Buscando una segunda opinión médica...")
         results.append((env.now,f"Patient {patient.name} is lookin up for another doctor opinion"))
         perception['confidence_treatment'] = beliefs['confidence_treatment'] - 1
         perception['knowledge_disease'] = beliefs['knowledge_disease'] + 1
@@ -173,7 +167,6 @@ def execute_action(hospital, beliefs, desires, perception, results, env, patient
 
     if desires['avoid_side_effects']:
         # Evitar tratamientos agresivos
-        print("Evitando tratamientos con altos efectos secundarios...")
         results.append((env.now,f"Patient {patient.name} prefer to avoid secondary effects"))
         perception['welfare_feeling'] = beliefs['welfare_feeling'] - 1
         yield env.timeout(2)
@@ -181,7 +174,6 @@ def execute_action(hospital, beliefs, desires, perception, results, env, patient
 
     if desires['reduce_impact_daily_life']:
         # Aplicar estrategias para reducir el impacto de la enfermedad en la vida diaria
-        print("Implementando estrategias para reducir el impacto en la vida diaria...")
         results.append((env.now,f"Patient {patient.name} will implement strategies to reduce impact on daily life "))
         perception['family_history'] = beliefs['family_history'] - 1
         yield env.timeout(2)
@@ -189,7 +181,6 @@ def execute_action(hospital, beliefs, desires, perception, results, env, patient
 
     if desires['explore_alternative_treatments']:
         # Explorar tratamientos alternativos
-        print("Explorando tratamientos alternativos...")
         results.append((env.now,f"Patient {patient.name} is looking up for alternative treatments "))
         perception['knowledge_disease'] = beliefs['knowledge_disease'] - 1
         perception['confidence_treatment'] = beliefs['confidence_treatment'] + 1

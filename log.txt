@@ -1,134 +1,661 @@
 0, Hospital is open
-16, Patient Federico Sepúlveda Blanco has been ingressed with a possible Alzheimer's Disease
-16, A bed has been assigned to patiend Federico Sepúlveda Blanco
-17, Patient Federico Sepúlveda Blanco is looking up for alternative treatments 
-20, Applied Assistive Devices like Walkers successfully to reduce symptoms of Alzheimer's Disease in Federico Sepúlveda Blanco
-22, Patient Federico Sepúlveda Blanco has been discharged
-23, Patient Marcos Figueroa Bautista has been ingressed with a possible Alzheimer's Disease
-23, A bed has been assigned to patiend Marcos Figueroa Bautista
-24, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
-25, Patient Marcos Figueroa Bautista will implement strategies to reduce impact on daily life 
-26, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
-28, Patient Marcos Figueroa Bautista will implement strategies to reduce impact on daily life 
-28, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
-29, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
-30, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Federico Sepúlveda Blanco
-30, Patient Marcos Figueroa Bautista is looking up for alternative treatments 
-30, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
-32, Patient Marcos Figueroa Bautista will implement strategies to reduce impact on daily life 
-33, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
-34, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
-35, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
-36, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
-36, Patient Marcos Figueroa Bautista has been discharged
-37, Patient Alicia Beltrán Paredes has been ingressed with a possible Alzheimer's Disease
-37, A bed has been assigned to patiend Alicia Beltrán Paredes
-38, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
-38, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
-39, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
-39, Patient Alicia Beltrán Paredes is looking up for alternative treatments 
-40, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
-40, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
-41, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
-43, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Marcos Figueroa Bautista
-44, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
-45, Medications applied, but the result was not effective for Alzheimer's Disease in Marcos Figueroa Bautista
-45, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
-47, Patient Patricia Fernández Ortiz has been ingressed with a possible Alzheimer's Disease
-47, A bed has been assigned to patiend Patricia Fernández Ortiz
-48, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
-48, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
-49, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-49, Medications to Manage Symptoms applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
-50, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
-50, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
-50, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-51, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
-51, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-52, Patient Alicia Beltrán Paredes has been discharged
-52, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
-52, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-54, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
-54, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
-55, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
-55, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-56, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
-57, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-57, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
-58, Medications applied, but the result was not effective for Alzheimer's Disease in Alicia Beltrán Paredes
-59, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Alicia Beltrán Paredes
-59, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Patricia Fernández Ortiz
-60, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
-60, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-62, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
-62, Patient Patricia Fernández Ortiz has been discharged
-63, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-64, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
-65, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-66, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
-66, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-67, Patient Montserrat Delgado Chávez has been ingressed with a possible Alzheimer's Disease
-67, A bed has been assigned to patiend Montserrat Delgado Chávez
-67, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
-69, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Patricia Fernández Ortiz
-69, Patient Montserrat Delgado Chávez has been discharged
-69, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-70, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-71, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-71, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-72, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-73, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-74, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-75, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-76, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-76, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-77, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-78, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-78, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-79, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-79, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-80, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-82, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-83, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-84, Patient Antonia Guerrero Arias has been ingressed with a possible Alzheimer's Disease
-84, A bed has been assigned to patiend Antonia Guerrero Arias
-84, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-84, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-85, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Antonia Guerrero Arias
-85, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-86, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-87, Patient Antonia Guerrero Arias prefer to avoid secondary effects
-87, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-87, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Antonia Guerrero Arias
-88, Patient Antonia Guerrero Arias prefer to avoid secondary effects
-88, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Antonia Guerrero Arias
-89, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-89, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Antonia Guerrero Arias
-90, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-91, Patient Agustín León Paredes has been ingressed with a possible Alzheimer's Disease
-91, A bed has been assigned to patiend Agustín León Paredes
-91, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Agustín León Paredes
-91, Patient Antonia Guerrero Arias prefer to avoid secondary effects
-92, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-92, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Antonia Guerrero Arias
-92, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Agustín León Paredes
-93, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-93, Patient Agustín León Paredes will implement strategies to reduce impact on daily life 
-94, Patient Antonia Guerrero Arias prefer to avoid secondary effects
-94, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-95, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Antonia Guerrero Arias
-95, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-95, Applied Assistive Devices like Walkers successfully to reduce symptoms of Alzheimer's Disease in Antonia Guerrero Arias
-95, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Agustín León Paredes
-95, Patient Antonia Guerrero Arias prefer to avoid secondary effects
-96, Patient Antonia Guerrero Arias prefer to avoid secondary effects
-97, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Antonia Guerrero Arias
-97, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-98, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Antonia Guerrero Arias
-98, Patient Montserrat Delgado Chávez is lookin up for another doctor opinion
-98, Patient Antonia Guerrero Arias has been discharged
-98, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Agustín León Paredes
-98, Patient Antonia Guerrero Arias prefer to avoid secondary effects
-98, Patient Patricia Fernández Ortiz prefer to avoid secondary effects
-99, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Antonia Guerrero Arias
-99, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Agustín León Paredes
+8, Patient Marta Barrios Cabrera has been ingressed with a possible Alzheimer's Disease
+8, A bed has been assigned to patiend Marta Barrios Cabrera
+10, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Marta Barrios Cabrera
+10, Patient Marta Barrios Cabrera is lookin up for another doctor opinion
+12, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Marta Barrios Cabrera
+13, Patient Marta Barrios Cabrera is lookin up for another doctor opinion
+15, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Marta Barrios Cabrera
+15, Patient Marta Barrios Cabrera is lookin up for another doctor opinion
+17, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Marta Barrios Cabrera
+17, Patient Marta Barrios Cabrera is lookin up for another doctor opinion
+18, Patient Marta Barrios Cabrera is lookin up for another doctor opinion
+19, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Marta Barrios Cabrera
+19, Patient Marta Barrios Cabrera is lookin up for another doctor opinion
+20, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Marta Barrios Cabrera
+22, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Marta Barrios Cabrera
+25, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Marta Barrios Cabrera
+27, Patient Jaime Muñoz Ramírez has been ingressed with a possible Alzheimer's Disease
+27, A bed has been assigned to patiend Jaime Muñoz Ramírez
+27, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Marta Barrios Cabrera
+27, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jaime Muñoz Ramírez
+29, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Marta Barrios Cabrera
+30, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jaime Muñoz Ramírez
+31, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jaime Muñoz Ramírez
+33, Patient Manuel Ponce Galindo has been ingressed with a possible Alzheimer's Disease
+33, A bed has been assigned to patiend Manuel Ponce Galindo
+34, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jaime Muñoz Ramírez
+35, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Manuel Ponce Galindo
+35, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jaime Muñoz Ramírez
+36, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jaime Muñoz Ramírez
+37, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jaime Muñoz Ramírez
+40, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jaime Muñoz Ramírez
+40, Patient Ezequiel Mansilla Ruiz has been ingressed with a possible Alzheimer's Disease
+40, A bed has been assigned to patiend Ezequiel Mansilla Ruiz
+40, Medications to Manage Symptoms applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+41, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jaime Muñoz Ramírez
+43, Medications to Manage Symptoms applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+44, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jaime Muñoz Ramírez
+45, Medications applied, but the result was not effective for Alzheimer's Disease in Manuel Ponce Galindo
+45, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jaime Muñoz Ramírez
+45, Medications to Manage Symptoms applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+46, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Jaime Muñoz Ramírez
+46, Medications to Manage Symptoms applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+49, Medications to Manage Symptoms applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+50, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Ezequiel Mansilla Ruiz
+50, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+51, Patient Isabel Rodríguez Blanco has been ingressed with a possible Alzheimer's Disease
+51, A bed has been assigned to patiend Isabel Rodríguez Blanco
+51, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+52, Patient Isabel Rodríguez Blanco has been discharged
+53, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Ezequiel Mansilla Ruiz
+54, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+54, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Ezequiel Mansilla Ruiz
+55, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+56, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+56, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+57, Patient Lola Sepúlveda Jiménez has been ingressed with a possible Alzheimer's Disease
+57, A bed has been assigned to patiend Lola Sepúlveda Jiménez
+57, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Lola Sepúlveda Jiménez
+58, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+58, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Lola Sepúlveda Jiménez
+59, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+59, Patient Lola Sepúlveda Jiménez prefer to avoid secondary effects
+60, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Ezequiel Mansilla Ruiz
+60, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Lola Sepúlveda Jiménez
+60, Patient Lola Sepúlveda Jiménez prefer to avoid secondary effects
+61, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+62, Patient Lola Sepúlveda Jiménez prefer to avoid secondary effects
+62, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+63, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Lola Sepúlveda Jiménez
+63, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+64, Medications applied, but the result was not effective for Alzheimer's Disease in Ezequiel Mansilla Ruiz
+65, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Ezequiel Mansilla Ruiz
+65, Patient Lola Sepúlveda Jiménez prefer to avoid secondary effects
+65, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Lola Sepúlveda Jiménez
+66, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+67, Patient Mariano Roldán Rangel has been ingressed with a possible Alzheimer's Disease
+67, A bed has been assigned to patiend Mariano Roldán Rangel
+67, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Lola Sepúlveda Jiménez
+67, Patient Mariano Roldán Rangel has been discharged
+67, Patient Lola Sepúlveda Jiménez prefer to avoid secondary effects
+68, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Lola Sepúlveda Jiménez
+68, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+69, Patient Mariano Roldán Rangel prefer to avoid secondary effects
+69, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+70, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Lola Sepúlveda Jiménez
+72, Patient Mariano Roldán Rangel prefer to avoid secondary effects
+72, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+73, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Lola Sepúlveda Jiménez
+74, Patient Mariano Roldán Rangel prefer to avoid secondary effects
+74, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+75, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Lola Sepúlveda Jiménez
+75, Patient Mariano Roldán Rangel prefer to avoid secondary effects
+75, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+76, Patient Marcelo Zúñiga Torres has been ingressed with a possible Alzheimer's Disease
+76, A bed has been assigned to patiend Marcelo Zúñiga Torres
+76, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcelo Zúñiga Torres
+78, Patient Mariano Roldán Rangel prefer to avoid secondary effects
+78, Patient Isabel Rodríguez Blanco is lookin up for another doctor opinion
+78, Patient Marcelo Zúñiga Torres prefer to avoid secondary effects
+79, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Marcelo Zúñiga Torres
+0, Hospital is open
+18, Patient Natalia Vargas Rangel has been ingressed with a possible Alzheimer's Disease
+18, A bed has been assigned to patiend Natalia Vargas Rangel
+19, Patient Natalia Vargas Rangel will implement strategies to reduce impact on daily life 
+20, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Natalia Vargas Rangel
+22, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Natalia Vargas Rangel
+25, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Natalia Vargas Rangel
+28, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Natalia Vargas Rangel
+30, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Natalia Vargas Rangel
+31, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Natalia Vargas Rangel
+32, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Natalia Vargas Rangel
+35, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Natalia Vargas Rangel
+37, Patient Irene Zamora Rojas has been ingressed with a possible Alzheimer's Disease
+37, A bed has been assigned to patiend Irene Zamora Rojas
+37, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Irene Zamora Rojas
+38, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Natalia Vargas Rangel
+38, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Irene Zamora Rojas
+39, Patient Irene Zamora Rojas prefer to avoid secondary effects
+40, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Irene Zamora Rojas
+40, Patient Irene Zamora Rojas prefer to avoid secondary effects
+41, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Natalia Vargas Rangel
+42, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Natalia Vargas Rangel
+42, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Irene Zamora Rojas
+43, Patient Irene Zamora Rojas prefer to avoid secondary effects
+44, Patient Irene Zamora Rojas prefer to avoid secondary effects
+45, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Irene Zamora Rojas
+47, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Irene Zamora Rojas
+48, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Irene Zamora Rojas
+50, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Irene Zamora Rojas
+52, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Natalia Vargas Rangel
+52, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Irene Zamora Rojas
+55, Patient Patricia Aguilar Santana has been ingressed with a possible Alzheimer's Disease
+55, A bed has been assigned to patiend Patricia Aguilar Santana
+55, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Irene Zamora Rojas
+55, Patient Patricia Aguilar Santana has been discharged
+60, Patient Mateo Ruiz Galindo has been ingressed with a possible Alzheimer's Disease
+60, A bed has been assigned to patiend Mateo Ruiz Galindo
+60, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Mateo Ruiz Galindo
+61, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Mateo Ruiz Galindo
+62, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Mateo Ruiz Galindo
+63, Patient Mateo Ruiz Galindo prefer to avoid secondary effects
+65, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Mateo Ruiz Galindo
+66, Patient Mateo Ruiz Galindo prefer to avoid secondary effects
+67, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Mateo Ruiz Galindo
+68, Patient Mateo Ruiz Galindo prefer to avoid secondary effects
+68, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Mateo Ruiz Galindo
+69, Patient Carlos Ochoa Salazar has been ingressed with a possible Alzheimer's Disease
+69, A bed has been assigned to patiend Carlos Ochoa Salazar
+70, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Mateo Ruiz Galindo
+70, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Carlos Ochoa Salazar
+71, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Mateo Ruiz Galindo
+72, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Mateo Ruiz Galindo
+75, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Mateo Ruiz Galindo
+77, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Mateo Ruiz Galindo
+78, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Mateo Ruiz Galindo
+0, Hospital is open
+17, Patient Andrés Pizarro Fuentes has been ingressed with a possible Alzheimer's Disease
+17, A bed has been assigned to patiend Andrés Pizarro Fuentes
+18, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+20, Patient Andrés Pizarro Fuentes has been discharged
+20, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+23, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+25, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+27, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+30, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+33, Patient Manuel Vargas Reyes has been ingressed with a possible Alzheimer's Disease
+33, A bed has been assigned to patiend Manuel Vargas Reyes
+33, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Manuel Vargas Reyes
+33, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+36, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+37, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+39, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+40, Patient Carlos Peña Zúñiga has been ingressed with a possible Alzheimer's Disease
+40, A bed has been assigned to patiend Carlos Peña Zúñiga
+40, Patient Carlos Peña Zúñiga has been discharged
+41, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+43, Medications applied, but the result was not effective for Alzheimer's Disease in Manuel Vargas Reyes
+43, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+46, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+48, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+50, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+51, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+53, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+55, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+56, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+59, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+60, Patient Edgar Domingo Torres has been ingressed with a possible Alzheimer's Disease
+60, A bed has been assigned to patiend Edgar Domingo Torres
+60, Patient Edgar Domingo Torres has been discharged
+61, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+62, Patient Edgar Domingo Torres prefer to avoid secondary effects
+63, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+64, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+65, Patient Edgar Domingo Torres prefer to avoid secondary effects
+65, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+66, Patient Edgar Domingo Torres prefer to avoid secondary effects
+67, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+67, Patient Edgar Domingo Torres prefer to avoid secondary effects
+68, Patient Edgar Domingo Torres prefer to avoid secondary effects
+69, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+71, Patient Edgar Domingo Torres prefer to avoid secondary effects
+72, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+72, Patient Edgar Domingo Torres prefer to avoid secondary effects
+73, Patient Alicia Montoya Quintana has been ingressed with a possible Alzheimer's Disease
+73, A bed has been assigned to patiend Alicia Montoya Quintana
+73, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Montoya Quintana
+73, Patient Edgar Domingo Torres prefer to avoid secondary effects
+74, Patient Edgar Domingo Torres prefer to avoid secondary effects
+75, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+75, Patient Edgar Domingo Torres prefer to avoid secondary effects
+76, Patient Alicia Montoya Quintana will implement strategies to reduce impact on daily life 
+76, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Montoya Quintana
+77, Patient Edgar Domingo Torres prefer to avoid secondary effects
+78, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+78, Patient Edgar Domingo Torres prefer to avoid secondary effects
+79, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Alicia Montoya Quintana
+79, Patient Andrés Pizarro Fuentes prefer to avoid secondary effects
+0, Hospital is open
+15, Patient Raimundo Jiménez Blanco has been ingressed with a possible Alzheimer's Disease
+15, A bed has been assigned to patiend Raimundo Jiménez Blanco
+15, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Raimundo Jiménez Blanco
+18, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Raimundo Jiménez Blanco
+20, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Raimundo Jiménez Blanco
+23, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Raimundo Jiménez Blanco
+24, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Raimundo Jiménez Blanco
+25, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Raimundo Jiménez Blanco
+25, Applied Psychotherapy successfully to reduce symptoms of Alzheimer's Disease in Raimundo Jiménez Blanco
+27, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Raimundo Jiménez Blanco
+28, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Raimundo Jiménez Blanco
+30, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Raimundo Jiménez Blanco
+33, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Raimundo Jiménez Blanco
+34, Patient Ana Escobar Mejía has been ingressed with a possible Alzheimer's Disease
+34, A bed has been assigned to patiend Ana Escobar Mejía
+34, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Raimundo Jiménez Blanco
+35, Applied Medications such as Antidepressants successfully to reduce symptoms of Alzheimer's Disease in Raimundo Jiménez Blanco
+35, Patient Ana Escobar Mejía has been discharged
+36, Patient Ana Escobar Mejía prefer to avoid secondary effects
+37, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Raimundo Jiménez Blanco
+37, Patient Ana Escobar Mejía prefer to avoid secondary effects
+40, Patient Ana Escobar Mejía prefer to avoid secondary effects
+41, Patient Ana Escobar Mejía prefer to avoid secondary effects
+43, Patient Ágata Bravo Arias has been ingressed with a possible Alzheimer's Disease
+43, A bed has been assigned to patiend Ágata Bravo Arias
+43, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Ágata Bravo Arias
+44, Patient Ana Escobar Mejía prefer to avoid secondary effects
+44, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Ágata Bravo Arias
+46, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Ágata Bravo Arias
+47, Patient Ana Escobar Mejía prefer to avoid secondary effects
+48, Patient Álex León Varela has been ingressed with a possible Alzheimer's Disease
+48, A bed has been assigned to patiend Álex León Varela
+49, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Ágata Bravo Arias
+49, Patient Ana Escobar Mejía prefer to avoid secondary effects
+49, Patient Álex León Varela prefer to avoid secondary effects
+50, Patient Álex León Varela has been discharged
+50, Patient Ana Escobar Mejía prefer to avoid secondary effects
+50, Patient Álex León Varela prefer to avoid secondary effects
+51, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Ágata Bravo Arias
+51, Patient Álex León Varela prefer to avoid secondary effects
+52, Patient Ana Escobar Mejía prefer to avoid secondary effects
+53, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Ágata Bravo Arias
+53, Patient Álex León Varela prefer to avoid secondary effects
+54, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Ágata Bravo Arias
+55, Patient Ana Escobar Mejía prefer to avoid secondary effects
+56, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Ágata Bravo Arias
+56, Patient Álex León Varela prefer to avoid secondary effects
+57, Patient Ana Escobar Mejía prefer to avoid secondary effects
+58, Patient Álex León Varela prefer to avoid secondary effects
+58, Patient Ana Escobar Mejía prefer to avoid secondary effects
+59, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Ágata Bravo Arias
+59, Patient Álex León Varela prefer to avoid secondary effects
+60, Patient Ana Escobar Mejía prefer to avoid secondary effects
+61, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Ágata Bravo Arias
+62, Patient Álex León Varela prefer to avoid secondary effects
+62, Patient Ana Escobar Mejía prefer to avoid secondary effects
+63, Patient Ana Escobar Mejía prefer to avoid secondary effects
+64, Patient Luis Salinas Vázquez has been ingressed with a possible Alzheimer's Disease
+64, A bed has been assigned to patiend Luis Salinas Vázquez
+64, Patient Álex León Varela prefer to avoid secondary effects
+64, Patient Ana Escobar Mejía prefer to avoid secondary effects
+65, Applied Assistive Devices like Walkers successfully to reduce symptoms of Alzheimer's Disease in Luis Salinas Vázquez
+66, Patient Luis Salinas Vázquez is lookin up for another doctor opinion
+67, Patient Álex León Varela prefer to avoid secondary effects
+67, Patient Ana Escobar Mejía prefer to avoid secondary effects
+67, Pain Management Therapies applied, but the result was not effective for Alzheimer's Disease in Luis Salinas Vázquez
+67, Patient Luis Salinas Vázquez is lookin up for another doctor opinion
+68, Patient Álex León Varela prefer to avoid secondary effects
+69, Pain Management Therapies applied, but the result was not effective for Alzheimer's Disease in Luis Salinas Vázquez
+70, Patient Ana Escobar Mejía prefer to avoid secondary effects
+70, Patient Luis Salinas Vázquez is lookin up for another doctor opinion
+70, Patient Álex León Varela prefer to avoid secondary effects
+71, Patient Ana Escobar Mejía prefer to avoid secondary effects
+71, Patient Luis Salinas Vázquez is lookin up for another doctor opinion
+72, Pain Management Therapies applied, but the result was not effective for Alzheimer's Disease in Luis Salinas Vázquez
+73, Patient Álex León Varela prefer to avoid secondary effects
+73, Patient Luis Salinas Vázquez is lookin up for another doctor opinion
+74, Patient Ana Escobar Mejía prefer to avoid secondary effects
+74, Pain Management Therapies applied, but the result was not effective for Alzheimer's Disease in Luis Salinas Vázquez
+75, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Luis Salinas Vázquez
+75, Patient Álex León Varela prefer to avoid secondary effects
+75, Patient Ana Escobar Mejía prefer to avoid secondary effects
+76, Patient Camila Morales Ortega has been ingressed with a possible Alzheimer's Disease
+76, A bed has been assigned to patiend Camila Morales Ortega
+76, Patient Ana Escobar Mejía prefer to avoid secondary effects
+77, Medications for Nerve Pain applied, but the result was not effective for Alzheimer's Disease in Luis Salinas Vázquez
+77, Speech Therapy applied, but the result was not effective for Alzheimer's Disease in Camila Morales Ortega
+77, Patient Ana Escobar Mejía prefer to avoid secondary effects
+78, Patient Álex León Varela prefer to avoid secondary effects
+79, Medications for Nerve Pain applied, but the result was not effective for Alzheimer's Disease in Luis Salinas Vázquez
+79, Patient Ana Escobar Mejía prefer to avoid secondary effects
+0, Hospital is open
+19, Patient Samantha Maldonado Miranda has been ingressed with a possible Alzheimer's Disease
+19, A bed has been assigned to patiend Samantha Maldonado Miranda
+20, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Samantha Maldonado Miranda
+21, Patient Samantha Maldonado Miranda is lookin up for another doctor opinion
+21, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Samantha Maldonado Miranda
+22, Patient Samantha Maldonado Miranda is lookin up for another doctor opinion
+23, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Samantha Maldonado Miranda
+24, Patient Samantha Maldonado Miranda is lookin up for another doctor opinion
+25, Patient Isabel Peña Rodríguez has been ingressed with a possible Alzheimer's Disease
+25, A bed has been assigned to patiend Isabel Peña Rodríguez
+25, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Isabel Peña Rodríguez
+25, Patient Samantha Maldonado Miranda is lookin up for another doctor opinion
+26, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Samantha Maldonado Miranda
+27, Patient Samantha Maldonado Miranda is lookin up for another doctor opinion
+28, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Samantha Maldonado Miranda
+29, Patient Samantha Maldonado Miranda is lookin up for another doctor opinion
+30, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Samantha Maldonado Miranda
+31, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Samantha Maldonado Miranda
+33, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Samantha Maldonado Miranda
+35, Medications applied, but the result was not effective for Alzheimer's Disease in Isabel Peña Rodríguez
+36, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Samantha Maldonado Miranda
+38, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Samantha Maldonado Miranda
+45, Patient Sara Miranda Muñoz has been ingressed with a possible Alzheimer's Disease
+45, A bed has been assigned to patiend Sara Miranda Muñoz
+45, Patient Sara Miranda Muñoz has been discharged
+47, Patient Sara Miranda Muñoz will implement strategies to reduce impact on daily life 
+49, Patient Sara Miranda Muñoz will implement strategies to reduce impact on daily life 
+50, Patient Sara Miranda Muñoz is looking up for alternative treatments 
+51, Patient Sara Miranda Muñoz will implement strategies to reduce impact on daily life 
+56, Patient Sergio Zamora Vázquez has been ingressed with a possible Alzheimer's Disease
+56, A bed has been assigned to patiend Sergio Zamora Vázquez
+56, Patient Sergio Zamora Vázquez has been discharged
+57, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+60, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+61, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+62, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+65, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+67, Patient Agustín Domínguez Hernández has been ingressed with a possible Alzheimer's Disease
+67, A bed has been assigned to patiend Agustín Domínguez Hernández
+67, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Agustín Domínguez Hernández
+67, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+69, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+70, Applied Assistive Devices like Walkers successfully to reduce symptoms of Alzheimer's Disease in Agustín Domínguez Hernández
+72, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+73, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+76, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+77, Medications applied, but the result was not effective for Alzheimer's Disease in Agustín Domínguez Hernández
+77, Patient Sergio Zamora Vázquez prefer to avoid secondary effects
+0, Hospital is open
+9, Patient Sergio Martínez Montero has been ingressed with a possible Alzheimer's Disease
+9, A bed has been assigned to patiend Sergio Martínez Montero
+10, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Sergio Martínez Montero
+13, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Sergio Martínez Montero
+14, Patient Inés Bautista Olivares has been ingressed with a possible Alzheimer's Disease
+14, A bed has been assigned to patiend Inés Bautista Olivares
+14, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Sergio Martínez Montero
+15, Applied Cognitive Behavioral Therapy successfully to reduce symptoms of Alzheimer's Disease in Inés Bautista Olivares
+16, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Sergio Martínez Montero
+18, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Sergio Martínez Montero
+20, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Sergio Martínez Montero
+23, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Sergio Martínez Montero
+25, Medications applied, but the result was not effective for Alzheimer's Disease in Inés Bautista Olivares
+33, Patient Jaime Mejía Iglesias has been ingressed with a possible Alzheimer's Disease
+33, A bed has been assigned to patiend Jaime Mejía Iglesias
+33, Patient Jaime Mejía Iglesias has been discharged
+50, Patient Lucía Delgado López has been ingressed with a possible Alzheimer's Disease
+50, A bed has been assigned to patiend Lucía Delgado López
+50, Patient Lucía Delgado López has been discharged
+52, Patient Lucía Delgado López prefer to avoid secondary effects
+53, Patient Lucía Delgado López prefer to avoid secondary effects
+55, Patient Lucía Delgado López prefer to avoid secondary effects
+58, Patient Cecilia Delgado Morales has been ingressed with a possible Alzheimer's Disease
+58, A bed has been assigned to patiend Cecilia Delgado Morales
+58, Patient Lucía Delgado López prefer to avoid secondary effects
+59, Patient Cecilia Delgado Morales will implement strategies to reduce impact on daily life 
+60, Patient Cecilia Delgado Morales has been discharged
+61, Patient Lucía Delgado López prefer to avoid secondary effects
+62, Patient Cecilia Delgado Morales will implement strategies to reduce impact on daily life 
+64, Patient Lucía Delgado López prefer to avoid secondary effects
+65, Patient Cecilia Delgado Morales is looking up for alternative treatments 
+66, Patient Lucía Delgado López prefer to avoid secondary effects
+67, Patient Cecilia Delgado Morales will implement strategies to reduce impact on daily life 
+68, Patient Lucía Delgado López prefer to avoid secondary effects
+69, Patient Lucía Delgado López prefer to avoid secondary effects
+70, Patient Héctor Romero Domínguez has been ingressed with a possible Alzheimer's Disease
+70, A bed has been assigned to patiend Héctor Romero Domínguez
+70, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Héctor Romero Domínguez
+71, Patient Lucía Delgado López prefer to avoid secondary effects
+71, Patient Héctor Romero Domínguez will implement strategies to reduce impact on daily life 
+72, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Héctor Romero Domínguez
+72, Patient Héctor Romero Domínguez will implement strategies to reduce impact on daily life 
+74, Patient Lucía Delgado López prefer to avoid secondary effects
+75, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Héctor Romero Domínguez
+77, Patient Lucía Delgado López prefer to avoid secondary effects
+78, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Héctor Romero Domínguez
+79, Patient José León Flores has been ingressed with a possible Alzheimer's Disease
+79, A bed has been assigned to patiend José León Flores
+0, Hospital is open
+19, Patient Andrés Silva Calderón has been ingressed with a possible Alzheimer's Disease
+19, A bed has been assigned to patiend Andrés Silva Calderón
+20, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Andrés Silva Calderón
+22, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Andrés Silva Calderón
+24, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Andrés Silva Calderón
+27, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Andrés Silva Calderón
+28, Patient Camila Domingo Carrillo has been ingressed with a possible Alzheimer's Disease
+28, A bed has been assigned to patiend Camila Domingo Carrillo
+29, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Andrés Silva Calderón
+30, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Andrés Silva Calderón
+30, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Camila Domingo Carrillo
+30, Patient Camila Domingo Carrillo will implement strategies to reduce impact on daily life 
+31, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Andrés Silva Calderón
+32, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Andrés Silva Calderón
+32, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Andrés Silva Calderón
+33, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Camila Domingo Carrillo
+33, Patient Camila Domingo Carrillo will implement strategies to reduce impact on daily life 
+34, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Andrés Silva Calderón
+36, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Camila Domingo Carrillo
+37, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Andrés Silva Calderón
+38, Patient Fátima Flores Martínez has been ingressed with a possible Alzheimer's Disease
+38, A bed has been assigned to patiend Fátima Flores Martínez
+38, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Camila Domingo Carrillo
+39, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Andrés Silva Calderón
+39, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Camila Domingo Carrillo
+40, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Camila Domingo Carrillo
+40, Patient Fátima Flores Martínez has been discharged
+41, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Andrés Silva Calderón
+41, Patient Fátima Flores Martínez prefer to avoid secondary effects
+42, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Andrés Silva Calderón
+42, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Andrés Silva Calderón
+42, Applied Assistive Devices like Walkers successfully to reduce symptoms of Alzheimer's Disease in Camila Domingo Carrillo
+42, Patient Fátima Flores Martínez prefer to avoid secondary effects
+43, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Camila Domingo Carrillo
+43, Patient Fátima Flores Martínez prefer to avoid secondary effects
+44, Patient Fátima Sánchez Figueroa has been ingressed with a possible Alzheimer's Disease
+44, A bed has been assigned to patiend Fátima Sánchez Figueroa
+45, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Fátima Sánchez Figueroa
+46, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Camila Domingo Carrillo
+46, Patient Fátima Flores Martínez prefer to avoid secondary effects
+46, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Fátima Sánchez Figueroa
+47, Patient Fátima Flores Martínez prefer to avoid secondary effects
+48, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Camila Domingo Carrillo
+48, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Fátima Sánchez Figueroa
+48, Patient Fátima Flores Martínez prefer to avoid secondary effects
+49, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Camila Domingo Carrillo
+49, Patient Fátima Flores Martínez prefer to avoid secondary effects
+50, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Fátima Sánchez Figueroa
+50, Patient Fátima Flores Martínez prefer to avoid secondary effects
+52, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Andrés Silva Calderón
+52, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Camila Domingo Carrillo
+52, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Fátima Sánchez Figueroa
+52, Patient Fátima Flores Martínez prefer to avoid secondary effects
+53, Patient Fátima Flores Martínez prefer to avoid secondary effects
+54, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Fátima Sánchez Figueroa
+55, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Fátima Sánchez Figueroa
+56, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Fátima Sánchez Figueroa
+56, Patient Fátima Flores Martínez prefer to avoid secondary effects
+57, Patient Fátima Flores Martínez prefer to avoid secondary effects
+58, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Fátima Sánchez Figueroa
+59, Patient Manuel Flores Blanco has been ingressed with a possible Alzheimer's Disease
+59, A bed has been assigned to patiend Manuel Flores Blanco
+60, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Fátima Sánchez Figueroa
+60, Patient Manuel Flores Blanco has been discharged
+60, Patient Fátima Flores Martínez prefer to avoid secondary effects
+62, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Fátima Sánchez Figueroa
+63, Patient Fátima Flores Martínez prefer to avoid secondary effects
+64, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Fátima Sánchez Figueroa
+64, Patient Fátima Flores Martínez prefer to avoid secondary effects
+65, Patient Fátima Flores Martínez prefer to avoid secondary effects
+68, Patient Fátima Flores Martínez prefer to avoid secondary effects
+70, Patient Rodrigo Hidalgo Galindo has been ingressed with a possible Alzheimer's Disease
+70, A bed has been assigned to patiend Rodrigo Hidalgo Galindo
+70, Patient Rodrigo Hidalgo Galindo has been discharged
+71, Patient Fátima Flores Martínez prefer to avoid secondary effects
+72, Patient Fátima Flores Martínez prefer to avoid secondary effects
+73, Patient Fátima Flores Martínez prefer to avoid secondary effects
+75, Patient Fátima Flores Martínez prefer to avoid secondary effects
+76, Patient Fátima Flores Martínez prefer to avoid secondary effects
+77, Patient Emilia Silva Mejía has been ingressed with a possible Alzheimer's Disease
+77, A bed has been assigned to patiend Emilia Silva Mejía
+77, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Emilia Silva Mejía
+78, Patient Fátima Flores Martínez prefer to avoid secondary effects
+79, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Emilia Silva Mejía
+0, Hospital is open
+17, Patient Gabriela Salinas Arroyo has been ingressed with a possible Alzheimer's Disease
+17, A bed has been assigned to patiend Gabriela Salinas Arroyo
+19, Patient Gabriela Salinas Arroyo is lookin up for another doctor opinion
+20, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Gabriela Salinas Arroyo
+20, Patient Gabriela Salinas Arroyo is lookin up for another doctor opinion
+23, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Gabriela Salinas Arroyo
+23, Patient Gabriela Salinas Arroyo is lookin up for another doctor opinion
+25, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Gabriela Salinas Arroyo
+26, Patient Gabriela Salinas Arroyo is lookin up for another doctor opinion
+28, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Gabriela Salinas Arroyo
+28, Patient Gabriela Salinas Arroyo is lookin up for another doctor opinion
+30, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Gabriela Salinas Arroyo
+30, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Gabriela Salinas Arroyo
+30, Patient Gabriela Salinas Arroyo is lookin up for another doctor opinion
+31, Patient Gabriela Salinas Arroyo is lookin up for another doctor opinion
+32, Patient Enrique García Calderón has been ingressed with a possible Alzheimer's Disease
+32, A bed has been assigned to patiend Enrique García Calderón
+33, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Gabriela Salinas Arroyo
+33, Patient Enrique García Calderón has been discharged
+34, Patient Enrique García Calderón prefer to avoid secondary effects
+35, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Gabriela Salinas Arroyo
+37, Patient Enrique García Calderón prefer to avoid secondary effects
+38, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Gabriela Salinas Arroyo
+39, Patient Enrique García Calderón prefer to avoid secondary effects
+40, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Gabriela Salinas Arroyo
+42, Patient Enrique García Calderón prefer to avoid secondary effects
+45, Patient Enrique García Calderón prefer to avoid secondary effects
+48, Patient Enrique García Calderón prefer to avoid secondary effects
+51, Patient Diana Medina Olivares has been ingressed with a possible Alzheimer's Disease
+51, A bed has been assigned to patiend Diana Medina Olivares
+51, Patient Enrique García Calderón prefer to avoid secondary effects
+54, Patient Enrique García Calderón prefer to avoid secondary effects
+55, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Diana Medina Olivares
+56, Patient Enrique García Calderón prefer to avoid secondary effects
+57, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Diana Medina Olivares
+58, Patient Enrique García Calderón prefer to avoid secondary effects
+58, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Diana Medina Olivares
+60, Patient Marcelo Mora Flores has been ingressed with a possible Alzheimer's Disease
+60, A bed has been assigned to patiend Marcelo Mora Flores
+60, Patient Marcelo Mora Flores has been discharged
+60, Patient Enrique García Calderón prefer to avoid secondary effects
+60, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Diana Medina Olivares
+61, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Diana Medina Olivares
+62, Patient Marcelo Mora Flores will implement strategies to reduce impact on daily life 
+63, Patient Enrique García Calderón prefer to avoid secondary effects
+63, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Diana Medina Olivares
+64, Patient Marcelo Mora Flores will implement strategies to reduce impact on daily life 
+64, Patient Enrique García Calderón prefer to avoid secondary effects
+65, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Diana Medina Olivares
+65, Antipsychotic Medications applied, but the result was not effective for Alzheimer's Disease in Diana Medina Olivares
+65, Patient Enrique García Calderón prefer to avoid secondary effects
+66, Patient Enrique García Calderón prefer to avoid secondary effects
+67, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Diana Medina Olivares
+68, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Diana Medina Olivares
+68, Patient Enrique García Calderón prefer to avoid secondary effects
+70, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Diana Medina Olivares
+70, Patient Enrique García Calderón prefer to avoid secondary effects
+71, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Diana Medina Olivares
+73, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Diana Medina Olivares
+73, Patient Enrique García Calderón prefer to avoid secondary effects
+74, Patient Rodrigo Pizarro Montero has been ingressed with a possible Alzheimer's Disease
+74, A bed has been assigned to patiend Rodrigo Pizarro Montero
+74, Patient Rodrigo Pizarro Montero has been discharged
+74, Patient Enrique García Calderón prefer to avoid secondary effects
+75, Applied Physical Therapy successfully to reduce symptoms of Alzheimer's Disease in Diana Medina Olivares
+76, Patient Enrique García Calderón prefer to avoid secondary effects
+77, Patient Rodrigo Pizarro Montero prefer to avoid secondary effects
+79, Patient Enrique García Calderón prefer to avoid secondary effects
+79, Patient Rodrigo Pizarro Montero prefer to avoid secondary effects
+0, Hospital is open
+8, Patient Eva Ruiz Hernández has been ingressed with a possible Alzheimer's Disease
+8, A bed has been assigned to patiend Eva Ruiz Hernández
+10, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Eva Ruiz Hernández
+11, Patient Eva Ruiz Hernández will implement strategies to reduce impact on daily life 
+12, Patient Eva Ruiz Hernández will implement strategies to reduce impact on daily life 
+13, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Eva Ruiz Hernández
+14, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Eva Ruiz Hernández
+17, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Eva Ruiz Hernández
+19, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Eva Ruiz Hernández
+20, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Eva Ruiz Hernández
+23, Patient Valeria Espinoza Zúñiga has been ingressed with a possible Alzheimer's Disease
+23, A bed has been assigned to patiend Valeria Espinoza Zúñiga
+23, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Eva Ruiz Hernández
+24, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Eva Ruiz Hernández
+25, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Valeria Espinoza Zúñiga
+27, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Eva Ruiz Hernández
+27, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Valeria Espinoza Zúñiga
+29, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Eva Ruiz Hernández
+30, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Valeria Espinoza Zúñiga
+31, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Valeria Espinoza Zúñiga
+32, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Valeria Espinoza Zúñiga
+33, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Valeria Espinoza Zúñiga
+35, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Valeria Espinoza Zúñiga
+37, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Valeria Espinoza Zúñiga
+40, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Valeria Espinoza Zúñiga
+41, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Valeria Espinoza Zúñiga
+42, Patient Jorge Miranda Hernández has been ingressed with a possible Alzheimer's Disease
+42, A bed has been assigned to patiend Jorge Miranda Hernández
+42, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Valeria Espinoza Zúñiga
+43, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Valeria Espinoza Zúñiga
+44, Patient Jorge Miranda Hernández is lookin up for another doctor opinion
+45, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Jorge Miranda Hernández
+46, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Jorge Miranda Hernández
+47, Patient Jorge Miranda Hernández is lookin up for another doctor opinion
+49, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Jorge Miranda Hernández
+49, Patient Jorge Miranda Hernández is lookin up for another doctor opinion
+50, Patient Cristina León Figueroa has been ingressed with a possible Alzheimer's Disease
+50, A bed has been assigned to patiend Cristina León Figueroa
+50, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Cristina León Figueroa
+51, Patient Jorge Miranda Hernández is lookin up for another doctor opinion
+51, Patient Cristina León Figueroa is lookin up for another doctor opinion
+51, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Cristina León Figueroa
+52, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Jorge Miranda Hernández
+52, Patient Jorge Miranda Hernández is lookin up for another doctor opinion
+53, Patient Cristina León Figueroa is lookin up for another doctor opinion
+53, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Jorge Miranda Hernández
+54, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Cristina León Figueroa
+54, Patient Jorge Miranda Hernández is lookin up for another doctor opinion
+54, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Jorge Miranda Hernández
+55, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Jorge Miranda Hernández
+55, Patient Cristina León Figueroa is lookin up for another doctor opinion
+55, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Cristina León Figueroa
+56, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Jorge Miranda Hernández
+57, Patient Cristina León Figueroa is lookin up for another doctor opinion
+57, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Cristina León Figueroa
+58, Patient Cristina León Figueroa is lookin up for another doctor opinion
+58, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Cristina León Figueroa
+59, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Jorge Miranda Hernández
+59, Patient Cristina Fernández Cano has been ingressed with a possible Alzheimer's Disease
+59, A bed has been assigned to patiend Cristina Fernández Cano
+59, Patient Cristina León Figueroa is lookin up for another doctor opinion
+60, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Cristina León Figueroa
+60, Patient Cristina Fernández Cano has been discharged
+61, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Cristina León Figueroa
+62, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Jorge Miranda Hernández
+62, Patient Cristina Fernández Cano is looking up for alternative treatments 
+63, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Jorge Miranda Hernández
+64, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Cristina León Figueroa
+64, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Jorge Miranda Hernández
+64, Patient Cristina Fernández Cano is looking up for alternative treatments 
+65, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Cristina León Figueroa
+66, Patient Sara Vega Sosa has been ingressed with a possible Alzheimer's Disease
+66, A bed has been assigned to patiend Sara Vega Sosa
+66, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Sara Vega Sosa
+67, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Cristina León Figueroa
+67, Patient Sara Vega Sosa will implement strategies to reduce impact on daily life 
+68, Applied Surgery for Severe Cases successfully to reduce symptoms of Alzheimer's Disease in Cristina León Figueroa
+69, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Sara Vega Sosa
+69, Patient Sara Vega Sosa will implement strategies to reduce impact on daily life 
+70, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Sara Vega Sosa
+71, Patient Sara Vega Sosa is looking up for alternative treatments 
+72, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Sara Vega Sosa
+73, Patient Sara Vega Sosa will implement strategies to reduce impact on daily life 
+73, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Sara Vega Sosa
+74, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Sara Vega Sosa
+75, Patient Jaime Méndez Ruiz has been ingressed with a possible Alzheimer's Disease
+75, A bed has been assigned to patiend Jaime Méndez Ruiz
+75, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jaime Méndez Ruiz
+75, Cognitive Therapy applied, but the result was not effective for Alzheimer's Disease in Sara Vega Sosa
+76, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Sara Vega Sosa
+76, Patient Sara Vega Sosa is looking up for alternative treatments 
+76, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jaime Méndez Ruiz
+77, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Sara Vega Sosa
+77, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Jaime Méndez Ruiz
+78, Patient Sara Vega Sosa will implement strategies to reduce impact on daily life 
+78, Medications like Beta-Blockers applied, but the result was not effective for Alzheimer's Disease in Sara Vega Sosa
+79, Applied Cholinesterase Inhibitors successfully to reduce symptoms of Alzheimer's Disease in Sara Vega Sosa

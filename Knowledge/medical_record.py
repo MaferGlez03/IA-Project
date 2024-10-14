@@ -64,7 +64,5 @@ class Patient:
         return (f"Patient Name: {self.name}\n" 
                 f"Age: {self.age}\n"
                 f"Gender: {self.gender}\n"
-                f"Symptoms: {[s.name for s in self.symptoms]}\n"
-                f"Diseases: {[d.name for d in self.diseases]}\n"
-                f"Treatments: {[t.name for t in self.treatments]}\n")
+                f"Symptoms: {[s.name for s in self.symptoms]}\n")
 

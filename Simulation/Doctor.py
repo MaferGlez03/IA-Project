@@ -45,7 +45,7 @@ def form_new_belief(symptoms):
     return {Hospital.Disease(new_disease_name, symptoms): 100}  # Assign 100% to the unknown disease
 
 
-def desires(beliefs):
+def desires(beliefs, threshold):
     desires_dict = {}
 
     # Generate desires based on the beliefs
@@ -54,7 +54,7 @@ def desires(beliefs):
             desires_dict[disease]["investigate_symptoms"] =  False
             desires_dict[disease]["reduce_symptoms"] =  (False,[])
             desires_dict[disease]["prevent_progression"] =  False
-            desires_dict[disease]["discharge_patient"] = disease.progress<=15 
+            desires_dict[disease]["discharge_patient"] = disease.progress <= threshold
         
     return desires_dict
 
@@ -135,8 +135,6 @@ def generate_options(beliefs, symptoms, procedures, desires_dict):
 
 
 def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
-   
-
     # Execute each intention
     for intention in intentions:
         if "can be discharged" in intention[0]:
@@ -167,23 +165,32 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
                         # Reducir la severidad solo si el resultado del procedimiento es bueno
                         if procedure.result == "good":
                             result = f"Applied {procedure.name} successfully to reduce symptoms of {disease} in {patient.name}"
+                            procedure.uses += 1
                             results.append((env.now,result))
                             # Reducir la severidad del síntoma
-                            print()
-                            print(f"patient.symptoms antes: {patient.symptoms}")
-                            if len(patient.symptoms) == 1:
+                            if len(disease_symptoms) == 0:
+                                patient.disease_progress = 0
+                                continue
+                            if disease_symptoms[0] not in patient.symptoms:
+                                while disease_symptoms[0] not in patient.symptoms:
+                                    disease_symptoms.remove(disease_symptoms[0])
+                                    if len(disease_symptoms) == 0:
+                                        break
+                                if len(disease_symptoms) == 0:
+                                    patient.disease_progress = 0
+                                    continue
+                            if len(patient.symptoms) == 0:
+                                d = take_disease(disease, beliefs)
+                                desires[d]["reduce_symptoms"] = False
+                                # yield env.timeout(10)
+                                continue
+                            elif len(patient.symptoms) == 1:
                                 patient.symptoms = []
                             else:
                                 patient.symptoms = [symptom for symptom in patient.symptoms if symptom.name != disease_symptoms[0].name]
                                 cured_symptom=disease_symptoms[0].name
                                 disease_symptoms = [symptom for symptom in disease_symptoms if symptom.name != cured_symptom]
-                            print(f"patient.symptoms despues: {patient.symptoms}")
                             d = take_disease(disease, beliefs)
-                            print(patient.name)
-                            print(f"patient.disease_progress = {patient.disease_progress}")
-                            print(f"d.progress = {d.progress}")
-                            print(f"(len(patient.symptoms) + 1) = {(len(patient.symptoms) + 1)}")
-                            print()
                             d.progress -= d.progress / (len(patient.symptoms) + 1) #!Parche 
                             patient.disease_progress = d.progress
                             desires[d]["reduce_symptoms"] = False
@@ -191,6 +198,7 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
                         else:
                             result = f"{procedure.name} applied, but the result was not effective for {disease} in {patient.name}"
                             results.append((env.now,result))
+                            procedure.uses += 1
                             yield env.timeout(10)
 
         elif "prevent progression" in intention[0]:
