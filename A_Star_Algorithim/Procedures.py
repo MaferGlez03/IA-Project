@@ -14,7 +14,7 @@ treatment_procedures = [
     ),
     Procedure(
         name="Surgery for Severe Cases",
-        cost=5000,
+        cost=500,
         effects_progress=30,
         effects_symptoms={"Heart Problems": "alleviate", "Involuntary Movements": "alleviate"}  # Mantiene alivio para problemas graves
     ),
@@ -68,7 +68,7 @@ treatment_procedures = [
     ),
     Procedure(
         name="Surgery in Refractory Cases",
-        cost=7000,
+        cost=700,
         effects_progress=40,
         effects_symptoms={"Seizures": "alleviate"} 
     ),

@@ -3,7 +3,7 @@ from A_Star_Algorithim.States import State
 from A_Star_Algorithim.Procedures import treatment_procedures,treatment_medications
 
 class AStar:
-    def __init__(self, minimal_cost_per_action=50, minimal_cost_per_treatment=100):
+    def __init__(self, minimal_cost_per_action=100, minimal_cost_per_treatment=100):
         self.minimal_cost_per_action = minimal_cost_per_action
         self.minimal_cost_per_treatment = minimal_cost_per_treatment
         self.possible_procedure = treatment_procedures
