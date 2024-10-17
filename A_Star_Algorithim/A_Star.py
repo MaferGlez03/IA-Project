@@ -58,7 +58,7 @@ class AStar:
                 continue
             
             if is_goal(current_state):
-                print("Goal state reached!")
+                # print("Goal state reached!")
                 return current_state
 
             visited.add(current_state)
@@ -118,9 +118,9 @@ class AStar:
                 symptoms = f"Symptoms: {[s.name for s in updated_symptoms]}"
                 progress = f"Progress: {updated_progress.improvement_percentage}%"
                 self.log = self.log + medication + "\n" + symptoms + "\n" + progress + "\n"
-                print(medication)
-                print(symptoms)
-                print(progress)
+                # print(medication)
+                # print(symptoms)
+                # print(progress)
                 successors.append(new_state)
 
         return successors

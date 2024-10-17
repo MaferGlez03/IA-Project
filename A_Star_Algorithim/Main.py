@@ -58,12 +58,12 @@ class Main:
         # Run the A* search algorithm
         solution = astar.a_star(initial_state, GoalCheck.is_goal)
 
-        # Print the result
-        if solution:
-            print("Goal state reached:")
-            print(solution)
-        else:
-            print("No solution found.")
+        # # Print the result
+        # if solution:
+        #     print("Goal state reached:")
+        #     print(solution)
+        # else:
+        #     print("No solution found.")
 
 
 # To run the program, simply call the main method

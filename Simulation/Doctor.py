@@ -161,7 +161,7 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
             disease = ' '.join(intention[0].split()[-2:] )  # Extract disease name from intention
             # Encontrar un procedimiento coincidente para esta enfermedad
             best_procedures = apply_A_Star(patient,Goal.GoalCheck.is_goal)
-            print(best_procedures)
+            # print(best_procedures)
             if not best_procedures: best_procedures= procedures
             for procedure in best_procedures:
                 if len(intention[1]):
@@ -196,7 +196,10 @@ def execute_action(intentions, patient, procedures,results,env,desires,beliefs):
                                 cured_symptom=disease_symptoms[0].name
                                 disease_symptoms = [symptom for symptom in disease_symptoms if symptom.name != cured_symptom]
                             d = take_disease(disease, beliefs)
-                            d.progress -= d.progress / (len(patient.symptoms) + 1) #!Parche 
+                            try:
+                                d.progress -= d.progress / (len(patient.symptoms) + 1) #!Parche 
+                            except:
+                                return
                             patient.disease_progress = d.progress
                             desires[d]["reduce_symptoms"] = False
                             yield env.timeout(10)

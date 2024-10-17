@@ -2,7 +2,7 @@ import json
 import simpy
 import random
 import itertools
-from Tests import most_used_service
+from Tests import most_used_service, criterio_parada
 from Language import chat
 from Knowledge.disease_detection import DiseasePredictionModel
 from Simulation import Doctor, Patient, Hospital, Procedures, Tools
@@ -41,6 +41,7 @@ def doctor(env, procedures, model, hospital, id, threshold=0):
             env.process(Doctor.execute_action(intentions, patient, procedures,results,env, desires, beliefs))
             
             yield env.timeout(random.randint(1, 3))
+        hospital.patients_treated += 1
 
 def patients(env, hospital, id, patient, threshold):
     perception = {
@@ -65,18 +66,24 @@ def patients(env, hospital, id, patient, threshold):
 def patient_generator(env, model, hospital, threshold):
     """Generate new patients that arrive at the hospital."""
     for i in itertools.count():
-        yield env.timeout(random.randint(*[5,20]))
+        yield env.timeout(random.randint(*[1,5]))
 
         # Hacer la predicción
-        patient, history = chat.chating("Christina Yang from Grey's Anatomy")
+        # patient, history = chat.chating("Christina Yang from Grey's Anatomy")
+        patient = chat.fake_chating()
+
 
         hospital.patients.append(patient)
 
-        energy_level = chat.analyze_conversation(history, "nivel de energía")
-        pain_level = chat.analyze_conversation(history, "nivel de dolor")
+        # energy_level = chat.analyze_conversation(history, "nivel de energía")
+        # pain_level = chat.analyze_conversation(history, "nivel de dolor")
+
+        energy_level = random.randint(1, 10)
+        pain_level = random.randint(1, 10)
+
         patient.energy_level=energy_level
         patient.pain_level=pain_level
-        env.process(patients(env, hospital, i, patient))
+        env.process(patients(env, hospital, i, patient, threshold))
 
         
 
@@ -89,12 +96,12 @@ def patient_generator(env, model, hospital, threshold):
         patient.diseases = prediction
         results.append((env.now, f'Patient {patient.name} has been ingressed with a possible {list(prediction.keys())[0].name}'))
 
-        print()
-        print(f"Predicted Disease:")
-        for clave, valor in prediction.items():
-                if valor == 0: break
-                print(f"{clave.name}: {valor}%")
-        print()
+        # print()
+        # print(f"Predicted Disease:")
+        # for clave, valor in prediction.items():
+        #         if valor == 0: break
+        #         print(f"{clave.name}: {valor}%")
+        # print()
 
 
     
@@ -130,13 +137,20 @@ def run_simulation(threshold=15):
 
     
 
-    env.run(until=40)
+    env.run(until=100.
+            )
     Tools.save_log(results)
     return hospital
 
-data = most_used_service.test_procedures(run_simulation)
+data = most_used_service.test_procedures(run_simulation, 100)
 most_used_service.graphs(data, 0)
-most_used_service.graphs(data, 1)
+
+data = criterio_parada.test_procedures(run_simulation, 100)
+criterio_parada.graphs(data)
+criterio_parada.statistics(data)
+
+
+
 # run_simulation()
 
 

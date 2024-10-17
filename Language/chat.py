@@ -174,6 +174,55 @@ def chating(role): # Imagine you are the Christina Yang from Grey's Anatomy
     print(patient)
     return patient, history
 
+def fake_chating():
+    symptoms = ["Memory Loss", "Muscle Weakness", "Involuntary Movements", "Tremor", "Difficulty Speaking", 
+                  "Fatigue", "Visual Hallucinations", "Cognitive Decline", "Difficulty Walking", 
+                  "Numbness or Tingling", "Bradykinesia", "Mood Changes", "Seizures", "Heart Problems"]
+    
+    # Listas de nombres y apellidos
+    female_names = [
+        "María", "Ana", "Sofía", "Laura", "Marta", "Lucía", "Paula", "Camila", "Gabriela", "Adriana", "Isabel", "Carmen", 
+        "Alba", "Beatriz", "Eva", "Irene", "Cristina", "Elena", "Teresa", "Rosa", "Natalia", "Patricia", "Silvia", "Inés", 
+        "Estefanía", "Victoria", "Claudia", "Alicia", "Diana", "Ángela", "Valeria", "Antonia", "Julia", "Renata", "Sara", 
+        "Clara", "Olga", "Verónica", "Emilia", "Cecilia", "Gloria", "Samantha", "Lola", "Noelia", "Estrella", "Fátima", 
+        "Lourdes", "Ágata", "Montserrat"
+    ]
+
+    male_names = [
+        "Carlos", "Juan", "José", "Luis", "David", "Pedro", "Jorge", "Fernando", "Andrés", "Diego", "Miguel", "Raúl", 
+        "Manuel", "Roberto", "Francisco", "Santiago", "Enrique", "Alberto", "Julio", "Esteban", "Héctor", "Marcos", "Álvaro", 
+        "Guillermo", "Daniel", "Sebastián", "Pablo", "Ricardo", "Federico", "Fabián", "Tomás", "Marcelo", "Emilio", "Rubén", 
+        "Bruno", "Mateo", "César", "Nicolás", "Mario", "Félix", "Agustín", "Rodrigo", "Sergio", "Gustavo", "Mauricio", 
+        "Rafael", "Iván", "Jaime", "Álex", "Cristóbal", "Ignacio", "Edgar", "Mariano", "Raimundo", "Ezequiel"
+    ]
+
+
+    last_names = [
+        "García", "Rodríguez", "Martínez", "Hernández", "López", "González", "Pérez", "Sánchez", "Ramírez", "Torres", "Flores", "Castro", "Rivas", "Ortega", "Molina", "Vargas", "Morales", 
+        "Reyes", "Iglesias", "Paredes", "Domínguez", "Chávez", "Ramos", "Vega", "Cruz", "Silva", "Núñez", "Cortés", "Esquivel", "Zamora", "Vázquez", "Delgado", "Sosa", "Peña", "Mejía", "Salinas", 
+        "Suárez", "Luna", "Cabrera", "Ornelas", "Méndez", "Medina", "Durán", "Arias", "Blanco", "Carrillo", "León", "Calderón", "Fernández", "Ortiz", "Montoya", "Miranda", "Muñoz", "Cano", 
+        "Herrera", "Rangel", "Valdez", "Quintana", "Aguilar", "Juárez", "Salazar", "Lara", "Villanueva", "Ruiz", "Valencia", "Alvarado", "Ponce", "Benítez", "Solís", "Santana", "Cuevas", "Maldonado", 
+        "Rojas", "Escobar", "Guerrero", "Bravo", "Figueroa", "Pizarro", "Acosta", "Espinoza", "Pineda", "Palacios", "Romero", "Fuentes", "Ochoa", "Domingo", "Mora", "Roldán", "Beltrán", "Jiménez", 
+        "Zúñiga", "Paredes", "Hidalgo", "Arroyo", "Olivares", "Montero", "Camacho", "Bautista", "Villarreal", "Galindo", "Prieto", "Mansilla", "Varela", "Escamilla", "Bustamante", "Barrios", "Sepúlveda"
+    ]
+
+    sex = random.choice(["Male", "Female"])
+    if sex == "Male":
+        name = random.choice(male_names) + " " + random.choice(last_names) + " " + random.choice(last_names)
+    else:
+        name = random.choice(female_names) + " " + random.choice(last_names) + " " + random.choice(last_names)
+    age = random.randint(18, 100)
+    
+    # Crear un paciente
+    patient = Patient(name, age, sex)
+
+    patient_symptoms = random.sample(symptoms, random.randint(0, len(symptoms)))
+
+    for s in patient_symptoms:
+        patient.add_symptom(s)
+    
+    return patient
+
 def convert_to_int_or_zero(value):
     try:
         # Intentar convertir a int
